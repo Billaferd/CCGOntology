@@ -8,5 +8,5 @@
 @prefix ccg: <https://example.org>
 
 ccg: rdf:type owl:Ontology ;
-skos:prefLabel "Collectible Card Game Ontology" ;
+	skos:prefLabel "Collectible Card Game Ontology" ;
       owl:imports <http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf> .
