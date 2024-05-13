@@ -57,6 +57,12 @@ ccg:CardPool a owl:Class ;
     dct:description "Any collection of cards that is used as part of the game."@en ;
     skos:example "Deck, hand, discard pile"@en .
 
+ccg:Resource a owl:Ontology ;
+    skos:prefLabel "Resource"@en ;
+    rdfs:label "Resource"@en ;
+    dct:description "Anything that needs to be managed by the player but has no direct physical representation in the game"@en ;
+    skos:example "Mana, Player Health"@en .
+
 ccg:CardRarity a owl:Class .
 
 ccg:CardStat a owl:Class .
@@ -92,6 +98,13 @@ ccg:hasEffect a owl:ObjectProperty ;
     skos:prefLabel "has effect"@en ;
     rdfs:label "has effect"@en ;
     dct:description "Relates an effect to a card, generally the effect is found in the rule box of the card."@en .
+
+ccg:hasRuleText a owl:objectProperty ;
+    rdfs:domain ccg:Card ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "has rule text"@en ;
+    rdfs:label "has rule text"@en ;
+    dct:description "Relates the card to the exact rule text that shows up on it."@en .
 
 ccg:isType a owl:ObjectProperty ;
     rdfs:domain ccg:Card ;
