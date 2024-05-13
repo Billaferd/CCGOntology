@@ -43,7 +43,11 @@ ccg:Card a owl:Class ;
     rdfs:label "Card"@en ;
     dct:Description "The most basic part of a CCG is the Card. These can take many shapes and sizes."@en .
 
-ccg:CardType a owl:Class .
+ccg:CardType a owl:Class ;
+    skos:prefLabel "Card Type"@en ;
+    rdfs:label "Card Type"@en ;
+    dct:description "A specific type of card that is distinct from other types in the game."@en ;
+    skos:example "Land, Energy, Artifacts, Spells, Tokens."@en .
 
 ccg:Effect a owl:Class .
 
