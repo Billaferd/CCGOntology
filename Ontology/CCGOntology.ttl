@@ -25,3 +25,24 @@ ccg: rdf:type owl:Ontology ;
     skos:scopeNote "Intended to be used for understanding digital and print CCG's" ;
     vs:term_status "stable" ;
     owl:imports <http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf> .
+
+# Classes
+
+ccg:CardGame a owl:Class ;
+    skos:prefLabel "Card Game"@en ;
+    rdfs:label "Card Game"@en ;
+    dct:description "Represents a card game that can be played."@en .
+
+ccg:CardSet a owl:Class ;
+    skos:prefLabel "Card Set"@en ;
+    rdfs:label "Card Set"@en ;
+    dct:description "Represents a card set release for a game."@en .
+
+# Predicates
+
+ccg:hasSet a owl:ObjectProperty ;
+    rdfs:domain ccg:CardGame ;
+    rdfs:range ccg:CardSet ;
+    skos:prefLabel "has card set"@en ;
+    rdfs:label "has card set"@en ;
+    dct:description "Relates a card game to its sets of cards. A set is generally a release of cards as a grouping and all having a similar theme."@en .
