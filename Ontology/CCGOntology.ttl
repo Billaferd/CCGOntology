@@ -86,9 +86,19 @@ ccg:hasCard a owl:ObjectProperty ;
     rdfs:label "has card"@en ;
     dct:description "relates different items that can contain cards like decks, card sets,hands, etc..."@en .
 
-ccg:hasEffect a owl:ObjectProperty .
+ccg:hasEffect a owl:ObjectProperty ;
+    rdfs:domain ccg:Card ;
+    rdfs:range ccg:Effect ;
+    skos:prefLabel "has effect"@en ;
+    rdfs:label "has effect"@en ;
+    dct:description "Relates an effect to a card, generally the effect is found in the rule box of the card."@en .
 
-ccg:isType a owl:ObjectProperty .
+ccg:isType a owl:ObjectProperty ;
+    rdfs:domain ccg:Card ;
+    rdfs:range ccg:CardType ;
+    skos:prefLabel "is type"@en ;
+    rdfs:label "is type"@en ;
+    dct:description "Relates a card to a specific game defined type."@en ;
 
 ccg:hasStat a owl:ObjectProperty .
 
