@@ -57,7 +57,15 @@ ccg:CardPool a owl:Class ;
     dct:description "Any collection of cards that is used as part of the game."@en ;
     skos:example "Deck, hand, discard pile"@en .
 
+ccg:CardRarity a owl:Class .
+
 ccg:CardStat a owl:Class .
+
+ccg:PlayZone a owl:Class ;
+    skos:prefLabel "Play Zone"@en ;
+    rdfs:label "Play Zone"@en ;
+    dct:description "Any zone distinct zone that is used as a play area."@en ;
+    skos:example "Library, Bench, Active Slot"@en .
 
 # Predicates
 
@@ -84,3 +92,6 @@ ccg:isType a owl:ObjectProperty .
 
 ccg:hasStat a owl:ObjectProperty .
 
+ccg:hasRarity a owl:ObjectProperty .
+
+ccg:hasPool a owl:ObjectProperty .
