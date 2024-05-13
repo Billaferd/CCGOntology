@@ -38,6 +38,23 @@ ccg:CardSet a owl:Class ;
     rdfs:label "Card Set"@en ;
     dct:description "Represents a card set release for a game."@en .
 
+ccg:Card a owl:Class ;
+    skos:prefLabel "Card"@en ;
+    rdfs:label "Card"@en ;
+    dct:Description "The most basic part of a CCG is the Card. These can take many shapes and sizes."@en .
+
+ccg:CardType a owl:Class .
+
+ccg:Effect a owl:Class .
+
+ccg:CardPool a owl:Class ;
+    skos:prefLabel "Card Pool"@en ;
+    rdfs:label "Card Pool"@en ;
+    dct:description "Any collection of cards that is used as part of the game."@en ;
+    skos:example "Deck, hand, discard pile"@en .
+
+ccg:CardStat a owl:Class .
+
 # Predicates
 
 ccg:hasSet a owl:ObjectProperty ;
@@ -46,3 +63,20 @@ ccg:hasSet a owl:ObjectProperty ;
     skos:prefLabel "has card set"@en ;
     rdfs:label "has card set"@en ;
     dct:description "Relates a card game to its sets of cards. A set is generally a release of cards as a grouping and all having a similar theme."@en .
+
+ccg:hasCard a owl:ObjectProperty ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (ccg:CardSet ccg:CardPool) .
+    ] ;
+    rdfs:range ccg:Card ;
+    skos:prefLabel "has card"@en ;
+    rdfs:label "has card"@en ;
+    dct:description "relates different items that can contain cards like decks, card sets,hands, etc..."@en .
+
+ccg:hasEffect a owl:ObjectProperty .
+
+ccg:isType a owl:ObjectProperty .
+
+ccg:hasStat a owl:ObjectProperty .
+
