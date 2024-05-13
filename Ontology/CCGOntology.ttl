@@ -49,7 +49,10 @@ ccg:CardType a owl:Class ;
     dct:description "A specific type of card that is distinct from other types in the game."@en ;
     skos:example "Land, Energy, Artifacts, Spells, Tokens."@en .
 
-ccg:Effect a owl:Class .
+ccg:Effect a owl:Class ;
+    skos:prefLabel "Effect"@en ;
+    rdfs:label "Effect"@en ;
+    skos:description "Effects caused by cards."@en .
 
 ccg:CardPool a owl:Class ;
     skos:prefLabel "Card Pool"@en ;
@@ -57,21 +60,41 @@ ccg:CardPool a owl:Class ;
     dct:description "Any collection of cards that is used as part of the game."@en ;
     skos:example "Deck, hand, discard pile"@en .
 
-ccg:Resource a owl:Ontology ;
+ccg:Resource a owl:Class ;
     skos:prefLabel "Resource"@en ;
     rdfs:label "Resource"@en ;
     dct:description "Anything that needs to be managed by the player but has no direct physical representation in the game"@en ;
     skos:example "Mana, Player Health"@en .
 
-ccg:CardRarity a owl:Class .
+ccg:CardRarity a owl:Class ;
+    skos:prefLabel "Card Rarity"@en ;
+    rdfs:label "Card Rarity"@en ;
+    dct:description "The rarity of a card in relation to other cards in a game, set, or some other sub-geouping"@en ;
+    skos:example "Common, Uncommon, Rare, Mythical, Secret Rare" .
 
-ccg:CardStat a owl:Class .
+ccg:CardStat a owl:Class ;
+    skos:prefLabel "Card Statistic"@en ;
+    rdfs:label "Card Statistic"@en ;
+    dct:description "A statistic about the card, usually for battle or other bookkeeping purposes."@en
+    skos:example "HP, Attack, Defense"@en .
+
+ccg:PlayArea a owl:Class ;
+    skos:prefLabel "Play Area"@en ;
+    rdfs:label "Play Area"@en ;
+    dct:description "Any distinct area of play."@en ;
+    skos:example "Playmat, Player Area"@en .
 
 ccg:PlayZone a owl:Class ;
+    rdfs:subClassOf ccg:PlayArea ;
     skos:prefLabel "Play Zone"@en ;
     rdfs:label "Play Zone"@en ;
-    dct:description "Any zone distinct zone that is used as a play area."@en ;
+    dct:description "Any distinct zone within the play area."@en ;
     skos:example "Library, Bench, Active Slot"@en .
+
+ccg:Player a owl:Class ;
+    skos:prefLabel "Player"@en ;
+    rdfs:label "Player"@en ;
+    dct:description "A player of the game"@en .
 
 # Predicates
 
@@ -99,7 +122,7 @@ ccg:hasEffect a owl:ObjectProperty ;
     rdfs:label "has effect"@en ;
     dct:description "Relates an effect to a card, generally the effect is found in the rule box of the card."@en .
 
-ccg:hasRuleText a owl:objectProperty ;
+ccg:hasRuleText a owl:DatatypeProperty ;
     rdfs:domain ccg:Card ;
     rdfs:range xsd:string ;
     skos:prefLabel "has rule text"@en ;
@@ -111,10 +134,35 @@ ccg:isType a owl:ObjectProperty ;
     rdfs:range ccg:CardType ;
     skos:prefLabel "is type"@en ;
     rdfs:label "is type"@en ;
-    dct:description "Relates a card to a specific game defined type."@en ;
+    dct:description "Relates a card to a specific game defined type."@en .
 
-ccg:hasStat a owl:ObjectProperty .
+ccg:hasStat a owl:ObjectProperty ;
+    rdfs:domain ccg:Card ;
+    rdfs:range ccg:CardStat ;
+    skos:prefLabel "has stat"@en ;
+    rdfs:label "has stat"@en ;
+    dct:description "Relates a card to its statistic."@en .
 
-ccg:hasRarity a owl:ObjectProperty .
+ccg:hasRarity a owl:ObjectProperty ;
+    rdfs:domain ccg:Card
+    rdfs:range ccg:CardRarity ;
+    skos:prefLabel "has rarity"@en ;
+    rdfs:label "has rarity"@en ;
+    dct:description "Relates a card to its rarity."@en .
 
-ccg:hasPool a owl:ObjectProperty .
+ccg:hasPool a owl:ObjectProperty ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (ccg:PlayArea ccg:PlayZone) .
+    ] ;
+    rdfs:range ccg:CardPool ;
+    skos:prefLabel "has pool"@en ;
+    rdfs:label "has pool"@en ;
+    dct:description "Relates a card pool to an area or zone of play."@en .
+
+ccg:hasCost a owl:ObjectProperty ;
+    rdfs:domain ccg:Effect ;
+    rdfs:range ccg:Resource ;
+    skos:prefLabel "has cost"@en ;
+    rdfs:label "has cost"@en ;
+    dct:description "Relates an effect to its cost in resources."@en .
