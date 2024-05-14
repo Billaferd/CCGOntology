@@ -115,11 +115,11 @@ ccg:hasSet a owl:ObjectProperty ;
 ccg:hasCard a owl:ObjectProperty ;
     rdfs:domain [
         a owl:Class ;
-        owl:unionOf (ccg:CardSet ccg:CardPool) .
+        owl:unionOf (ccg:CardSet ccg:CardPool ccg:Deck) .
     ] ;
     rdfs:range [
         a owl:Class ;
-        owl:unionOf (ccg:Card ccg:CardSet) ;
+        owl:unionOf (ccg:Card ccg:CardPool) ;
     ] ;
     skos:prefLabel "has card"@en ;
     rdfs:label "has card"@en ;
