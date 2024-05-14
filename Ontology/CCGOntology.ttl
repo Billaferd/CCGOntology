@@ -28,17 +28,20 @@ ccg: rdf:type owl:Ontology ;
 
 # Classes
 
-ccg:CardGame a owl:Class ;
+ccg:CardGame a owl:Class
+        , skos:Concept ;
     skos:prefLabel "Card Game"@en ;
     rdfs:label "Card Game"@en ;
     dct:description "Represents a card game that can be played."@en .
 
-ccg:CardSet a owl:Class ;
+ccg:CardSet a owl:Class
+        , skos:Concept ;
     skos:prefLabel "Card Set"@en ;
     rdfs:label "Card Set"@en ;
     dct:description "Represents a card set release for a game."@en .
 
-ccg:Card a owl:Class ;
+ccg:Card a owl:Class
+        , skos:Concept ;
     skos:prefLabel "Card"@en ;
     dct:description "The most basic part of a CCG is the Card. These can take many shapes and sizes, and they are the primary means by which players interact with the game."@en ;
     rdfs:comment "Cards are the building blocks of any CCG. They represent characters, actions, events, resources, and other elements that are integral to the game's mechanics. Each card typically has attributes such as name, type, cost, and effects that define its role within the game. Cards are collected, traded, and used in gameplay to achieve objectives and compete against opponents."@en ;
@@ -49,65 +52,77 @@ ccg:Card a owl:Class ;
     skos:editorialNote "Ensure that the card class is flexible enough to accommodate the diverse range of cards found across various CCGs, from simple to complex."@en .
 
 
-ccg:CardType a owl:Class ;
+ccg:CardType a owl:Class
+        , skos:ConceptScheme ;
     skos:prefLabel "Card Type"@en ;
     rdfs:label "Card Type"@en ;
     dct:description "A specific type of card that is distinct from other types in the game."@en ;
     skos:example "Land, Energy, Artifacts, Spells, Tokens."@en .
 
-ccg:Effect a owl:Class ;
+ccg:Effect a owl:Class
+        ,skos:Concept ;
     skos:prefLabel "Effect"@en ;
     rdfs:label "Effect"@en ;
     dct:description "Effects caused by cards."@en .
 
-ccg:CardPool a owl:Class ;
+ccg:CardPool a owl:Class
+        skos:Concept ;
     skos:prefLabel "Card Pool"@en ;
     rdfs:label "Card Pool"@en ;
     dct:description "Any collection of cards that is used as part of the game."@en ;
     skos:example "Deck, hand, discard pile"@en .
 
-ccg:Resource a owl:Class ;
+ccg:Resource a owl:Class
+        , skos:ConceptScheme ;
     skos:prefLabel "Resource"@en ;
     rdfs:label "Resource"@en ;
     dct:description "Anything that needs to be managed by the player but has no direct physical representation in the game"@en ;
     skos:example "Mana, Player Health"@en .
 
-ccg:CardRarity a owl:Class ;
+ccg:CardRarity a owl:Class
+        , skos:ConceptScheme ;
     skos:prefLabel "Card Rarity"@en ;
     rdfs:label "Card Rarity"@en ;
     dct:description "The rarity of a card in relation to other cards in a game, set, or some other sub-geouping"@en ;
     skos:example "Common, Uncommon, Rare, Mythical, Secret Rare" .
 
-ccg:CardStat a owl:Class ;
+ccg:CardStat a owl:Class
+        , skos:ConceptScheme ;
     skos:prefLabel "Card Statistic"@en ;
     rdfs:label "Card Statistic"@en ;
     dct:description "A statistic about the card, usually for battle or other bookkeeping purposes."@en
     skos:example "HP, Attack, Defense"@en .
 
-ccg:PlayArea a owl:Class ;
+ccg:PlayArea a owl:Class
+        , skos:Concept ;
     skos:prefLabel "Play Area"@en ;
     rdfs:label "Play Area"@en ;
     dct:description "Any distinct area of play."@en ;
     skos:example "Playmat, Player Area"@en .
 
-ccg:PlayZone a owl:Class ;
+ccg:PlayZone a owl:Class
+        , skos:Concept ;
+    skos:broader ccg:PlayArea ;
     rdfs:subClassOf ccg:PlayArea ;
     skos:prefLabel "Play Zone"@en ;
     rdfs:label "Play Zone"@en ;
     dct:description "Any distinct zone within a play area."@en ;
     skos:example "Library, Bench, Active Slot"@en .
 
-ccg:Player a owl:Class ;
+ccg:Player a owl:Class
+        , skos:Concept ;
     skos:prefLabel "Player"@en ;
     rdfs:label "Player"@en ;
     dct:description "A player of the game"@en .
 
-ccg:GameAction a owl:Class ;
+ccg:GameAction a owl:Class
+        , skos:Concept ;
     skos:prefLabel "Game Action"@en ;
     rdfs:label "Game Action"@en ;
     dct:description "Represents an in game action."@en .
 
 ccg:EffectTrigger a owl:Class
+        , skos:Concept ;
     rdfs:subClassOf ccg:Game action ;
     skos:prefLabel "Effect Trigger"@en ;
     rdfs:label "Effect Trigger"@en ;
