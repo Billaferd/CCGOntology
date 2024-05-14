@@ -20,12 +20,29 @@ mtg:Deck a ccg:CardPool ;
     rdfs:label "Deck"@en ;
     dct:description "the deck of cards that a player draws from"@en ;
     owl:equivalentClass [
-        rdf:type owl:Restriction ;
-        owl:onProperty ccg:hasCard ;
-        owl:minCardinality "40"^^xsd:nonNegativeInteger .
-    ] ;
-    owl:equivalentClass [
-        rdf:type owl:Restriction ;
-        owl:onProperty ccg:hasCard ;
-        owl:maxCardinality "60"^^xsd:nonNegativeInteger .
-    ] .
+        a owl:Restriction ;
+        owl:onProperty ccg:hasCardCount ;
+        owl:allValuesFrom [
+            a owl:Class ;
+            owl:unionOf (
+            [
+                a owl:Restriction ;
+                owl:onProperty ccg:hasCardCount ;
+                owl:someValuesFrom ccg:CardSet ;
+                owl:maxCardinality 4
+             ]
+             [
+                 a owl:Restriction ;
+                 owl:onProperty ccg:hasCardCount ;
+                 owl:someValuesFrom ccg:Deck ;
+                 owl:maxCardinality 60
+              ]
+              [
+                  a owl:Restriction ;
+                  owl:onProperty ccg:hasCardCount ;
+                  owl:someValuesFrom ccg:Deck ;
+                  owl:minCardinality 40
+              ]
+              )
+        ]
+] .
