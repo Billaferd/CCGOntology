@@ -96,6 +96,13 @@ ccg:Player a owl:Class ;
     rdfs:label "Player"@en ;
     dct:description "A player of the game"@en .
 
+ccg:GameAction a owl:Class ;
+    skos:prefLabel "Game Action"@en ;
+    rdfs:label "Game Action"@en ;
+    dct:description "Represents an in game action."@en .
+
+ccg:Effect trigger a ccg:GameAction .
+
 # Predicates
 
 ccg:hasSet a owl:ObjectProperty ;
