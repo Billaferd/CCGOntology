@@ -1,0 +1,35 @@
+prefix pokemon: <https://example.org/Pokemon/> .
+
+pokemon:PokemonTCG a ccg:CardGame ;
+    skos:prefLabel "Pokemon Trading Card Game"@en ;
+    rdfs:label "Pokemon Trading Card Game"@en .
+
+pokemon:Stage a ccg:CardType ;
+    skos:prefLabel "Stage"@en ;
+    rdfs:label "Stage"@en ;
+    dct:description "Stage in a Pokemon's evolution line."@en ;
+    skos:example "Basic, Stage 1, Stage 2" .
+
+pokemon:BasicPokemon a pokemon:Card , ccg:Card ;
+    skos:prefLabel "Basic Pokemon"@en ;
+    rdfs:label "Basic Pokemon"@en ;
+    dct:description "The first stage in a Pokemon's evolution line."@en ;
+    rdfs:subClassOf pokemon:Stage .
+
+pokemon:TrainerCard a pokemon:Card , ccg:Card ;
+    skos:prefLabel "Trainer Card"@en ;
+    rdfs:label "Trainer Card"@en ;
+    dct:description "Cards that represent trainers, items, or supporter effects."@en ;
+    ccg:isType [
+        a ccg:CardType ;
+        rdfs:label "Trainer" .
+    ] .
+
+pokemon:EnergyCard a pokemon:Card , ccg:Card ;
+    skos:prefLabel "Energy Card"@en ;
+    rdfs:label "Energy Card"@en ;
+    dct:description "Provides energy required to use attacks."@en ;
+    ccg:isType [
+        a ccg:CardType ;
+        rdfs:label "Energy" .
+    ] .
