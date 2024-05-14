@@ -46,3 +46,16 @@ mtg:Deck a ccg:CardPool ;
               )
         ]
 ] .
+
+mtg:Mana a ccg:Resource ;
+    skos:prefLabel "Mana"@en ;
+    rdfs:label "Mana"@en ;
+    dct:description "Mana is required for deploying cards and activating abilities. It can come in five six variations."@en ;
+
+mtg:LandCard a ccg:Card ;
+    skos:prefLabel "Land Card"@en ;
+    rdfs:label "Lan Card"@en ;
+    dct:description "Land cards are used to produce Mana. Some lands have other special effects."@en ;
+    ccg:hasEffect [
+        a ccg:Effect .
+    ] .
