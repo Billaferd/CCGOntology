@@ -110,7 +110,10 @@ ccg:hasCard a owl:ObjectProperty ;
         a owl:Class ;
         owl:unionOf (ccg:CardSet ccg:CardPool) .
     ] ;
-    rdfs:range ccg:Card ;
+    rdfs:range [
+        a owl:Class ;
+        owl:unionOf (ccg:Card ccg:CardSet) ;
+    ] ;
     skos:prefLabel "has card"@en ;
     rdfs:label "has card"@en ;
     dct:description "relates different items that can contain cards like decks, card sets,hands, etc..."@en .
@@ -166,3 +169,10 @@ ccg:hasCost a owl:ObjectProperty ;
     skos:prefLabel "has cost"@en ;
     rdfs:label "has cost"@en ;
     dct:description "Relates an effect to its cost in resources."@en .
+
+ccg:hasCardCount a owl:DatatypeProperty ;
+    rdfs:range ccg:CardSet ;
+    rdfs:domain xsd:nonNegativeInteger ;
+    skos:prefLabel "has card count"@en ;
+    rdfs:label "has card count"@en ;
+    dct:description "Relates the total available cards to the card set."@en .
