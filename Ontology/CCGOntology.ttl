@@ -40,8 +40,14 @@ ccg:CardSet a owl:Class ;
 
 ccg:Card a owl:Class ;
     skos:prefLabel "Card"@en ;
-    rdfs:label "Card"@en ;
-    dct:Description "The most basic part of a CCG is the Card. These can take many shapes and sizes."@en .
+    dct:description "The most basic part of a CCG is the Card. These can take many shapes and sizes, and they are the primary means by which players interact with the game."@en ;
+    rdfs:comment "Cards are the building blocks of any CCG. They represent characters, actions, events, resources, and other elements that are integral to the game's mechanics. Each card typically has attributes such as name, type, cost, and effects that define its role within the game. Cards are collected, traded, and used in gameplay to achieve objectives and compete against opponents."@en ;
+    skos:definition "In the context of a Collectible Card Game, a card is a physical or digital artifact that represents a game element with various attributes and abilities. It is used by players to perform actions and strategies during play."@en ;
+    skos:scopeNote "This class can be extended to include various subclasses representing different categories of cards found in specific CCGs, such as creature cards, spell cards, or equipment cards."@en ;
+    skos:example "A 'Fireball' spell card that costs 3 mana to cast and deals 4 damage to any target."@en ;
+    skos:historyNote "The concept of the card has evolved over time, with early CCGs featuring simple designs and mechanics, while modern CCGs offer a wide range of complex and thematic cards."@en ;
+    skos:editorialNote "Ensure that the card class is flexible enough to accommodate the diverse range of cards found across various CCGs, from simple to complex."@en .
+
 
 ccg:CardType a owl:Class ;
     skos:prefLabel "Card Type"@en ;
