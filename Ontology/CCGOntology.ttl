@@ -52,12 +52,11 @@ ccg:Card a owl:Class
     skos:editorialNote "Ensure that the card class is flexible enough to accommodate the diverse range of cards found across various CCGs, from simple to complex."@en .
 
 
-ccg:CardType a owl:Class
-        , skos:ConceptScheme ;
-    skos:prefLabel "Card Type"@en ;
-    rdfs:label "Card Type"@en ;
-    dct:description "A specific type of card that is distinct from other types in the game."@en ;
-    skos:example "Land, Energy, Artifacts, Spells, Tokens."@en .
+# PermanentCard
+ccg:PermanentCard a owl:Class ;
+    rdfs:subClassOf ccg:Card ;
+    rdfs:label "Permanent Card"@en ;
+    rdfs:comment "Represents cards that remain on the playing field after being played."@en .
 
 ccg:Effect a owl:Class
         ,skos:Concept ;
@@ -71,6 +70,14 @@ ccg:CardPool a owl:Class
     rdfs:label "Card Pool"@en ;
     dct:description "Any collection of cards that is used as part of the game."@en ;
     skos:example "Deck, hand, discard pile"@en .
+
+ccg:ResourceCost a owl:Class
+        , skos:Concept ;
+    rdfs:subClassOf ccg:Resource ;
+    skos:prefLabel "Resource Cost"@en ;
+    rdfs:label "Resource Cost"@en ;
+    dct:description "The type and cost of resource to be paid for an effect."@en ;
+    skos:example "2 Red Mana, 1 Leaf Energy"@en .
 
 ccg:Resource a owl:Class
         , skos:ConceptScheme ;
@@ -86,8 +93,16 @@ ccg:CardRarity a owl:Class
     dct:description "The rarity of a card in relation to other cards in a game, set, or some other sub-geouping"@en ;
     skos:example "Common, Uncommon, Rare, Mythical, Secret Rare" .
 
-ccg:CardStat a owl:Class
+ccg:GameStat a owl:Class
         , skos:ConceptScheme ;
+    skos:prefLabel "Game Statistic"@en ;
+    rdfs:label "Game Statistic"@en ;
+    dct:description "A statistic about the game."@en
+    skos:example "Player HP, Active Tokens"@en .
+
+ccg:CardStat a owl:Class
+        , skos:ConceptScheme
+        , ccg:GameStat ;
     skos:prefLabel "Card Statistic"@en ;
     rdfs:label "Card Statistic"@en ;
     dct:description "A statistic about the card, usually for battle or other bookkeeping purposes."@en
@@ -136,7 +151,7 @@ ccg:hasSet a owl:ObjectProperty ;
     rdfs:range ccg:CardSet ;
     skos:prefLabel "has card set"@en ;
     rdfs:label "has card set"@en ;
-    dct:description "Relates a card game to its sets of cards. A set is generally a release of cards as a grouping and all having a similar theme."@en .
+    dct:description "Relates a card game to its sets of cards. A set is generally a release of cards as a grouping and all having a similar theme. Sometimes called an expansion."@en .
 
 ccg:hasCard a owl:ObjectProperty ;
     rdfs:domain [
@@ -172,19 +187,36 @@ ccg:hasRuleText a owl:DatatypeProperty ;
     rdfs:label "has rule text"@en ;
     dct:description "Relates the card to the exact rule text that shows up on it."@en .
 
-ccg:isType a owl:ObjectProperty ;
-    rdfs:domain ccg:Card ;
-    rdfs:range ccg:CardType ;
-    skos:prefLabel "is type"@en ;
-    rdfs:label "is type"@en ;
-    dct:description "Relates a card to a specific game defined type."@en .
-
 ccg:hasStat a owl:ObjectProperty ;
-    rdfs:domain ccg:Card ;
-    rdfs:range ccg:CardStat ;
+    rdfs:domain owl:unionOf ( ccg:Card ccg:gameStat ) ;
+    rdfs:range ccg:GameStat ;
     skos:prefLabel "has stat"@en ;
     rdfs:label "has stat"@en ;
-    dct:description "Relates a card to its statistic."@en .
+    dct:description "Relates a card or stat to its (sub)statistic."@en .
+
+ccg:hasCurrentValue a owl:datatypeProperty
+        , rdfs:Property ;
+    rdfs:domain ccg:GameStat ;
+    rdfs:range xsd:decimal ;
+    skos:prefLabel "has current value"@en ;
+    rdfs:label "has current value"@en ;
+    dct:description "Relates a statistic to its current value."@en .
+
+ccg:hasMinimumValue a owl:datatypeProperty
+        , rdfs:Property ;
+    rdfs:domain ccg:GameStat ;
+    rdfs:range xsd:decimal ;
+    skos:prefLabel "has minimum value"@en ;
+    rdfs:label "has minimum value"@en ;
+    dct:description "Relates a statistic to its minimum value."@en .
+
+ccg:hasMaximumValue a owl:datatypeProperty
+        , rdfs:Property ;
+    rdfs:domain ccg:GameStat ;
+    rdfs:range xsd:decimal ;
+    skos:prefLabel "has maximum value"@en ;
+    rdfs:label "has maximum value"@en ;
+    dct:description "Relates a statistic to its maximum value."@en .
 
 ccg:hasRarity a owl:ObjectProperty ;
     rdfs:domain ccg:Card
