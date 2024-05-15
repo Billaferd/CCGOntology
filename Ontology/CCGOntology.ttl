@@ -36,9 +36,10 @@ ccg:CardGame a owl:Class
 
 ccg:CardSet a owl:Class
         , skos:Concept ;
+    rdfs:subClassOf ccg:CardPool ;
     skos:prefLabel "Card Set"@en ;
     rdfs:label "Card Set"@en ;
-    dct:description "Represents a card set release for a game."@en .
+    dct:description "Represents a card set for a game. Sometimes called an expansion or a release."@en .
 
 ccg:Card a owl:Class
         , skos:Concept ;
@@ -71,6 +72,28 @@ ccg:CardPool a owl:Class
     dct:description "Any collection of cards that is used as part of the game."@en ;
     skos:example "Deck, hand, discard pile"@en .
 
+ccg:Deck a owl:Class
+        , skos:Concept ;
+    rdfs:subClassOf ccg:CardPool ;
+    skos:prefLabel "Deck"@en ;
+    rdfs:label "Deck"@en ;
+    dct:description "Represents a deck of cards in some form."@en ;
+    skos:example "Player Deck, Deck List"@en .
+
+ccg:PlayerHand a owl:Class
+        , skos:Concept ;
+    rdfs:subClassOf ccg:CardPool ;
+    skos:prefLabel "Hand"@en ;
+    rdfs:label "Hand"@en ;
+    dct:description "Represents the cards that a player has in their hand."@en .
+
+ccg:DiscardPile a owl:Class
+        , skos:Concept ;
+    rdfs:subClassOf ccg:CardPool ;
+    skos:prefLabel "Discard Pile"@en ;
+    rdfs:label "Discard Pile"@en ;
+    dct:description "Represents the cards that a player discarded."@en .
+
 ccg:ResourceCost a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:Resource ;
@@ -101,8 +124,8 @@ ccg:GameStat a owl:Class
     skos:example "Player HP, Active Tokens"@en .
 
 ccg:CardStat a owl:Class
-        , skos:ConceptScheme
-        , ccg:GameStat ;
+        , skos:Concept ;
+    rdfs:subClassOf ccg:GameStat ;
     skos:prefLabel "Card Statistic"@en ;
     rdfs:label "Card Statistic"@en ;
     dct:description "A statistic about the card, usually for battle or other bookkeeping purposes."@en
@@ -243,11 +266,11 @@ ccg:hasCost a owl:ObjectProperty ;
     dct:description "Relates an effect to its cost in resources."@en .
 
 ccg:hasCardCount a owl:DatatypeProperty ;
-    rdfs:domain ccg:CardSet ;
+    rdfs:domain ccg:CardPool ;
     rdfs:range xsd:nonNegativeInteger ;
     skos:prefLabel "has card count"@en ;
     rdfs:label "has card count"@en ;
-    dct:description "Relates the total available cards to the card set."@en .
+    dct:description "Relates the total available cards to the card set or pool."@en .
 
 ccg:hasPlayArea a owl:ObjectProperty ;
     rdfs:domain [
