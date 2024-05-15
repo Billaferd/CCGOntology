@@ -7,7 +7,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 
-@prefix ccg: <https://example.org>
+@prefix ccg: <https://example.org/ccg> .
 
 ccg: rdf:type owl:Ontology ;
     skos:prefLabel "Collectible Card Game Ontology" ;
@@ -60,13 +60,13 @@ ccg:PermanentCard a owl:Class ;
     rdfs:comment "Represents cards that remain on the playing field after being played."@en .
 
 ccg:Effect a owl:Class
-        ,skos:Concept ;
+        , skos:Concept ;
     skos:prefLabel "Effect"@en ;
     rdfs:label "Effect"@en ;
     dct:description "Effects caused by cards."@en .
 
 ccg:CardPool a owl:Class
-        skos:Concept ;
+        , skos:Concept ;
     skos:prefLabel "Card Pool"@en ;
     rdfs:label "Card Pool"@en ;
     dct:description "Any collection of cards that is used as part of the game."@en ;
@@ -120,7 +120,7 @@ ccg:GameStat a owl:Class
         , skos:ConceptScheme ;
     skos:prefLabel "Game Statistic"@en ;
     rdfs:label "Game Statistic"@en ;
-    dct:description "A statistic about the game."@en
+    dct:description "A statistic about the game."@en ;
     skos:example "Player HP, Active Tokens"@en .
 
 ccg:CardStat a owl:Class
@@ -128,7 +128,7 @@ ccg:CardStat a owl:Class
     rdfs:subClassOf ccg:GameStat ;
     skos:prefLabel "Card Statistic"@en ;
     rdfs:label "Card Statistic"@en ;
-    dct:description "A statistic about the card, usually for battle or other bookkeeping purposes."@en
+    dct:description "A statistic about the card, usually for battle or other bookkeeping purposes."@en ;
     skos:example "HP, Attack, Defense"@en .
 
 ccg:PlayArea a owl:Class
@@ -177,10 +177,7 @@ ccg:hasSet a owl:ObjectProperty ;
     dct:description "Relates a card game to its sets of cards. A set is generally a release of cards as a grouping and all having a similar theme. Sometimes called an expansion."@en .
 
 ccg:hasCard a owl:ObjectProperty ;
-    rdfs:domain [
-        a owl:Class ;
-        owl:unionOf (ccg:CardSet ccg:CardPool ccg:Deck) .
-    ] ;
+    rdfs:domain ccg:CardPool ;
     rdfs:range [
         a owl:Class ;
         owl:unionOf (ccg:Card ccg:CardPool) ;
@@ -211,7 +208,10 @@ ccg:hasRuleText a owl:DatatypeProperty ;
     dct:description "Relates the card to the exact rule text that shows up on it."@en .
 
 ccg:hasStat a owl:ObjectProperty ;
-    rdfs:domain owl:unionOf ( ccg:Card ccg:gameStat ) ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf ( ccg:Card ccg:gameStat ) ;
+    ] ;
     rdfs:range ccg:GameStat ;
     skos:prefLabel "has stat"@en ;
     rdfs:label "has stat"@en ;
@@ -242,7 +242,7 @@ ccg:hasMaximumValue a owl:datatypeProperty
     dct:description "Relates a statistic to its maximum value."@en .
 
 ccg:hasRarity a owl:ObjectProperty ;
-    rdfs:domain ccg:Card
+    rdfs:domain ccg:Card ;
     rdfs:range ccg:CardRarity ;
     skos:prefLabel "has rarity"@en ;
     rdfs:label "has rarity"@en ;
@@ -251,7 +251,7 @@ ccg:hasRarity a owl:ObjectProperty ;
 ccg:hasPool a owl:ObjectProperty ;
     rdfs:domain [
         a owl:Class ;
-        owl:unionOf (ccg:PlayArea ccg:PlayZone) .
+        owl:unionOf (ccg:PlayArea ccg:PlayZone) ;
     ] ;
     rdfs:range ccg:CardPool ;
     skos:prefLabel "has pool"@en ;
