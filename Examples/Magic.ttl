@@ -59,3 +59,34 @@ mtg:LandCard a ccg:Card ;
     ccg:hasEffect [
         a ccg:Effect .
     ] .
+
+# CreatureCard
+ccg:CreatureCard a owl:Class ;
+    rdfs:subClassOf ccg:PermanentCard ;
+    rdfs:label "Creature Card"@en ;
+    rdfs:comment "Represents cards that depict creatures, characters, or entities within the game."@en ;
+    ccg:isType mtg:Permanent .
+
+# SpellCard
+ccg:SpellCard a owl:Class ;
+    rdfs:subClassOf ccg:Card ;
+    rdfs:label "Spell Card"@en ;
+    rdfs:comment "Represents cards that cast spells, perform actions, or have immediate effects."@en .
+
+# ArtifactCard
+ccg:ArtifactCard a owl:Class ;
+    rdfs:subClassOf ccg:PermanentCard ;
+    rdfs:label "Artifact Card"@en ;
+    rdfs:comment "Represents cards that depict magical items, equipment, or artifacts."@en .
+
+# EnchantmentCard
+ccg:EnchantmentCard a owl:PermanentClass ;
+    rdfs:subClassOf ccg:Card ;
+    rdfs:label "Enchantment Card"@en ;
+    rdfs:comment "Represents cards that provide continuous effects or modify game rules."@en .
+
+# LandCard
+ccg:LandCard a owl:Class ;
+    rdfs:subClassOf ccg:PermanentCard ;
+    rdfs:label "Land Card"@en ;
+    rdfs:comment "Represents cards that provide resources or have special abilities related to the game environment."@en .
