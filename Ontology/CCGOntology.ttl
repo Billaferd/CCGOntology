@@ -172,6 +172,12 @@ ccg:ActivateAction a owl:Class
     rdfs:label "Activate"@en ;
     dct:description "Activate some rule, effect, or other part of the game."@en .
 
+ccg:ResourceAction a owl:Class
+        , skos:Concept ;
+    skos:prefLabel "Resource Action"@en ;
+    rdfs:label "Resource Action"@en ;
+    dct:description "Do something with a resource, transfer, add, remove, or something else."@en ;
+
 # Predicates
 
 ccg:hasSet a owl:ObjectProperty ;
@@ -227,6 +233,13 @@ ccg:isEffectOf a owl:ObjectProperty ;
     skos:prefLabel "is effect of"@en ;
     rdfs:label "is effect of"@en ;
     dct:description "Relates an effect to a card, generally the effect is found in the rule box of the card."@en .
+
+ccg:hasAction a owl:ObjectProperty ;
+    rdfs:domain ccg:Effect ;
+    rdfs:range ccg:GameAction ;
+    skos:prefLabel "has action"@en ;
+    rdfs:label "has action"@en ;
+    dct:description "Relates an effect to the action that it produces."@en .
 
 ccg:hasTrigger a owl:ObjectProperty ;
     rdfs:domain ccg:Effect ;
