@@ -52,7 +52,7 @@ mtg:Mana a ccg:Resource ;
     rdfs:label "Mana"@en ;
     dct:description "Mana is required for deploying cards and activating abilities. It can come in five six variations."@en ;
 
-mtg:LandCard a ccg:Card ;
+mtg:LandCard a ccg:PermanentCard ;
     skos:prefLabel "Land Card"@en ;
     rdfs:label "Lan Card"@en ;
     dct:description "Land cards are used to produce Mana. Some lands have other special effects."@en ;
@@ -80,13 +80,7 @@ ccg:ArtifactCard a owl:Class ;
     rdfs:comment "Represents cards that depict magical items, equipment, or artifacts."@en .
 
 # EnchantmentCard
-ccg:EnchantmentCard a owl:PermanentClass ;
+ccg:EnchantmentCard a ccg:PermanentCard ;
     rdfs:subClassOf ccg:Card ;
     rdfs:label "Enchantment Card"@en ;
     rdfs:comment "Represents cards that provide continuous effects or modify game rules."@en .
-
-# LandCard
-ccg:LandCard a owl:Class ;
-    rdfs:subClassOf ccg:PermanentCard ;
-    rdfs:label "Land Card"@en ;
-    rdfs:comment "Represents cards that provide resources or have special abilities related to the game environment."@en .
