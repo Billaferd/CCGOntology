@@ -1,0 +1,26 @@
+# Rule: Define isSetOf Property
+{
+  ?game rdf:type ccg:CardGame ;
+        ccg:hasSet ?set .
+} => {
+  ?set rdf:type ccg:CardSet ;
+       ccg:isSetOf ?game .
+} .
+
+# Rule: Define isCardIn Property
+{
+  ?pool rdf:type ccg:CardPool ;
+        ccg:hasCard ?card .
+} => {
+  ?card rdf:type ccg:Card ;
+        ccg:isCardIn ?pool .
+} .
+
+# Rule: Define isEffectOf Property
+{
+  ?card rdf:type ccg:Card ;
+        ccg:hasEffect ?effect .
+} => {
+  ?effect rdf:type ccg:Effect ;
+          ccg:isEffectOf ?card .
+} .
