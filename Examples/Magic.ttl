@@ -78,7 +78,11 @@ ccg:Forest a ccg:LandCard ;
         ccg:hasTrigger mtg:TapAction ;
         ccg:hasAction [
             a ccg:ResourceAction ;
-            
+            ccg:hasSideEffect [
+                a mtg:ManaPool ;
+                ccg:hasResource mtg:GreenMana ;
+                ccg:hasResourceCount 1;
+            ] ;
         ] ;
     ] .
 
