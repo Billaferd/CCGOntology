@@ -1,9 +1,11 @@
 prefix pokemon: <https://example.org/Pokemon/> .
 
+# Define Pokemon TCG as a subclass of CardGame
 pokemon:PokemonTCG a ccg:CardGame ;
     skos:prefLabel "Pokemon Trading Card Game"@en ;
     rdfs:label "Pokemon Trading Card Game"@en .
 
+# Define additional types of Pokemon cards
 pokemon:Stage a ccg:CardType ;
     skos:prefLabel "Stage"@en ;
     rdfs:label "Stage"@en ;
@@ -32,4 +34,35 @@ pokemon:EnergyCard a pokemon:Card , ccg:Card ;
     ccg:isType [
         a ccg:CardType ;
         rdfs:label "Energy" .
+    ] .
+
+# Define some specific Pokemon cards
+pokemon:Pikachu a pokemon:Card , ccg:Card ;
+    skos:prefLabel "Pikachu"@en ;
+    rdfs:label "Pikachu"@en ;
+    dct:description "An iconic Electric-type Pokemon."@en ;
+    rdfs:subClassOf pokemon:BasicPokemon .
+
+pokemon:Charizard a pokemon:Card , ccg:Card ;
+    skos:prefLabel "Charizard"@en ;
+    rdfs:label "Charizard"@en ;
+    dct:description "A powerful Fire-type Pokemon."@en ;
+    rdfs:subClassOf pokemon:Stage .
+
+pokemon:ProfessorOak a pokemon:Card , ccg:Card ;
+    skos:prefLabel "Professor Oak"@en ;
+    rdfs:label "Professor Oak"@en ;
+    dct:description "A Trainer card that allows the player to draw cards."@en ;
+    ccg:isType [
+        a ccg:CardType ;
+        rdfs:label "Supporter" .
+    ] .
+
+pokemon:LightningEnergy a pokemon:Card , ccg:Card ;
+    skos:prefLabel "Lightning Energy"@en ;
+    rdfs:label "Lightning Energy"@en ;
+    dct:description "An Energy card that provides Lightning-type energy."@en ;
+    ccg:isType [
+        a ccg:CardType ;
+        rdfs:label "Lightning Energy" .
     ] .
