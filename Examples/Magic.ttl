@@ -47,6 +47,12 @@ mtg:Deck a ccg:CardPool ;
         ]
 ] .
 
+mtg:TapAction a owl:Class ;
+    rdfs:subClassOf ccg:ActivateAction ;
+    skos:prefLabel "Tap"@en ;
+    rdfs:label "Tap"@en ;
+    dct:description "To Tap your card, you turn it sideways. This is how you activate a card in Magic."@en .
+
 mtg:Mana a ccg:Resource ;
     skos:prefLabel "Mana"@en ;
     rdfs:label "Mana"@en ;
@@ -57,7 +63,8 @@ mtg:LandCard a ccg:PermanentCard ;
     rdfs:label "Lan Card"@en ;
     dct:description "Land cards are used to produce Mana. Some lands have other special effects."@en ;
     ccg:hasEffect [
-        a ccg:Effect .
+        a ccg:Effect ;
+        ccg:hasTrigger mtg:TapAction .
     ] .
 
 # CreatureCard
