@@ -159,13 +159,11 @@ ccg:GameAction a owl:Class
     rdfs:label "Game Action"@en ;
     dct:description "Represents an in game action."@en .
 
-ccg:EffectTrigger a owl:Class
+ccg:ActivateAction a owl:Class
         , skos:Concept ;
-    rdfs:subClassOf ccg:Game action ;
-    skos:prefLabel "Effect Trigger"@en ;
-    rdfs:label "Effect Trigger"@en ;
-    dct:description "Triggers an in game effect"@en ;
-    skos:example "Pay Mana, Activate Card, Attack, Interrupt, Flip a Coin"@en .
+    skos:prefLabel "Activate"@en ;
+    rdfs:label "Activate"@en ;
+    dct:description "Activate some rule, effect, or other part of the game."@en .
 
 # Predicates
 
@@ -225,7 +223,7 @@ ccg:isEffectOf a owl:ObjectProperty ;
 
 ccg:hasTrigger a owl:ObjectProperty ;
     rdfs:domain ccg:Effect ;
-    rdfs:range ccg:EffectTrigger ;
+    rdfs:range ccg:GameAction ;
     skos:prefLabel "has trigger"@en ;
     rdfs:label "has trigger"@en ;
     dct:description "Relates an effect to its trigger."@en .
