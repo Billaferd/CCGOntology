@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix ccg: <https://example.org/ccg#> .
+
+# Define the ontology
+ccg: rdf:type owl:Ontology ;
+    rdfs:label "CCG Ontology" ;
+    dct:description "This Ontology is intended to provide a comprehensive way of representing CCG's in a semantic way." ;
+    dct:creator "Brent Ritchie" ;
+    dct:title "Collectible Card Game Ontology" ;
+    dct:created "2024-05-12" ;
+    dct:issued "2024-05-12" ;
+    foaf:mbox "ritchie.brent@gmail.com" ;
+    dct:language "en" ;
+    dct:audience "Intended for anyone interested in the semantic representation of CCG's." ;
+    vs:term_status "stable" ;
+    owl:imports <http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf> .
+
+# Classes
+ccg:YuGiOh a owl:Class ;
+    rdfs:subClassOf ccg:CardGame ;
+    skos:prefLabel "Yu-Gi-Oh!"@en ;
+    rdfs:label "Yu-Gi-Oh!"@en ;
+    dct:description "Represents the Yu-Gi-Oh! card game."@en .
+
+# Predicates
+ccg:hasSet a owl:ObjectProperty ;
+    rdfs:domain ccg:YuGiOh ;
+    rdfs:range ccg:CardSet ;
+    skos:prefLabel "has card set"@en ;
+    rdfs:label "has card set"@en ;
+    dct:description "Relates the Yu-Gi-Oh! card game to its sets of cards."@en .
+
+ccg:hasCard a owl:ObjectProperty ;
+    rdfs:domain ccg:CardPool ;
+    rdfs:range [
+        a owl:Class ;
+        owl:unionOf (ccg:Card ccg:CardPool) ;
+    ] ;
+    skos:prefLabel "has card"@en ;
+    rdfs:label "has card"@en ;
+    dct:description "Relates different items that can contain cards like decks, card sets, hands, etc..."@en .
+
+ccg:hasEffect a owl:ObjectProperty ;
+    rdfs:domain ccg:Card ;
+    rdfs:range ccg:Effect ;
+    skos:prefLabel "has effect"@en ;
+    rdfs:label "has effect"@en ;
+    dct:description "Relates an effect to a card, generally the effect is found in the rule box of the card."@en .
+
+# Yu-Gi-Oh! Card Sets
+ccg:YuGiOhStarterDeck1 a ccg:CardSet ;
+    skos:prefLabel "Yu-Gi-Oh! Starter Deck 1"@en ;
+    rdfs:label "Yu-Gi-Oh! Starter Deck 1"@en ;
+    dct:description "The first starter deck released for Yu-Gi-Oh!"@en .
+
+ccg:YuGiOhBoosterPack1 a ccg:CardSet ;
+    skos:prefLabel "Yu-Gi-Oh! Booster Pack 1"@en ;
+    rdfs:label "Yu-Gi-Oh! Booster Pack 1"@en ;
+    dct:description "The first booster pack released for Yu-Gi-Oh!"@en .
+
+# Cards in Yu-Gi-Oh!
+ccg:DarkMagician a ccg:Card ;
+    skos:prefLabel "Dark Magician"@en ;
+    rdfs:label "Dark Magician"@en ;
+    dct:description "A powerful spellcaster card with high attack and defense."@en ;
+    ccg:hasSet ccg:YuGiOhStarterDeck1 .
+
+ccg:BlueEyesWhiteDragon a ccg:Card ;
+    skos:prefLabel "Blue-Eyes White Dragon"@en ;
+    rdfs:label "Blue-Eyes White Dragon"@en ;
+    dct:description "A legendary dragon card with formidable strength."@en ;
+    ccg:hasSet ccg:YuGiOhBoosterPack1 .
+
+# Effects
+ccg:DrawCardEffect a ccg:Effect ;
+    skos:prefLabel "Draw Card Effect"@en ;
+    rdfs:label "Draw Card Effect"@en ;
+    dct:description "Allows the player to draw additional cards from their deck."@en .
+
+# Associate Effects with Cards
+ccg:DarkMagician ccg:hasEffect ccg:DrawCardEffect .
