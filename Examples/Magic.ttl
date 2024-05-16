@@ -67,10 +67,19 @@ mtg:GreenMana a owl:Class ;
 mtg:LandCard a ccg:PermanentCard ;
     skos:prefLabel "Land Card"@en ;
     rdfs:label "Lan Card"@en ;
-    dct:description "Land cards are used to produce Mana. Some lands have other special effects."@en ;
+    dct:description "Land cards are used to produce Mana. Some lands have other special effects."@en .
+
+ccg:Forest a ccg:LandCard ;
+    skos:prefLabel "Forest"@en ;
+    rdfs:label "Forest"@en ;
+    dct:description "Generates a Green Mana when tapped."@en ;
     ccg:hasEffect [
         a ccg:Effect ;
-        ccg:hasTrigger mtg:TapAction .
+        ccg:hasTrigger mtg:TapAction ;
+        ccg:hasAction [
+            a ccg:ResourceAction ;
+            
+        ] ;
     ] .
 
 # CreatureCard
