@@ -58,6 +58,12 @@ mtg:Mana a ccg:Resource ;
     rdfs:label "Mana"@en ;
     dct:description "Mana is required for deploying cards and activating abilities. It can come in five six variations."@en ;
 
+mtg:GreenMana a owl:Class ;
+    rdfs:subClassOf mtg:Mana ;
+    skos:prefLabel "Green Mana"@en ;
+    rdfs:label "Green Mana"@en ;
+    dct:description "Green Mana is generally produced by Forest Cards"@en .
+
 mtg:LandCard a ccg:PermanentCard ;
     skos:prefLabel "Land Card"@en ;
     rdfs:label "Lan Card"@en ;
