@@ -96,11 +96,18 @@ ccg:DiscardPile a owl:Class
 
 ccg:ResourceCost a owl:Class
         , skos:Concept ;
-    rdfs:subClassOf ccg:Resource ;
+    rdfs:subClassOf ccg:ResourcePool ;
     skos:prefLabel "Resource Cost"@en ;
     rdfs:label "Resource Cost"@en ;
     dct:description "The type and cost of resource to be paid for an effect."@en ;
     skos:example "2 Red Mana, 1 Leaf Energy"@en .
+
+ccg:ResourcePool a owl:Class
+        , skos:Concept ;
+    skos:prefLabel "Resource Pool"@en ;
+    rdfs:label "Resource Pool"@en ;
+    dct:description "A collection of resources that is countable"@en ;
+    skos:example "Mana Pool, Attached Energy"@en .
 
 ccg:Resource a owl:Class
         , skos:ConceptScheme ;
@@ -276,7 +283,7 @@ ccg:hasRarity a owl:ObjectProperty ;
     rdfs:label "has rarity"@en ;
     dct:description "Relates a card to its rarity."@en .
 
-ccg:hasPool a owl:ObjectProperty ;
+ccg:hasCardPool a owl:ObjectProperty ;
     rdfs:domain [
         a owl:Class ;
         owl:unionOf (ccg:PlayArea ccg:PlayZone) ;
@@ -286,12 +293,19 @@ ccg:hasPool a owl:ObjectProperty ;
     rdfs:label "has pool"@en ;
     dct:description "Relates a card pool to an area or zone of play."@en .
 
-ccg:hasCost a owl:ObjectProperty ;
-    rdfs:domain ccg:Effect ;
-    rdfs:range ccg:Resource ;
+ccg:hasResourceCount a owl:DatatypeProperty ;
+    rdfs:domain ccg:ResourcePool ;
+    rdfs:range xsd:Decimal ;
     skos:prefLabel "has cost"@en ;
     rdfs:label "has cost"@en ;
     dct:description "Relates an effect to its cost in resources."@en .
+
+ccg:forResource a owl:ObjectProperty ;
+    rdfs:domain ccg:ResourcePool ;
+    rdfs:range ccg:Resource ;
+    skos:prefLabel "for resource"@en ;
+    rdfs:label "for resource"@en ;
+    dct:description "Relates a resource type to a resource pool."@en .
 
 ccg:hasCardCount a owl:DatatypeProperty ;
     rdfs:domain ccg:CardPool ;
