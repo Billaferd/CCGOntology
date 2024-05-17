@@ -1,4 +1,4 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema> .
+ok@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema> .
 @prefix owl: <http://www.w3.org/2002/07/owl> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core> .
@@ -86,6 +86,74 @@ ccg:Forest a ccg:LandCard ;
         ] ;
     ] .
 
+ccg:Plains a ccg:LandCard ;
+    skos:prefLabel "Plains"@en ;
+    rdfs:label "Plains"@en ;
+    dct:description "Generates a White Mana when tapped."@en ;
+    ccg:hasEffect [
+        a ccg:Effect ;
+        ccg:hasTrigger mtg:TapAction ;
+        ccg:hasAction [
+            a ccg:ResourceAction ;
+            ccg:hasSideEffect [
+                a mtg:ManaPool ;
+                ccg:hasResource mtg:WhiteMana ;
+                ccg:hasResourceCount 1;
+            ] ;
+        ] ;
+    ] .
+
+ccg:Island a ccg:LandCard ;
+    skos:prefLabel "Island"@en ;
+    rdfs:label "Island"@en ;
+    dct:description "Generates a Blue Mana when tapped."@en ;
+    ccg:hasEffect [
+        a ccg:Effect ;
+        ccg:hasTrigger mtg:TapAction ;
+        ccg:hasAction [
+            a ccg:ResourceAction ;
+            ccg:hasSideEffect [
+                a mtg:ManaPool ;
+                ccg:hasResource mtg:BlueMana ;
+                ccg:hasResourceCount 1;
+            ] ;
+        ] ;
+    ] .
+
+ccg:Swamp a ccg:LandCard ;
+    skos:prefLabel "Swamp"@en ;
+    rdfs:label "Swamp"@en ;
+    dct:description "Generates a Black Mana when tapped."@en ;
+    ccg:hasEffect [
+        a ccg:Effect ;
+        ccg:hasTrigger mtg:TapAction ;
+        ccg:hasAction [
+            a ccg:ResourceAction ;
+            ccg:hasSideEffect [
+                a mtg:ManaPool ;
+                ccg:hasResource mtg:BlackMana ;
+                ccg:hasResourceCount 1;
+            ] ;
+        ] ;
+    ] .
+
+ccg:Mountain a ccg:LandCard ;
+    skos:prefLabel "Mountain"@en ;
+    rdfs:label "Mountain"@en ;
+    dct:description "Generates a Red Mana when tapped."@en ;
+    ccg:hasEffect [
+        a ccg:Effect ;
+        ccg:hasTrigger mtg:TapAction ;
+        ccg:hasAction [
+            a ccg:ResourceAction ;
+            ccg:hasSideEffect [
+                a mtg:ManaPool ;
+                ccg:hasResource mtg:RedMana ;
+                ccg:hasResourceCount 1;
+            ] ;
+        ] ;
+    ] .
+
 ccg:LibraryOfLeng a ccg:ArtifactCard ;
     skos:prefLabel "Library of Leng"@en ;
     rdfs:label "Library of Leng"@en ;
@@ -146,6 +214,31 @@ ccg:StripMine a ccg:LandCard ;
         ccg:hasAction [
             a ccg:DestroyAction ;
             ccg:hasTarget mtg:LandCard ;
+        ] ;
+    ] .
+
+ccg:LlanowarElves a ccg:CreatureCard ;
+    skos:prefLabel "Llanowar Elves"@en ;
+    rdfs:label "Llanowar Elves"@en ;
+    dct:description "One of the most well-known creatures, Llanowar Elves have been used by generations of players for mana acceleration."@en ;
+    ccg:hasRuleText "{T}: Add {G}."@en ;
+    ccg:hasManaCost [
+        a ccg:ManaCost ;
+        ccg:requiresMana mtg:GreenMana ;
+        ccg:requiresManaCount 1 ;
+    ] ;
+    ccg:hasPower 1 ;
+    ccg:hasToughness 1 ;
+    ccg:hasEffect [
+        a ccg:Effect ;
+        ccg:hasTrigger mtg:TapAction ;
+        ccg:hasAction [
+            a ccg:ResourceAction ;
+            ccg:hasSideEffect [
+                a mtg:ManaPool ;
+                ccg:hasResource mtg:GreenMana ;
+                ccg:hasResourceCount 1 ;
+            ] ;
         ] ;
     ] .
 
