@@ -64,6 +64,30 @@ mtg:GreenMana a owl:Class ;
     rdfs:label "Green Mana"@en ;
     dct:description "Green Mana is generally produced by Forest Cards"@en .
 
+mtg:WhiteMana a owl:Class ;
+    rdfs:subClassOf mtg:Mana ;
+    skos:prefLabel "White Mana"@en ;
+    rdfs:label "White Mana"@en ;
+    dct:description "White Mana is generally produced by Plains Cards"@en .
+
+mtg:BlackMana a owl:Class ;
+    rdfs:subClassOf mtg:Mana ;
+    skos:prefLabel "Black Mana"@en ;
+    rdfs:label "Black Mana"@en ;
+    dct:description "Black Mana is generally produced by Swamp Cards"@en .
+
+mtg:BlueMana a owl:Class ;
+    rdfs:subClassOf mtg:Mana ;
+    skos:prefLabel "Blue Mana"@en ;
+    rdfs:label "Blue Mana"@en ;
+    dct:description "Blue Mana is generally produced by FlIsland Cards"@en .
+
+mtg:RedMana a owl:Class ;
+    rdfs:subClassOf mtg:Mana ;
+    skos:prefLabel "Red Mana"@en ;
+    rdfs:label "Red Mana"@en ;
+    dct:description "Red Mana is generally produced by Mountain Cards"@en .
+
 mtg:LandCard a ccg:PermanentCard ;
     skos:prefLabel "Land Card"@en ;
     rdfs:label "Lan Card"@en ;
@@ -239,6 +263,44 @@ ccg:LlanowarElves a ccg:CreatureCard ;
                 ccg:hasResource mtg:GreenMana ;
                 ccg:hasResourceCount 1 ;
             ] ;
+        ] ;
+    ] .
+
+ccg:SolRing a ccg:ArtifactCard ;
+    skos:prefLabel "Sol Ring"@en ;
+    rdfs:label "Sol Ring"@en ;
+    dct:description "Provides an abundant source of mana by tapping into the core of a distant star."@en ;
+    ccg:hasRuleText "{T}: Add {C}{C}."@en ;
+    ccg:hasManaCost [
+        a ccg:ManaCost ;
+        ccg:requiresMana mtg:ColorlessMana ;
+        ccg:requiresManaCount 1 ;
+    ] ;
+    ccg:hasEffect [
+        a ccg:Effect ;
+        ccg:hasTrigger mtg:TapAction ;
+        ccg:hasAction [
+            a ccg:ResourceAction ;
+            ccg:hasSideEffect [
+                a mtg:ManaPool ;
+                ccg:hasResource mtg:ColorlessMana ;
+                ccg:hasResourceCount 2 ;
+            ] ;
+        ] ;
+    ] .
+
+ccg:GiantGrowth a ccg:InstantCard ;
+    skos:prefLabel "Giant Growth"@en ;
+    rdfs:label "Giant Growth"@en ;
+    ccg:hasRuleText "Target creature gets +3/+3 until end of turn."@en ;
+    ccg:hasEffect [
+        a ccg:Effect ;
+        ccg:hasTrigger mtg:CastAction ;
+        ccg:hasTarget mtg:CreatureCard ;
+        ccg:hasAction [
+            a ccg:ModifyPTAction ;
+            ccg:hasAmount 3 ;
+            ccg:hasDuration mtg:EndOfTurn ;
         ] ;
     ] .
 
