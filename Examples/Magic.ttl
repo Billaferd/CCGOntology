@@ -47,6 +47,10 @@ mtg:Deck a ccg:CardPool ;
         ]
 ] .
 
+mtg:ToughnessStat a ccg:CardStat .
+
+mtg:PowerStat a ccg:CardStat .
+
 mtg:TapAction a owl:Class ;
     rdfs:subClassOf ccg:ActivateAction ;
     skos:prefLabel "Tap"@en ;
@@ -251,8 +255,12 @@ ccg:LlanowarElves a ccg:CreatureCard ;
         ccg:requiresMana mtg:GreenMana ;
         ccg:requiresManaCount 1 ;
     ] ;
-    ccg:hasPower 1 ;
-    ccg:hasToughness 1 ;
+    ccg:hasStat [
+        a mtg:ToughnessStat ;
+    ] ;
+    ccg:hasStat [
+        a mtg:PowerStat ;
+    ] ;
     ccg:hasEffect [
         a ccg:Effect ;
         ccg:hasTrigger mtg:TapAction ;
