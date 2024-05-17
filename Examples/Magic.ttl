@@ -86,6 +86,33 @@ ccg:Forest a ccg:LandCard ;
         ] ;
     ] .
 
+ccg:LibraryOfLeng a ccg:ArtifactCard ;
+    skos:prefLabel "Library of Leng"@en ;
+    rdfs:label "Library of Leng"@en ;
+    dct:description "You have no maximum hand size. If an effect causes you to discard a card, discard it, but you may put it on top of your library instead of into your graveyard."@en ;
+    ccg:hasAbility [
+        a ccg:Ability ;
+        ccg:hasEffect [
+            a ccg:Effect ;
+            ccg:hasTrigger mtg:DiscardAction ;
+            ccg:hasAction [
+                a ccg:ChoiceAction ;
+                ccg:hasOption [
+                    a ccg:DiscardOption ;
+                    ccg:hasDestination mtg:Graveyard ;
+                ] ;
+                ccg:hasOption [
+                    a ccg:DiscardOption ;
+                    ccg:hasDestination mtg:LibraryTop ;
+                ] ;
+            ] ;
+        ] ;
+        ccg:hasEffect [
+            a ccg:Effect ;
+            ccg:hasCondition mtg:NoMaximumHandSizeCondition ;
+        ] ;
+    ] .
+
 # CreatureCard
 ccg:CreatureCard a owl:Class ;
     rdfs:subClassOf ccg:PermanentCard ;
