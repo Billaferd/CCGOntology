@@ -66,17 +66,70 @@ ccg:YuGiOhBoosterPack1 a ccg:CardSet ;
     dct:description "The first booster pack released for Yu-Gi-Oh!"@en .
 
 # Cards in Yu-Gi-Oh!
-ccg:DarkMagician a ccg:Card ;
-    skos:prefLabel "Dark Magician"@en ;
-    rdfs:label "Dark Magician"@en ;
-    dct:description "A powerful spellcaster card with high attack and defense."@en ;
-    ccg:hasSet ccg:YuGiOhStarterDeck1 .
-
-ccg:BlueEyesWhiteDragon a ccg:Card ;
+ygo:BlueEyesWhiteDragon a ygo:MonsterCard ;
     skos:prefLabel "Blue-Eyes White Dragon"@en ;
     rdfs:label "Blue-Eyes White Dragon"@en ;
-    dct:description "A legendary dragon card with formidable strength."@en ;
-    ccg:hasSet ccg:YuGiOhBoosterPack1 .
+    dct:description "This legendary dragon is a powerful engine of destruction."@en ;
+    ygo:hasEffect [
+        a ygo:Effect ;
+        ygo:hasTrigger ygo:AttackAction ;
+        ygo:hasAction [
+            a ygo:DamageAction ;
+            ygo:hasAmount 3000 ;
+            ygo:hasTarget ygo:AnyTarget ;
+        ] ;
+    ] ;
+    ygo:hasStat [
+        a ygo:ATKStat ;
+        ygo:hasCurrentValue 3000 .
+    ] ;
+    ygo:hasStat [
+        a ygo:DEFStat ;
+        ygo:hasCurrentValue 2500 .
+    ] .
+
+ygo:DarkMagician a ygo:MonsterCard ;
+    skos:prefLabel "Dark Magician"@en ;
+    rdfs:label "Dark Magician"@en ;
+    dct:description "The ultimate wizard in terms of attack and defense."@en ;
+    ygo:hasEffect [
+        a ygo:Effect ;
+        ygo:hasTrigger ygo:SummonAction ;
+        ygo:hasAction [
+            a ygo:SpecialSummonAction ;
+            ygo:hasTarget ygo:SpellcasterType ;
+        ] ;
+    ] ;
+    ygo:hasStat [
+        a ygo:ATKStat ;
+        ygo:hasCurrentValue 2500 .
+    ] ;
+    ygo:hasStat [
+        a ygo:DEFStat ;
+        ygo:hasCurrentValue 2100 .
+    ] .
+
+ygo:RedEyesBlackDragon a ygo:MonsterCard ;
+    skos:prefLabel "Red-Eyes Black Dragon"@en ;
+    rdfs:label "Red-Eyes Black Dragon"@en ;
+    dct:description "A ferocious dragon with a deadly attack."@en ;
+    ygo:hasEffect [
+        a ygo:Effect ;
+        ygo:hasTrigger ygo:AttackAction ;
+        ygo:hasAction [
+            a ygo:DamageAction ;
+            ygo:hasAmount 2400 ;
+            ygo:hasTarget ygo:AnyTarget ;
+        ] ;
+    ] ;
+    ygo:hasStat [
+        a ygo:ATKStat ;
+        ygo:hasCurrentValue 2400 .
+    ] ;
+    ygo:hasStat [
+        a ygo:DEFStat ;
+        ygo:hasCurrentValue 2000 .
+    ] .
 
 # Effects
 ccg:DrawCardEffect a ccg:Effect ;
