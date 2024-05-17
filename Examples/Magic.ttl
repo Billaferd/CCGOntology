@@ -89,29 +89,41 @@ ccg:Forest a ccg:LandCard ;
 ccg:LibraryOfLeng a ccg:ArtifactCard ;
     skos:prefLabel "Library of Leng"@en ;
     rdfs:label "Library of Leng"@en ;
-    dct:description "You have no maximum hand size. If an effect causes you to discard a card, discard it, but you may put it on top of your library instead of into your graveyard."@en ;
-    ccg:hasAbility [
-        a ccg:Ability ;
-        ccg:hasEffect [
-            a ccg:Effect ;
-            ccg:hasTrigger mtg:DiscardAction ;
-            ccg:hasAction [
-                a ccg:ChoiceAction ;
-                ccg:hasOption [
-                    a ccg:DiscardOption ;
-                    ccg:hasDestination mtg:Graveyard ;
-                ] ;
-                ccg:hasOption [
-                    a ccg:DiscardOption ;
-                    ccg:hasDestination mtg:LibraryTop ;
-                ] ;
+    ccg:hasRuleText "You have no maximum hand size. If an effect causes you to discard a card, discard it, but you may put it on top of your library instead of into your graveyard."@en ;
+    ccg:hasEffect [
+        a ccg:Effect ;
+        ccg:hasTrigger mtg:DiscardAction ;
+        ccg:hasAction [
+            a ccg:ChoiceAction ;
+            ccg:hasOption [
+                a ccg:DiscardOption ;
+                ccg:hasDestination mtg:Graveyard ;
+            ] ;
+            ccg:hasOption [
+                a ccg:DiscardOption ;
+                ccg:hasDestination mtg:LibraryTop ;
             ] ;
         ] ;
-        ccg:hasEffect [
-            a ccg:Effect ;
-            ccg:hasCondition mtg:NoMaximumHandSizeCondition ;
+    ccg:hasEffect [
+        a ccg:Effect ;
+        ccg:hasCondition mtg:NoMaximumHandSizeCondition ;
+    ] ;
+] .
+
+ccg:LightningBolt a ccg:InstantCard ;
+    skos:prefLabel "Lightning Bolt"@en ;
+    rdfs:label "Lightning Bolt"@en ;
+    ccg:hasRuleText "Lightning Bolt deals 3 damage to any target."@en ;
+    ccg:hasEffect [
+        a ccg:Effect ;
+        ccg:hasTrigger mtg:CastAction ;
+        ccg:hasAction [
+            a ccg:DamageAction ;
+            ccg:hasAmount 3 ;
+            ccg:hasTarget mtg:AnyTarget ;
         ] ;
     ] .
+
 
 # CreatureCard
 ccg:CreatureCard a owl:Class ;
@@ -125,6 +137,11 @@ ccg:SpellCard a owl:Class ;
     rdfs:subClassOf ccg:Card ;
     rdfs:label "Spell Card"@en ;
     rdfs:comment "Represents cards that cast spells, perform actions, or have immediate effects."@en .
+
+ccg:InstantCard a owl:Class ;
+    rdfs:subClassOf ccg:SpellCard ;
+    rdfs:label "Instant"@en ;
+    rdfs:comment "Represents cards that take effect instantly."@en .
 
 # ArtifactCard
 ccg:ArtifactCard a owl:Class ;
