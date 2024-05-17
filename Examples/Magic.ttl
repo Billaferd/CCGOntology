@@ -124,6 +124,31 @@ ccg:LightningBolt a ccg:InstantCard ;
         ] ;
     ] .
 
+ccg:StripMine a ccg:LandCard ;
+    skos:prefLabel "Strip Mine"@en ;
+    rdfs:label "Strip Mine"@en ;
+    ccg:hasRuleText "Adds 1 colorless mana to your mana pool or sacrifices to destroy target land."@en ;
+    ccg:hasEffect [
+        a ccg:Effect ;
+        ccg:hasTrigger mtg:TapAction ;
+        ccg:hasAction [
+            a ccg:ResourceAction ;
+            ccg:hasSideEffect [
+                a mtg:ManaPool ;
+                ccg:hasResource mtg:ColorlessMana ;
+                ccg:hasResourceCount 1 ;
+            ] ;
+        ] ;
+    ],
+    [
+        a ccg:Effect ;
+        ccg:hasTrigger mtg:SacrificeAction ;
+        ccg:hasAction [
+            a ccg:DestroyAction ;
+            ccg:hasTarget mtg:LandCard ;
+        ] ;
+    ] .
+
 
 # CreatureCard
 ccg:CreatureCard a owl:Class ;
