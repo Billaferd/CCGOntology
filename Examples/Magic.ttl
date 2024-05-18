@@ -54,9 +54,11 @@ mtg:PowerStat a ccg:CardStat .
 mtg:Battlefield rdf:type ccg:PlayArea ;
     ccg:hasPlayZone mtg:Library, mtg:Graveyard .
 
-mtg:Library a ccg:Deck .
+mtg:Library a ccg:HiddenZone ;
+    ccg:hasCardPool ccg:Deck .
 
-mtg:Graveyard a ccg:DiscardPile .
+mtg:Graveyard a ccg:Public zone ;
+    ccg:hasCardPool ccg:DiscardPile .
 
 mtg:TapAction a owl:Class ;
     rdfs:subClassOf ccg:ActivateAction ;
