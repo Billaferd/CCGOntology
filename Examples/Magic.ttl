@@ -357,3 +357,29 @@ ccg:EnchantmentCard a ccg:PermanentCard ;
     rdfs:subClassOf ccg:Card ;
     rdfs:label "Enchantment Card"@en ;
     rdfs:comment "Represents cards that provide continuous effects or modify game rules."@en .
+
+mtg:Comprehensive rules a ccg:RuleBook ;
+    dct:title "Magic: The Gathering Comprehensive Rules"@en ;
+    ccg:hasRuleSection mtg:GameConcepts .
+
+mtg:GameConceptsRuleSection a ccg:RuleSection ;
+    dct:title "Game Concepts"@en ;
+    ccg:hasSubSection ccg:GeneralRulesSection ;
+
+mtg:GeneralRulesSection a ccg:RulesSection ;
+    dct:title "1. General"@en .
+
+mtg:Rule100%2e1 a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    dct:description "100.1. These Magic rules apply to any Magic game with two or more players, including two-player games and multiplayer games."@en .
+
+mtg:Rule100%2e1a a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    skos:related mtg:Player ;
+    dct:description "100.1a A two-player game is a game that begins with only two players."@en .
+
+mtg:Rule100%2e1b a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    rdfs:seeAlso mtg:MultiplayerRulesSection ;
+    skos:related mtg:Player ;
+    dct:description "100.1b A multiplayer game is a game that begins with more than two players. See section 8, &quot;Multiplayer Rules.&quot;"@en .
