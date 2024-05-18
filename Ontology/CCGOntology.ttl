@@ -130,6 +130,13 @@ ccg:GameStat a owl:Class
     dct:description "A statistic about the game."@en ;
     skos:example "Player HP, Active Tokens"@en .
 
+ccg:PlayerStat a owl:Class
+        , skos:ConceptScheme ;
+    skos:prefLabel "Player Statistic"@en ;
+    rdfs:label "Player Statistic"@en ;
+    dct:description "A statistic about the game."@en ;
+    skos:example "Player HP"@en .
+
 ccg:CardStat a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:GameStat ;
@@ -171,6 +178,24 @@ ccg:ActivateAction a owl:Class
     skos:prefLabel "Activate"@en ;
     rdfs:label "Activate"@en ;
     dct:description "Activate some rule, effect, or other part of the game."@en .
+
+ccg:ShuffleAction a owl:Class
+        , skos:Concept ;
+    skos:prefLabel "Shuffle"@en ;
+    rdfs:label "Shuffle"@en ;
+    dct:description "Shuffle some card pool."@en .
+
+ccg:DrawAction a owl:Class
+        , skos:Concept ;
+    skos:prefLabel "Draw"@en ;
+    rdfs:label "Draw"@en ;
+    dct:description "Draw a card from some card pool."@en .
+
+ccg:DiscardAction a owl:Class
+        , skos:Concept ;
+    skos:prefLabel "Discard"@en ;
+    rdfs:label "Discard"@en ;
+    dct:description "Discard a card or other thing."@en .
 
 ccg:ResourceAction a owl:Class
         , skos:Concept ;
@@ -254,6 +279,12 @@ ccg:hasTrigger a owl:ObjectProperty ;
     skos:prefLabel "has trigger"@en ;
     rdfs:label "has trigger"@en ;
     dct:description "Relates an effect to its trigger."@en .
+
+ccg:hasTarget a owl:ObjectProperty ;
+    rdfs:domain ccg:Effect ;
+    skos:prefLabel "has target"@en ;
+    rdfs:label "has target"@en ;
+    dct:description "Relates an effect to a target that it acts upon."@en .
 
 ccg:hasRuleText a owl:DatatypeProperty ;
     rdfs:domain ccg:Card ;
