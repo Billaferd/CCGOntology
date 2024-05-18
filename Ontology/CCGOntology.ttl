@@ -26,6 +26,17 @@ ccg: rdf:type owl:Ontology ;
     vs:term_status "stable" ;
     owl:imports <http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf> .
 
+ccg:CollectibleCardHobby a owl:Class
+        , skos:ConceptScheme ;
+    skos:hasTopConcept ccg:CardGame
+        , ccg:Rule
+        , ccg:PlayArea
+        , ccg:CardRarity
+        , ccg:GameAction ;
+    skos:prefLabel "Collectible Card Hobby"@en ;
+    rdfs:label "Collectible Card Hobby"@en ;
+    dct:description "The hobby of playing, trading, and collecting cards for the purposes of a game."@en .
+
 # Classes
 
 ccg:CardGame a owl:Class
@@ -37,6 +48,7 @@ ccg:CardGame a owl:Class
 ccg:CardSet a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:CardPool ;
+    skos:related ccg:Card ;
     skos:prefLabel "Card Set"@en ;
     rdfs:label "Card Set"@en ;
     dct:description "Represents a card set for a game. Sometimes called an expansion or a release."@en .
@@ -52,17 +64,32 @@ ccg:Card a owl:Class
     skos:historyNote "The concept of the card has evolved over time, with early CCGs featuring simple designs and mechanics, while modern CCGs offer a wide range of complex and thematic cards."@en ;
     skos:editorialNote "Ensure that the card class is flexible enough to accommodate the diverse range of cards found across various CCGs, from simple to complex."@en .
 
-ccg:TurnStructure a owl:Class ;
-    skos:prefLabel "Turn Structure"@en .
+ccg:TurnStructure a owl:Class
+        , skos:Concept ;
+    skos:prefLabel "Turn Structure"@en ;
+    rdfs:label "Turn Structure"@en ;
+    dct:description "Defines the overall turn structure of that game."@en .
 
 ccg:Phase a owl:Class ;
-    skos:prefLabel "Phase"@en .
+    skos:broader ccg:TurnStructure ;
+    skos:prefLabel "Phase"@en ;
+    rdfs:label "Phase"@en ;
+    dct:description "A specific phase of a game turn."@en ;
+    skos:example "Main phase, combat phase"@en .
 
-ccg:Step a owl:Class ;
-    skos:prefLabel "Step"@en .
+ccg:Step a owl:Class
+        , skos:Concept ;
+    skos:broader ccg:Phase ;
+    skos:prefLabel "Step"@en ;
+    rdfs:label "Step"@en ;
+    dct:description "A single step that can be performed during a phase"@en ;
+    skos:example "Upkeep, untap"@en .
 
-ccg:Rule a owl:Class ;
-    skos:prefLabel "Rule"@en .
+ccg:Rule a owl:Class
+        , skos:Concept ;
+    skos:prefLabel "Rule"@en ;
+    rdfs:label "Rule"@en ;
+    dct:description "A rule that pertains to the game."@en .
 
 # PermanentCard
 ccg:PermanentCard a owl:Class
@@ -80,6 +107,7 @@ ccg:Effect a owl:Class
 
 ccg:CardPool a owl:Class
         , skos:Concept ;
+    skos:related ccg:Card ;
     skos:prefLabel "Card Pool"@en ;
     rdfs:label "Card Pool"@en ;
     dct:description "Any collection of cards that is used as part of the game."@en ;
@@ -89,6 +117,7 @@ ccg:Deck a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:CardPool ;
     skos:broader ccg:CardPool ;
+    skos:related ccg:Card ;
     skos:prefLabel "Deck"@en ;
     rdfs:label "Deck"@en ;
     dct:description "Represents a deck of cards in some form."@en ;
@@ -121,6 +150,7 @@ ccg:ResourceCost a owl:Class
 
 ccg:ResourcePool a owl:Class
         , skos:Concept ;
+    skos:related ccg:Resource ;
     skos:prefLabel "Resource Pool"@en ;
     rdfs:label "Resource Pool"@en ;
     dct:description "A collection of resources that is countable"@en ;
@@ -247,6 +277,7 @@ ccg:DiscardAction a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:CardAction ;
     skos:broader ccg:CardAction ;
+    skos:related ccg:Card ;
     skos:related ccg:CardPool ;
     skos:prefLabel "Discard"@en ;
     rdfs:label "Discard"@en ;
@@ -269,6 +300,13 @@ ccg:ChoiceAction a owl:Class
     dct:description "An action that requires a choice py a player."@en .
 
 # Predicates
+
+ccg:hasChoice a owl:ObjectProperty ;
+    rdfs:domain ccg:ChoiceAction ;
+    rdfs:range ccg:Action ;
+    skos:prefLabel "has choice"@en ;
+    rdfs:label "has choice"@en ;
+    dct:description "Relates a choice of actions that a player can take."@en .
 
 ccg:hasSet a owl:ObjectProperty ;
     rdfs:domain ccg:CardGame ;
