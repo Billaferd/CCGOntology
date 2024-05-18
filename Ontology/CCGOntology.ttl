@@ -319,6 +319,12 @@ ccg:hasTarget a owl:ObjectProperty ;
     rdfs:label "has target"@en ;
     dct:description "Relates an effect to a target that it acts upon."@en .
 
+ccg:hasSource owl:ObjectProperty ;
+    rdfs:domain ccg:Effect ;
+    skos:prefLabel "has source"@en ;
+    rdfs:label "has source"@en ;
+    dct:description "Relates an effect to a source that it acts upon."@en .
+
 ccg:hasRuleText a owl:DatatypeProperty ;
     rdfs:domain ccg:Card ;
     rdfs:range xsd:string ;
