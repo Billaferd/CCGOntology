@@ -54,8 +54,10 @@ ccg:Card a owl:Class
 
 
 # PermanentCard
-ccg:PermanentCard a owl:Class ;
+ccg:PermanentCard a owl:Class
+        , skos:Concept ;
     rdfs:subClassOf ccg:Card ;
+    skos:broader ccg:Card ;
     rdfs:label "Permanent Card"@en ;
     rdfs:comment "Represents cards that remain on the playing field after being played."@en .
 
@@ -75,6 +77,7 @@ ccg:CardPool a owl:Class
 ccg:Deck a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:CardPool ;
+    skos:broader ccg:CardPool ;
     skos:prefLabel "Deck"@en ;
     rdfs:label "Deck"@en ;
     dct:description "Represents a deck of cards in some form."@en ;
@@ -83,6 +86,7 @@ ccg:Deck a owl:Class
 ccg:PlayerHand a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:CardPool ;
+    skos:broader ccg:CardPool ;
     skos:prefLabel "Hand"@en ;
     rdfs:label "Hand"@en ;
     dct:description "Represents the cards that a player has in their hand."@en .
@@ -90,6 +94,7 @@ ccg:PlayerHand a owl:Class
 ccg:DiscardPile a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:CardPool ;
+    skos:broader skos:CardPool ;
     skos:prefLabel "Discard Pile"@en ;
     rdfs:label "Discard Pile"@en ;
     dct:description "Represents the cards that a player discarded."@en .
@@ -175,30 +180,42 @@ ccg:GameAction a owl:Class
 
 ccg:ActivateAction a owl:Class
         , skos:Concept ;
+    rdfs:subClassOf ccg:GameAction ;
     skos:prefLabel "Activate"@en ;
     rdfs:label "Activate"@en ;
     dct:description "Activate some rule, effect, or other part of the game."@en .
 
+ccg:CardAction a owl:Class
+        , skos:Concept ;
+    rdfs:subClassOf ccg:GameAction ;
+    skos:prefLabel "Card Action"@en ;
+    rdfs:label "Card Action"@en ;
+    dct:description "Any action taken with cards."@en .
+
 ccg:ShuffleAction a owl:Class
         , skos:Concept ;
+    rdfs:subClassOf ccg:CardAction ;
     skos:prefLabel "Shuffle"@en ;
     rdfs:label "Shuffle"@en ;
     dct:description "Shuffle some card pool."@en .
 
 ccg:DrawAction a owl:Class
         , skos:Concept ;
+    rdfs:subClassOf ccg:CardAction ;
     skos:prefLabel "Draw"@en ;
     rdfs:label "Draw"@en ;
     dct:description "Draw a card from some card pool."@en .
 
 ccg:DiscardAction a owl:Class
         , skos:Concept ;
+    rdfs:subClassOf ccg:CardAction ;
     skos:prefLabel "Discard"@en ;
     rdfs:label "Discard"@en ;
     dct:description "Discard a card or other thing."@en .
 
 ccg:ResourceAction a owl:Class
         , skos:Concept ;
+    rdfs:subClassOf ccg:GameAction ;
     skos:prefLabel "Resource Action"@en ;
     rdfs:label "Resource Action"@en ;
     dct:description "Do something with a resource: transfer, add, remove, or something else."@en .
