@@ -51,6 +51,13 @@ mtg:ToughnessStat a ccg:CardStat .
 
 mtg:PowerStat a ccg:CardStat .
 
+mtg:Battlefield rdf:type ccg:PlayArea ;
+    ccg:hasPlayZone mtg:Library, mtg:Graveyard .
+
+mtg:Library a ccg:Deck .
+
+mtg:Graveyard a ccg:DiscardPile .
+
 mtg:TapAction a owl:Class ;
     rdfs:subClassOf ccg:ActivateAction ;
     skos:prefLabel "Tap"@en ;
