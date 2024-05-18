@@ -52,6 +52,20 @@ ccg:Card a owl:Class
     skos:historyNote "The concept of the card has evolved over time, with early CCGs featuring simple designs and mechanics, while modern CCGs offer a wide range of complex and thematic cards."@en ;
     skos:editorialNote "Ensure that the card class is flexible enough to accommodate the diverse range of cards found across various CCGs, from simple to complex."@en .
 
+ccg:TurnStructure a owl:Class ;
+    skos:prefLabel "Turn Structure"@en .
+
+ccg:Phase a owl:Class ;
+    skos:prefLabel "Phase"@en .
+
+ccg:Step a owl:Class ;
+    skos:prefLabel "Step"@en .
+
+ccg:Action a owl:Class ;
+    skos:prefLabel "Action"@en .
+
+ccg:Rule a owl:Class ;
+    skos:prefLabel "Rule"@en .
 
 # PermanentCard
 ccg:PermanentCard a owl:Class
@@ -236,7 +250,7 @@ ccg:ResourceAction a owl:Class
     rdfs:label "Resource Action"@en ;
     dct:description "Do something with a resource: transfer, add, remove, or something else."@en .
 
-ccg:ChoiceAction a owl;Class
+ccg:ChoiceAction a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:GameAction ;
     skos:prefLabel "Choice Action"@en ;
@@ -319,7 +333,7 @@ ccg:hasTarget a owl:ObjectProperty ;
     rdfs:label "has target"@en ;
     dct:description "Relates an effect to a target that it acts upon."@en .
 
-ccg:hasSource owl:ObjectProperty ;
+ccg:hasSource a owl:ObjectProperty ;
     rdfs:domain ccg:Effect ;
     skos:prefLabel "has source"@en ;
     rdfs:label "has source"@en ;
@@ -424,3 +438,54 @@ ccg:hasPlayZone a owl:ObjectProperty ;
     skos:prefLabel "has play zone"@en ;
     rdfs:label "has play zone"@en ;
     dct:description "Relates a player or play areas/zones to other play zones."@en .
+
+ccg:hasPhase a owl:ObjectProperty ;
+    rdfs:domain ccg:TurnStructure ;
+    rdfs:range ccg:Phase ;
+    skos:prefLabel "has phase"@en .
+
+ccg:hasStep a owl:ObjectProperty ;
+    rdfs:domain ccg:Phase ;
+    rdfs:range ccg:Step ;
+    skos:prefLabel "has step"@en .
+
+ccg:hasAction a owl:ObjectProperty ;
+    rdfs:domain ccg:Step ;
+    rdfs:range ccg:Action ;
+    skos:prefLabel "has action"@en .
+
+ccg:isAllowedDuring a owl:ObjectProperty ;
+    rdfs:domain ccg:Action ;
+    rdfs:range [
+        a owl:Class ;
+        owl:unionOf(ccg:Phase ccg:Step) ;
+    ] ;
+    skos:prefLabel "is allowed during"@en .
+
+ccg:governs a owl:ObjectProperty ;
+    rdfs:domain ccg:Rule ;
+    rdfs:range [
+        a owl:Class ;
+        owl:unionOf(ccg:Phase ccg:Step ccg:Action) ;
+    ] ;
+    skos:prefLabel "governs"@en .
+
+ccg:hasPrecondition a owl:ObjectProperty ;
+    rdfs:domain ccg:Action ;
+    rdfs:range ccg:Rule ;
+    skos:prefLabel "has precondition"@en .
+
+ccg:hasPostcondition a owl:ObjectProperty ;
+    rdfs:domain ccg:Action ;
+    rdfs:range ccg:Rule ;
+    skos:prefLabel "has postcondition"@en .
+
+ccg:hasTurnOrder a owl:ObjectProperty ;
+    rdfs:domain ccg:TurnStructure ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "has turn order"@en .
+
+ccg:hasPriorityRule a owl:ObjectProperty ;
+    rdfs:domain ccg:TurnStructure ;
+    rdfs:range ccg:Rule ;
+    skos:prefLabel "has priority rule"@en .
