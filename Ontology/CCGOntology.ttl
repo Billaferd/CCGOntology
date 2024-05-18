@@ -98,6 +98,13 @@ ccg:RuleSection a owl:Class ;
     rdfs:label "Rule Section"@en ;
     dct:description "A specific section of the rules."@en .
 
+ccg:RuleBook a owl:Class 
+        , skos:Concept ;
+    skos:prefLabel "Rule Book"@en ;
+    rdfs:label "Rule Book"@en ;
+    dct:description "A set of rules for a specific game. A game can have multiple rule books if there are multiple styles or modes of play."@en ;
+    skos:example "Tournament Rules, House Rules, Draft"@en .
+
 # PermanentCard
 ccg:PermanentCard a owl:Class
         , skos:Concept ;
@@ -426,7 +433,21 @@ ccg:isDefinedIn a owl:ObjectProperty ;
     rdfs:label "is defined in"@en ;
     dct:description "Relates a rule the the section in the rule book of where it is defined."@en .
 
-ccg:ofRuleBook a owl:ObjectProperty .
+ccg:inRuleBook a owl:ObjectProperty ;
+    rdfs:domain ccg:RuleSection ;
+    rdfs:range ccg:RuleBook ;
+    owl:inverseOf ccg:hasRuleSection ;
+    skos:prefLabel "in rule book"@en ;
+    rdfs:label "in rule book"@en ;
+    dct:description "Relates a rule section to the rule book that it belongs to."@en .
+
+ccg:hasRuleSection a owl:ObjectProperty ;
+    rdfs:domain ccg:RuleBook ;
+    rdfs:range ccg:RuleSection ;
+    owl:inverseOf ccg:inRuleBook ;
+    skos:prefLabel "has section"@en ;
+    rdfs:label "has section"@en ;
+    dct:description "Relates a rulbook to the sections it contains."@en .
 
 ccg:hasRuleText a owl:DatatypeProperty ;
     rdfs:domain ccg:Card ;
