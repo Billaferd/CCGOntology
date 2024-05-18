@@ -92,7 +92,7 @@ ccg:Rule a owl:Class
     rdfs:label "Rule"@en ;
     dct:description "A rule that pertains to the game."@en .
 
-ccg:RuleSection a owl:Class ;
+ccg:RuleSection a owl:Class
         , skos:Concept ;
     skos:prefLabel "Rule Section"@en ;
     rdfs:label "Rule Section"@en ;
