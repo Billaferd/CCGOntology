@@ -176,7 +176,14 @@ ccg:ResourceAction a owl:Class
         , skos:Concept ;
     skos:prefLabel "Resource Action"@en ;
     rdfs:label "Resource Action"@en ;
-    dct:description "Do something with a resource, transfer, add, remove, or something else."@en .
+    dct:description "Do something with a resource: transfer, add, remove, or something else."@en .
+
+ccg:ChoiceAction a owl;Class
+        , skos:Concept ;
+    rdfs:subClassOf ccg:GameAction ;
+    skos:prefLabel "Choice Action"@en ;
+    rdfs:label "Choice Action"@en ;
+    dct:description "An action that requires a choice py a player."@en .
 
 # Predicates
 
