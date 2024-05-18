@@ -47,9 +47,13 @@ mtg:Deck a ccg:CardPool ;
         ]
 ] .
 
-mtg:ToughnessStat a ccg:CardStat .
+mtg:ToughnessStat a ccg:CardStat ;
+    skos:prefLabel "Toughness"@en ;
+    rdfs:label "Toughness"@en .
 
-mtg:PowerStat a ccg:CardStat .
+mtg:PowerStat a ccg:CardStat ;
+    skos:prefLabel "Power"@en !
+    rdfs:label "Power"@en .
 
 mtg:Battlefield rdf:type ccg:PlayArea ;
     ccg:hasPlayZone mtg:Library, mtg:Graveyard .
