@@ -87,9 +87,16 @@ ccg:Step a owl:Class
 
 ccg:Rule a owl:Class
         , skos:Concept ;
+    skos:broader ccg:RuleSection ;
     skos:prefLabel "Rule"@en ;
     rdfs:label "Rule"@en ;
     dct:description "A rule that pertains to the game."@en .
+
+ccg:RuleSection a owl:Class ;
+        , skos:Concept ;
+    skos:prefLabel "Rule Section"@en ;
+    rdfs:label "Rule Section"@en ;
+    dct:description "A specific section of the rules."@en .
 
 # PermanentCard
 ccg:PermanentCard a owl:Class
@@ -375,15 +382,51 @@ ccg:hasTrigger a owl:ObjectProperty ;
 
 ccg:hasTarget a owl:ObjectProperty ;
     rdfs:domain ccg:Effect ;
+    rdfs:range rdfs:Resource ;
     skos:prefLabel "has target"@en ;
     rdfs:label "has target"@en ;
     dct:description "Relates an effect to a target that it acts upon."@en .
 
 ccg:hasSource a owl:ObjectProperty ;
     rdfs:domain ccg:Effect ;
+    rdfs:range rdfs:Resource ;
     skos:prefLabel "has source"@en ;
     rdfs:label "has source"@en ;
     dct:description "Relates an effect to a source that it acts upon."@en .
+
+ccg:governs a owl:ObjectProperty ;
+    rdfs:domain ccg:Rule ;
+    rdfs:range rdfs:Resource ;
+    owl:inverseOf ccg:hasRule ;
+    skos:prefLabel "governs"@en ;
+    rdfs:label "governs"@en ;
+    dct:description "Relates a rule to some part of the game."@en .
+
+ccg:hasRule a owl:ObjectProperty ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range ccg:Rule ;
+    owl:inverseOf ccg:Governs ;
+    skos:prefLabel "has rule"@en ;
+    rdfs:label "has rule"@en ;
+    dct:description "Relates some part to a rule that governs it."@en .
+
+ccg:containsRule a owl:ObjectProperty ;
+    rdfs:domain ccg:RuleSection ;
+    rdfs:range ccg:Rule ;
+    owl:inverseOf ccg:isDefinedIn ;
+    skos:prefLabel "contains rule"@en ;
+    rdfs:label "contains rule"@en ;
+    dct:description "Relates a rule book section to the rules it contains."@en .
+
+ccg:isDefinedIn a owl:ObjectProperty ;
+    rdfs:domain ccg:Rule ;
+    rdfs:range ccg:RuleSection ;
+    owl:inverseOf ccg:containsRule ;
+    skos:prefLabel "is defined in"@en ;
+    rdfs:label "is defined in"@en ;
+    dct:description "Relates a rule the the section in the rule book of where it is defined."@en .
+
+ccg:ofRuleBook a owl:ObjectProperty .
 
 ccg:hasRuleText a owl:DatatypeProperty ;
     rdfs:domain ccg:Card ;
@@ -391,6 +434,13 @@ ccg:hasRuleText a owl:DatatypeProperty ;
     skos:prefLabel "has rule text"@en ;
     rdfs:label "has rule text"@en ;
     dct:description "Relates the card to the exact rule text that shows up on it."@en .
+
+ccg:hasFlavourText a owl:DatatypeProperty ;
+    rdfs:domain ccg:Card ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "has flavour text"@en ;
+    rdfs:label "has flavour text"@en ;
+    dct:description "Relates the card to the exact flavour text that shows up on it."@en .
 
 ccg:hasStat a owl:ObjectProperty ;
     rdfs:domain [
@@ -507,14 +557,6 @@ ccg:isAllowedDuring a owl:ObjectProperty ;
         owl:unionOf(ccg:Phase ccg:Step) ;
     ] ;
     skos:prefLabel "is allowed during"@en .
-
-ccg:governs a owl:ObjectProperty ;
-    rdfs:domain ccg:Rule ;
-    rdfs:range [
-        a owl:Class ;
-        owl:unionOf(ccg:Phase ccg:Step ccg:GameAction) ;
-    ] ;
-    skos:prefLabel "governs"@en .
 
 ccg:hasPrecondition a owl:ObjectProperty ;
     rdfs:domain ccg:GameAction ;
