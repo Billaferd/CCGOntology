@@ -166,6 +166,22 @@ ccg:PlayZone a owl:Class
     dct:description "Any distinct zone within a play area."@en ;
     skos:example "Library, Bench, Active Slot"@en .
 
+ccg:HiddenPlayZone a owl:Class
+        , skos:Concept ;
+    skos:broader ccg:PlayZone ;
+    rdfs:subClassOf ccg:PlayZone ;
+    skos:prefLabel "Private Zone"@en ;
+    rdfs:label "Private Zone"@en ;
+    dct:description "Any zone whose contents are not expected to be visible to all players."@en .
+
+ccg:PublicPlayZone a owl:Class
+        , skos:Concept ;
+    skos:broader ccg:PlayZone ;
+    rdfs:subClassOf ccg:PlayZone ;
+    skos:prefLabel "Public Zone"@en ;
+    rdfs:label "Public Zone"@en ;
+    dct:description "Any zone whose contents are visible to all players."@en .
+
 ccg:Player a owl:Class
         , skos:Concept ;
     skos:prefLabel "Player"@en ;
