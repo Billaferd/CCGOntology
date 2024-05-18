@@ -61,9 +61,6 @@ ccg:Phase a owl:Class ;
 ccg:Step a owl:Class ;
     skos:prefLabel "Step"@en .
 
-ccg:Action a owl:Class ;
-    skos:prefLabel "Action"@en .
-
 ccg:Rule a owl:Class ;
     skos:prefLabel "Rule"@en .
 
@@ -108,7 +105,7 @@ ccg:PlayerHand a owl:Class
 ccg:DiscardPile a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:CardPool ;
-    skos:broader skos:CardPool ;
+    skos:broader ccg:CardPool ;
     skos:prefLabel "Discard Pile"@en ;
     rdfs:label "Discard Pile"@en ;
     dct:description "Represents the cards that a player discarded."@en .
@@ -116,6 +113,7 @@ ccg:DiscardPile a owl:Class
 ccg:ResourceCost a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:ResourcePool ;
+    skos:broader ccg:ResourcePool ;
     skos:prefLabel "Resource Cost"@en ;
     rdfs:label "Resource Cost"@en ;
     dct:description "The type and cost of resource to be paid for an effect."@en ;
@@ -129,31 +127,32 @@ ccg:ResourcePool a owl:Class
     skos:example "Mana Pool, Attached Energy"@en .
 
 ccg:Resource a owl:Class
-        , skos:ConceptScheme ;
+        , skos:Concept ;
     skos:prefLabel "Resource"@en ;
     rdfs:label "Resource"@en ;
     dct:description "Anything that needs to be managed by the player but has no direct physical representation in the game"@en ;
     skos:example "Mana, Player Health"@en .
 
 ccg:CardRarity a owl:Class
-        , skos:ConceptScheme ;
+        , skos:Concept ;
     skos:prefLabel "Card Rarity"@en ;
     rdfs:label "Card Rarity"@en ;
     dct:description "The rarity of a card in relation to other cards in a game, set, or some other sub-geouping"@en ;
-    skos:example "Common, Uncommon, Rare, Mythical, Secret Rare" .
+    skos:example "Common, Uncommon, Rare, Mythical, Secret Rare, Illustrated Rare" .
 
 ccg:GameStat a owl:Class
-        , skos:ConceptScheme ;
+        , skos:Concept ;
     skos:prefLabel "Game Statistic"@en ;
     rdfs:label "Game Statistic"@en ;
     dct:description "A statistic about the game."@en ;
     skos:example "Player HP, Active Tokens"@en .
 
 ccg:PlayerStat a owl:Class
-        , skos:ConceptScheme ;
+        , skos:Concept ;
+    rdfs:subClassOf ccg:GameStat ;
     skos:prefLabel "Player Statistic"@en ;
     rdfs:label "Player Statistic"@en ;
-    dct:description "A statistic about the game."@en ;
+    dct:description "A game statistic that applies to a player."@en ;
     skos:example "Player HP"@en .
 
 ccg:CardStat a owl:Class
@@ -162,7 +161,7 @@ ccg:CardStat a owl:Class
     skos:prefLabel "Card Statistic"@en ;
     rdfs:label "Card Statistic"@en ;
     dct:description "A statistic about the card, usually for battle or other bookkeeping purposes."@en ;
-    skos:example "HP, Attack, Defense"@en .
+    skos:example "HP, Attack, Defense, Tokens, Counters"@en .
 
 ccg:PlayArea a owl:Class
         , skos:Concept ;
@@ -211,6 +210,7 @@ ccg:GameAction a owl:Class
 ccg:ActivateAction a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:GameAction ;
+    skos:broader ccg:GameAction ;
     skos:prefLabel "Activate"@en ;
     rdfs:label "Activate"@en ;
     dct:description "Activate some rule, effect, or other part of the game."@en .
@@ -218,6 +218,8 @@ ccg:ActivateAction a owl:Class
 ccg:CardAction a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:GameAction ;
+    skos:broader ccg:GameAction ;
+    skos:related ccg:Card ;
     skos:prefLabel "Card Action"@en ;
     rdfs:label "Card Action"@en ;
     dct:description "Any action taken with cards."@en .
@@ -225,6 +227,8 @@ ccg:CardAction a owl:Class
 ccg:ShuffleAction a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:CardAction ;
+    skos:broader ccg:GameAction ;
+    skos:related ccg:CardPool ;
     skos:prefLabel "Shuffle"@en ;
     rdfs:label "Shuffle"@en ;
     dct:description "Shuffle some card pool."@en .
@@ -232,6 +236,9 @@ ccg:ShuffleAction a owl:Class
 ccg:DrawAction a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:CardAction ;
+    skos:broader ccg:CardAction ;
+    skos:related ccg:Card ;
+    skos:related ccg:CardPool ;
     skos:prefLabel "Draw"@en ;
     rdfs:label "Draw"@en ;
     dct:description "Draw a card from some card pool."@en .
@@ -239,6 +246,8 @@ ccg:DrawAction a owl:Class
 ccg:DiscardAction a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:CardAction ;
+    skos:broader ccg:CardAction ;
+    skos:related ccg:CardPool ;
     skos:prefLabel "Discard"@en ;
     rdfs:label "Discard"@en ;
     dct:description "Discard a card or other thing."@en .
@@ -246,6 +255,8 @@ ccg:DiscardAction a owl:Class
 ccg:ResourceAction a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:GameAction ;
+    skos:broader ccg:GameAction ;
+    skos:related ccg:Resource ;
     skos:prefLabel "Resource Action"@en ;
     rdfs:label "Resource Action"@en ;
     dct:description "Do something with a resource: transfer, add, remove, or something else."@en .
@@ -277,10 +288,7 @@ ccg:isSetOf a owl:ObjectProperty ;
 
 ccg:hasCard a owl:ObjectProperty ;
     rdfs:domain ccg:CardPool ;
-    rdfs:range [
-        a owl:Class ;
-        owl:unionOf (ccg:Card ccg:CardPool) ;
-    ] ;
+    rdfs:range ccg:Card ;
     owl:inverseOf ccg:isCardIn ;
     skos:prefLabel "has card"@en ;
     rdfs:label "has card"@en ;
@@ -451,11 +459,11 @@ ccg:hasStep a owl:ObjectProperty ;
 
 ccg:hasAction a owl:ObjectProperty ;
     rdfs:domain ccg:Step ;
-    rdfs:range ccg:Action ;
+    rdfs:range ccg:GameAction ;
     skos:prefLabel "has action"@en .
 
 ccg:isAllowedDuring a owl:ObjectProperty ;
-    rdfs:domain ccg:Action ;
+    rdfs:domain ccg:GameAction ;
     rdfs:range [
         a owl:Class ;
         owl:unionOf(ccg:Phase ccg:Step) ;
@@ -466,17 +474,17 @@ ccg:governs a owl:ObjectProperty ;
     rdfs:domain ccg:Rule ;
     rdfs:range [
         a owl:Class ;
-        owl:unionOf(ccg:Phase ccg:Step ccg:Action) ;
+        owl:unionOf(ccg:Phase ccg:Step ccg:GameAction) ;
     ] ;
     skos:prefLabel "governs"@en .
 
 ccg:hasPrecondition a owl:ObjectProperty ;
-    rdfs:domain ccg:Action ;
+    rdfs:domain ccg:GameAction ;
     rdfs:range ccg:Rule ;
     skos:prefLabel "has precondition"@en .
 
 ccg:hasPostcondition a owl:ObjectProperty ;
-    rdfs:domain ccg:Action ;
+    rdfs:domain ccg:GameAction ;
     rdfs:range ccg:Rule ;
     skos:prefLabel "has postcondition"@en .
 
