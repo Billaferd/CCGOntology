@@ -13,17 +13,20 @@ ccg: rdf:type owl:Ontology ;
     skos:prefLabel "Collectible Card Game Ontology" ;
     dct:description "This Ontology is intended to provide a comprehensive way of representing CCG's in a semantic way." ;
     rdfs:comment "This Ontology exists to encode the rules and concepts of Collectible Card Games into a machine readable format." ;
-    owl:versionInfo "1.0" ;
-    dct:creator "Brent Ritchie" ;
+    dct:creator [
+        a foaf:Person ;
+        foaf:name "Brent Ritchie" ;
+        foaf:mbox "ritchie.brent@gmail.com" ;
+        dct:comment "Contributors should document their contributions clearly with a structure similar to this. It should be a blank node of type foaf:Person with some identifiers from the foaf and dct Ontologies. The dct:contributor property should be used."@en ;
+    ] ;
     dct:title "Collectible Card Game Ontology" ;
     rdfs:label "CCG Ontology" ;
     dct:created "2024-05-12" ;
     dct:issued "2024-05-12" ;
-    foaf:mbox "ritchie.brent@gmail.com" ;
     dct:language "en" ;
     dct:audience "Intended for anyone interested in the semantic representation of CCG's." ;
     skos:scopeNote "Intended to be used for understanding digital and print CCG's" ;
-    vs:term_status "stable" ;
+    vs:term_status "unstable" ;
     owl:imports <http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf> .
 
 ccg:CollectibleCardHobby a owl:Class
