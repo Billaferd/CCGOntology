@@ -15,7 +15,7 @@ mtg:MagicTheGathering a ccg:CardGame ;
     skos:prefLabel "Magic: The Gathering"@en ;
     rdfs:label "Magic: The Gathering"@en .
 
-mtg:Deck a ccg:CardPool ;
+mtg:Deck a ccg:Deck ;
     skos:prefLabel "Deck"@en ;
     rdfs:label "Deck"@en ;
     dct:description "the deck of cards that a player draws from"@en ;
@@ -25,21 +25,15 @@ mtg:Deck a ccg:CardPool ;
         owl:allValuesFrom [
             a owl:Class ;
             owl:unionOf (
-            [
-                a owl:Restriction ;
-                owl:onProperty ccg:hasCardCount ;
-                owl:someValuesFrom ccg:CardSet ;
-                owl:maxCardinality 4
-             ]
              [
                  a owl:Restriction ;
-                 owl:onProperty ccg:hasCardCount ;
+                 owl:onProperty ccg:hasCard ;
                  owl:someValuesFrom ccg:Deck ;
                  owl:maxCardinality 60
               ]
               [
                   a owl:Restriction ;
-                  owl:onProperty ccg:hasCardCount ;
+                  owl:onProperty ccg:hasCard ;
                   owl:someValuesFrom ccg:Deck ;
                   owl:minCardinality 40
               ]
