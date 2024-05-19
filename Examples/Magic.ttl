@@ -406,7 +406,6 @@ mtg:Rule100%2e2b a ccg:Rule ;
 mtg:Rule100%2e2c a ccg:Rule ;
     ccg:isDefinedIn mtg:GeneralRulesSection ;
     rdfs:seeAlso mtg:Rule903 ;
-    skos:related mtg:Player ;
     skos:related mtg:Deck ;
     dct:description "100.2c Commander decks are subject to additional deckbuilding restrictions and requirements. See rule 903, &quot;Commander,&quot; for details."@en .
 
@@ -419,3 +418,51 @@ mtg:Rule100%2e2d a ccg:Rule ;
     skos:related mtg:Player ;
     skos:related mtg:Deck ;
     dct:description "100.2d Some formats and casual play variants allow players to use a supplementary deck of nontraditional Magic cards (see rule 108.2a). These supplementary decks have their own deck construction rules. See rule 717, &quot;Attraction Cards;&quot; rule 901, &quot;Planechase;&quot; and rule 904, &quot;Archenemy.&quot;"@en .
+
+mtg:Rule100%2e3 a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    skos:related mtg:Card ;
+    dct:description "100.3. Some cards require coins or traditional dice. Some casual variants require additional items, such as specially designated cards, nontraditional Magic cards, and specialized dice."@en .
+
+mtg:Rule100%2e4 a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    skos:related mtg:Card ;
+    skos:related mtg:Player ;
+    skos:related mtg:Sideboard ;
+    skos:related mtg:Deck ;
+    dct:description "100.4. Each player may also have a sideboard, which is a group of additional cards the player may use to modify their deck between games of a match."@en .
+
+mtg:Rule100%2e4a a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    rdfs:seeAlso mtg:Rule100%2e2a ;
+    skos:related mtg:Sideboard ;
+    skos:related mtg:Deck ;
+    dct:description "100.4a In constructed play, a sideboard may contain no more than fifteen cards. The four-card limit (see rule 100.2a) applies to the combined deck and sideboard."@en .
+
+mtg:Rule100%2e4b a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    skos:related mtg:Player ;
+    skos:related mtg:Sideboard ;
+    skos:related mtg:Deck ;
+    dct:description "100.4b In limited play involving individual players, all cards in a player’s card pool not included in their deck are in that player’s sideboard."@en .
+
+mtg:Rule100%2e4c a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    skos:related mtg:Player ;
+    skos:related mtg:Sideboard ;
+    skos:related mtg:Deck ;
+    dct:description "100.4c In limited play involving the Two-Headed Giant multiplayer variant, all cards in a team’s card pool but not in either player’s deck are in that team’s sideboard.
+"@en .
+
+mtg:Rule100%2e4d a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    skos:related mtg:Player ;
+    skos:related mtg:Sideboard ;
+    skos:related mtg:Card ;
+    dct:description "100.4d In limited play involving other multiplayer team variants, each card in a team’s card pool but not in any player’s deck is assigned to the sideboard of one of those players. Each player has their own sideboard; cards may not be transferred between players."@en .
+
+mtg:Rule100%2e5 a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    skos:related mtg:Card ;
+    skos:related mtg:Deck ;
+    dct:description "100.5. If a deck must contain at least a certain number of cards, that number is referred to as a minimum deck size. There is no maximum deck size for non-Commander decks."@en .
