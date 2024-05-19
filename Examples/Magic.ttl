@@ -16,37 +16,33 @@ mtg:MagicTheGathering a ccg:CardGame ;
     rdfs:label "Magic: The Gathering"@en .
 
 mtg:Deck a ccg:Deck ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty ccg:hasCard ;
+    owl:minCardinality "40"^^xsd:nonNegativeInteger ;
+    owl:maxCardinality "60"^^xsd:nonNegativeInteger ;
+    owl:someValuesFrom [
+      a owl:Class ;
+      owl:intersectionOf (
+        ccg:Card
+        [
+          a owl:Restriction ;
+          owl:onProperty ccg:hasCard ;
+          owl:maxCardinality "4"^^xsd:nonNegativeInteger
+        ]
+      )
+    ]
+  ] ;
     skos:prefLabel "Deck"@en ;
     rdfs:label "Deck"@en ;
-    dct:description "the deck of cards that a player draws from"@en ;
-    owl:equivalentClass [
-        a owl:Restriction ;
-        owl:onProperty ccg:hasCardCount ;
-        owl:allValuesFrom [
-            a owl:Class ;
-            owl:unionOf (
-             [
-                 a owl:Restriction ;
-                 owl:onProperty ccg:hasCard ;
-                 owl:someValuesFrom ccg:Deck ;
-                 owl:maxCardinality 60
-              ]
-              [
-                  a owl:Restriction ;
-                  owl:onProperty ccg:hasCard ;
-                  owl:someValuesFrom ccg:Deck ;
-                  owl:minCardinality 40
-              ]
-              )
-        ]
-] .
+    dct:description "the deck of cards that a player draws from"@en .
 
 mtg:ToughnessStat a ccg:CardStat ;
     skos:prefLabel "Toughness"@en ;
     rdfs:label "Toughness"@en .
 
 mtg:PowerStat a ccg:CardStat ;
-    skos:prefLabel "Power"@en !
+    skos:prefLabel "Power"@en ;
     rdfs:label "Power"@en .
 
 mtg:Battlefield rdf:type ccg:PlayArea ;
@@ -55,7 +51,7 @@ mtg:Battlefield rdf:type ccg:PlayArea ;
 mtg:Library a ccg:HiddenZone ;
     ccg:hasCardPool ccg:Deck .
 
-mtg:Graveyard a ccg:Public zone ;
+mtg:Graveyard a ccg:PublicZone ;
     ccg:hasCardPool ccg:DiscardPile .
 
 mtg:TapAction a owl:Class ;
@@ -67,7 +63,7 @@ mtg:TapAction a owl:Class ;
 mtg:Mana a ccg:Resource ;
     skos:prefLabel "Mana"@en ;
     rdfs:label "Mana"@en ;
-    dct:description "Mana is required for deploying cards and activating abilities. It can come in five six variations."@en ;
+    dct:description "Mana is required for deploying cards and activating abilities. It can come in five six variations."@en .
 
 mtg:GreenMana a owl:Class ;
     rdfs:subClassOf mtg:Mana ;
@@ -264,11 +260,11 @@ ccg:LlanowarElves a ccg:CreatureCard ;
     ] ;
     ccg:hasStat [
         a mtg:ToughnessStat ;
-        ccg:hasCurrentValue 1 .
+        ccg:hasCurrentValue 1 ;
     ] ;
     ccg:hasStat [
         a mtg:PowerStat ;
-        ccg:hasCurrentValue 1 .
+        ccg:hasCurrentValue 1 ;
     ] ;
     ccg:hasEffect [
         a ccg:Effect ;
@@ -352,13 +348,13 @@ ccg:EnchantmentCard a ccg:PermanentCard ;
     rdfs:label "Enchantment Card"@en ;
     rdfs:comment "Represents cards that provide continuous effects or modify game rules."@en .
 
-mtg:Comprehensive rules a ccg:RuleBook ;
+mtg:ComprehensiveRules a ccg:RuleBook ;
     dct:title "Magic: The Gathering Comprehensive Rules"@en ;
     ccg:hasRuleSection mtg:GameConcepts .
 
 mtg:GameConceptsRuleSection a ccg:RuleSection ;
     dct:title "Game Concepts"@en ;
-    ccg:hasSubSection ccg:GeneralRulesSection ;
+    ccg:hasSubSection ccg:GeneralRulesSection .
 
 mtg:GeneralRulesSection a ccg:RulesSection ;
     dct:title "1. General"@en .
@@ -445,8 +441,7 @@ mtg:Rule100%2e4c a ccg:Rule ;
     skos:related mtg:Player ;
     skos:related mtg:Sideboard ;
     skos:related mtg:Deck ;
-    dct:description "100.4c In limited play involving the Two-Headed Giant multiplayer variant, all cards in a team’s card pool but not in either player’s deck are in that team’s sideboard.
-"@en .
+    dct:description "100.4c In limited play involving the Two-Headed Giant multiplayer variant, all cards in a team’s card pool but not in either player’s deck are in that team’s sideboard."@en .
 
 mtg:Rule100%2e4d a ccg:Rule ;
     ccg:isDefinedIn mtg:GeneralRulesSection ;
