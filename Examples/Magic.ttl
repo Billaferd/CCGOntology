@@ -383,3 +383,39 @@ mtg:Rule100%2e1b a ccg:Rule ;
     rdfs:seeAlso mtg:MultiplayerRulesSection ;
     skos:related mtg:Player ;
     dct:description "100.1b A multiplayer game is a game that begins with more than two players. See section 8, &quot;Multiplayer Rules.&quot;"@en .
+
+mtg:Rule100%2e2 a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    skos:related mtg:Player ;
+    skos:related mtg:Deck ;
+    dct:description "100.2. To play, each player needs their own deck of traditional Magic cards, small items to represent any tokens and counters, and some way to clearly track life totals."@en .
+
+mtg:Rule100%2e2a a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    rdfs:seeAlso mtg:Rule201%2e3 ;
+    skos:related mtg:Player ;
+    skos:related mtg:Deck ;
+    dct:description "100.2a In constructed play (a way of playing in which each player creates their own deck ahead of time), each deck has a minimum deck size of 60 cards. A constructed deck may contain any number of basic land cards and no more than four of any card with a particular English name other than basic land cards. For the purposes of deck construction, cards with interchangeable names have the same English name (see rule 201.3)."@en .
+
+mtg:Rule100%2e2b a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    skos:related mtg:Player ;
+    skos:related mtg:Deck ;
+    dct:description "100.2b In limited play (a way of playing in which each player gets the same quantity of unopened Magic product such as booster packs and creates their own deck using only this product and basic land cards), each deck has a minimum deck size of 40 cards. A limited deck may contain as many duplicates of a card as are included with the product."@en .
+
+mtg:Rule100%2e2c a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    rdfs:seeAlso mtg:Rule903 ;
+    skos:related mtg:Player ;
+    skos:related mtg:Deck ;
+    dct:description "100.2c Commander decks are subject to additional deckbuilding restrictions and requirements. See rule 903, &quot;Commander,&quot; for details."@en .
+
+mtg:Rule100%2e2d a ccg:Rule ;
+    ccg:isDefinedIn mtg:GeneralRulesSection ;
+    rdfs:seeAlso mtg:Rule108%2e2a ;
+    rdfs:seeAlso mtg:Rule717 ;
+    rdfs:seeAlso mtg:Rule901 ;
+    rdfs:seeAlso mtg:Rule904 ;
+    skos:related mtg:Player ;
+    skos:related mtg:Deck ;
+    dct:description "100.2d Some formats and casual play variants allow players to use a supplementary deck of nontraditional Magic cards (see rule 108.2a). These supplementary decks have their own deck construction rules. See rule 717, &quot;Attraction Cards;&quot; rule 901, &quot;Planechase;&quot; and rule 904, &quot;Archenemy.&quot;"@en .
