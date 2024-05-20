@@ -21,20 +21,12 @@ pokemon:BasicPokemon a ccg:Card ;
 pokemon:TrainerCard a ccg:Card ;
     skos:prefLabel "Trainer Card"@en ;
     rdfs:label "Trainer Card"@en ;
-    dct:description "Cards that represent trainers, items, or supporter effects."@en ;
-    ccg:isType [
-        a ccg:CardType ;
-        rdfs:label "Trainer" .
-    ] .
+    dct:description "Cards that represent trainers, items, or supporter effects."@en .
 
 pokemon:EnergyCard a ccg:Card ;
     skos:prefLabel "Energy Card"@en ;
     rdfs:label "Energy Card"@en ;
-    dct:description "Provides energy required to use attacks."@en ;
-    ccg:isType [
-        a ccg:CardType ;
-        rdfs:label "Energy" .
-    ] .
+    dct:description "Provides energy required to use attacks."@en .
 
 # Define some specific Pokemon cards
 poke:Pikachu a poke:BasicPokemon ;
