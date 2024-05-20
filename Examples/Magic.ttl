@@ -348,6 +348,11 @@ ccg:EnchantmentCard a ccg:PermanentCard ;
     rdfs:label "Enchantment Card"@en ;
     rdfs:comment "Represents cards that provide continuous effects or modify game rules."@en .
 
+mtg:BasicTurnStructure a ccg:TurnStructure ;
+    skos:prefLabel "Basic Turn Structure"@en ;
+    rdfs:label "Basic Turn Structure"@en ;
+    dct:description "The basic and most common turn structure of Magic: The Gathering."@en ;
+
 mtg:ComprehensiveRules a ccg:RuleBook ;
     dct:title "Magic: The Gathering Comprehensive Rules"@en ;
     ccg:hasRuleSection mtg:GameConcepts .
