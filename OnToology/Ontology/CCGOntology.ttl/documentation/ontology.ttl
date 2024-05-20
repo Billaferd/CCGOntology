@@ -1,0 +1,1015 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/audience
+<http://purl.org/dc/terms/audience> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/comment
+<http://purl.org/dc/terms/comment> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-nstype
+<http://www.w3.org/1999/02/22-rdf-syntax-nstype> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schemacomment
+<http://www.w3.org/2000/01/rdf-schemacomment> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schemadomain
+<http://www.w3.org/2000/01/rdf-schemadomain> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schemalabel
+<http://www.w3.org/2000/01/rdf-schemalabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schemarange
+<http://www.w3.org/2000/01/rdf-schemarange> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schemasubClassOf
+<http://www.w3.org/2000/01/rdf-schemasubClassOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owlimports
+<http://www.w3.org/2002/07/owlimports> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owlinverseOf
+<http://www.w3.org/2002/07/owlinverseOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owlunionOf
+<http://www.w3.org/2002/07/owlunionOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/corebroader
+<http://www.w3.org/2004/02/skos/corebroader> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/coredefinition
+<http://www.w3.org/2004/02/skos/coredefinition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/coreeditorialNote
+<http://www.w3.org/2004/02/skos/coreeditorialNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/coreexample
+<http://www.w3.org/2004/02/skos/coreexample> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/corehasTopConcept
+<http://www.w3.org/2004/02/skos/corehasTopConcept> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/corehistoryNote
+<http://www.w3.org/2004/02/skos/corehistoryNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/coreprefLabel
+<http://www.w3.org/2004/02/skos/coreprefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/corerelated
+<http://www.w3.org/2004/02/skos/corerelated> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/corescopeNote
+<http://www.w3.org/2004/02/skos/corescopeNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schemaProperty
+<http://www.w3.org/2000/01/rdf-schemaProperty> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owlClass
+<http://www.w3.org/2002/07/owlClass> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owlDatatypeProperty
+<http://www.w3.org/2002/07/owlDatatypeProperty> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owlObjectProperty
+<http://www.w3.org/2002/07/owlObjectProperty> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owldatatypeProperty
+<http://www.w3.org/2002/07/owldatatypeProperty> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/coreConcept
+<http://www.w3.org/2004/02/skos/coreConcept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/coreConceptScheme
+<http://www.w3.org/2004/02/skos/coreConceptScheme> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://example.org/ccgActivateAction
+<https://example.org/ccgActivateAction> rdf:type owl:NamedIndividual ,
+                                                 <http://www.w3.org/2002/07/owlClass> ,
+                                                 <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                        <http://purl.org/dc/terms/description> "Activate some rule, effect, or other part of the game."@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemalabel> "Activate"@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgGameAction> ;
+                                        <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgGameAction> ;
+                                        <http://www.w3.org/2004/02/skos/coreprefLabel> "Activate"@en .
+
+
+###  https://example.org/ccgCard
+<https://example.org/ccgCard> rdf:type owl:NamedIndividual ,
+                                       <http://www.w3.org/2002/07/owlClass> ,
+                                       <http://www.w3.org/2004/02/skos/coreConcept> ;
+                              <http://purl.org/dc/terms/description> "The most basic part of a CCG is the Card. These can take many shapes and sizes, and they are the primary means by which players interact with the game."@en ;
+                              <http://www.w3.org/2000/01/rdf-schemacomment> "Cards are the building blocks of any CCG. They represent characters, actions, events, resources, and other elements that are integral to the game's mechanics. Each card typically has attributes such as name, type, cost, and effects that define its role within the game. Cards are collected, traded, and used in gameplay to achieve objectives and compete against opponents."@en ;
+                              <http://www.w3.org/2004/02/skos/coredefinition> "In the context of a Collectible Card Game, a card is a physical or digital artifact that represents a game element with various attributes and abilities. It is used by players to perform actions and strategies during play."@en ;
+                              <http://www.w3.org/2004/02/skos/coreeditorialNote> "Ensure that the card class is flexible enough to accommodate the diverse range of cards found across various CCGs, from simple to complex."@en ;
+                              <http://www.w3.org/2004/02/skos/coreexample> "A 'Fireball' spell card that costs 3 mana to cast and deals 4 damage to any target."@en ;
+                              <http://www.w3.org/2004/02/skos/corehistoryNote> "The concept of the card has evolved over time, with early CCGs featuring simple designs and mechanics, while modern CCGs offer a wide range of complex and thematic cards."@en ;
+                              <http://www.w3.org/2004/02/skos/coreprefLabel> "Card"@en ;
+                              <http://www.w3.org/2004/02/skos/corescopeNote> "This class can be extended to include various subclasses representing different categories of cards found in specific CCGs, such as creature cards, spell cards, or equipment cards."@en .
+
+
+###  https://example.org/ccgCardAction
+<https://example.org/ccgCardAction> rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/2002/07/owlClass> ,
+                                             <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                    <http://purl.org/dc/terms/description> "Any action taken with cards."@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemalabel> "Card Action"@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgGameAction> ;
+                                    <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgGameAction> ;
+                                    <http://www.w3.org/2004/02/skos/coreprefLabel> "Card Action"@en ;
+                                    <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/ccgCard> .
+
+
+###  https://example.org/ccgCardGame
+<https://example.org/ccgCardGame> rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/2002/07/owlClass> ,
+                                           <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                  <http://purl.org/dc/terms/description> "Represents a card game that can be played."@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemalabel> "Card Game"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Card Game"@en .
+
+
+###  https://example.org/ccgCardPool
+<https://example.org/ccgCardPool> rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/2002/07/owlClass> ,
+                                           <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                  <http://purl.org/dc/terms/description> "Any collection of cards that is used as part of the game."@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemalabel> "Card Pool"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreexample> "Deck, hand, discard pile"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Card Pool"@en ;
+                                  <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/ccgCard> .
+
+
+###  https://example.org/ccgCardRarity
+<https://example.org/ccgCardRarity> rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/2002/07/owlClass> ,
+                                             <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                    <http://purl.org/dc/terms/description> "The rarity of a card in relation to other cards in a game, set, or some other sub-geouping"@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemalabel> "Card Rarity"@en ;
+                                    <http://www.w3.org/2004/02/skos/coreexample> "Common, Uncommon, Rare, Mythical, Secret Rare, Illustrated Rare" ;
+                                    <http://www.w3.org/2004/02/skos/coreprefLabel> "Card Rarity"@en .
+
+
+###  https://example.org/ccgCardSet
+<https://example.org/ccgCardSet> rdf:type owl:NamedIndividual ,
+                                          <http://www.w3.org/2002/07/owlClass> ,
+                                          <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                 <http://purl.org/dc/terms/description> "Represents a card set for a game. Sometimes called an expansion or a release."@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemalabel> "Card Set"@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgCardPool> ;
+                                 <http://www.w3.org/2004/02/skos/coreexample> "Magic Theros, Magic Journey into Nyx"@en ;
+                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "Card Set"@en ;
+                                 <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/ccgCard> .
+
+
+###  https://example.org/ccgCardStat
+<https://example.org/ccgCardStat> rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/2002/07/owlClass> ,
+                                           <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                  <http://purl.org/dc/terms/description> "A statistic about the card, usually for battle or other bookkeeping purposes."@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemalabel> "Card Statistic"@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgGameStat> ;
+                                  <http://www.w3.org/2004/02/skos/coreexample> "HP, Attack, Defense, Tokens, Counters"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Card Statistic"@en .
+
+
+###  https://example.org/ccgChoiceAction
+<https://example.org/ccgChoiceAction> rdf:type owl:NamedIndividual ,
+                                               <http://www.w3.org/2002/07/owlClass> ,
+                                               <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                      <http://purl.org/dc/terms/description> "An action that requires a choice py a player."@en ;
+                                      <http://www.w3.org/2000/01/rdf-schemalabel> "Choice Action"@en ;
+                                      <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgGameAction> ;
+                                      <http://www.w3.org/2004/02/skos/coreprefLabel> "Choice Action"@en .
+
+
+###  https://example.org/ccgCollectibleCardHobby
+<https://example.org/ccgCollectibleCardHobby> rdf:type owl:NamedIndividual ,
+                                                       <http://www.w3.org/2002/07/owlClass> ,
+                                                       <http://www.w3.org/2004/02/skos/coreConceptScheme> ;
+                                              <http://purl.org/dc/terms/description> "The hobby of playing, trading, and collecting cards for the purposes of a game."@en ;
+                                              <http://www.w3.org/2000/01/rdf-schemalabel> "Collectible Card Hobby"@en ;
+                                              <http://www.w3.org/2004/02/skos/corehasTopConcept> <https://example.org/ccgCardGame> ,
+                                                                                                 <https://example.org/ccgCardRarity> ,
+                                                                                                 <https://example.org/ccgGameAction> ,
+                                                                                                 <https://example.org/ccgPlayArea> ,
+                                                                                                 <https://example.org/ccgRule> ;
+                                              <http://www.w3.org/2004/02/skos/coreprefLabel> "Collectible Card Hobby"@en .
+
+
+###  https://example.org/ccgDeck
+<https://example.org/ccgDeck> rdf:type owl:NamedIndividual ,
+                                       <http://www.w3.org/2002/07/owlClass> ,
+                                       <http://www.w3.org/2004/02/skos/coreConcept> ;
+                              <http://purl.org/dc/terms/description> "Represents a deck of cards in some form."@en ;
+                              <http://www.w3.org/2000/01/rdf-schemalabel> "Deck"@en ;
+                              <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgCardPool> ;
+                              <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgCardPool> ;
+                              <http://www.w3.org/2004/02/skos/coreexample> "Player Deck, Deck List"@en ;
+                              <http://www.w3.org/2004/02/skos/coreprefLabel> "Deck"@en ;
+                              <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/ccgCard> .
+
+
+###  https://example.org/ccgDiscardAction
+<https://example.org/ccgDiscardAction> rdf:type owl:NamedIndividual ,
+                                                <http://www.w3.org/2002/07/owlClass> ,
+                                                <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                       <http://purl.org/dc/terms/description> "Discard a card or other thing."@en ;
+                                       <http://www.w3.org/2000/01/rdf-schemalabel> "Discard"@en ;
+                                       <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgCardAction> ;
+                                       <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgCardAction> ;
+                                       <http://www.w3.org/2004/02/skos/coreprefLabel> "Discard"@en ;
+                                       <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/ccgCard> ,
+                                                                                    <https://example.org/ccgCardPool> .
+
+
+###  https://example.org/ccgDiscardPile
+<https://example.org/ccgDiscardPile> rdf:type owl:NamedIndividual ,
+                                              <http://www.w3.org/2002/07/owlClass> ,
+                                              <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                     <http://purl.org/dc/terms/description> "Represents the cards that a player discarded."@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemalabel> "Discard Pile"@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgCardPool> ;
+                                     <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgCardPool> ;
+                                     <http://www.w3.org/2004/02/skos/coreprefLabel> "Discard Pile"@en .
+
+
+###  https://example.org/ccgDrawAction
+<https://example.org/ccgDrawAction> rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/2002/07/owlClass> ,
+                                             <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                    <http://purl.org/dc/terms/description> "Draw a card from some card pool."@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemalabel> "Draw"@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgCardAction> ;
+                                    <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgCardAction> ;
+                                    <http://www.w3.org/2004/02/skos/coreprefLabel> "Draw"@en ;
+                                    <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/ccgCard> ,
+                                                                                 <https://example.org/ccgCardPool> .
+
+
+###  https://example.org/ccgEdition
+<https://example.org/ccgEdition> rdf:type owl:NamedIndividual ,
+                                          <http://www.w3.org/2002/07/owlClass> ,
+                                          <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                 <http://purl.org/dc/terms/description> "Represents a release of the game, generally introduces changes to the core game."@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemalabel> "Card Set"@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgCardPool> ;
+                                 <http://www.w3.org/2004/02/skos/coreexample> "Pokemon 1st Edition, Magic Alpha Series, Magic Theros Block"@en ;
+                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "Card Set"@en ;
+                                 <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/ccgCard> ,
+                                                                              <https://example.org/ccgCardSet> .
+
+
+###  https://example.org/ccgEffect
+<https://example.org/ccgEffect> rdf:type owl:NamedIndividual ,
+                                         <http://www.w3.org/2002/07/owlClass> ,
+                                         <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                <http://purl.org/dc/terms/description> "Effects caused by cards."@en ;
+                                <http://www.w3.org/2000/01/rdf-schemalabel> "Effect"@en ;
+                                <http://www.w3.org/2004/02/skos/coreprefLabel> "Effect"@en .
+
+
+###  https://example.org/ccgGameAction
+<https://example.org/ccgGameAction> rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/2002/07/owlClass> ,
+                                             <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                    <http://purl.org/dc/terms/description> "Represents an in game action."@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemalabel> "Game Action"@en ;
+                                    <http://www.w3.org/2004/02/skos/coreprefLabel> "Game Action"@en .
+
+
+###  https://example.org/ccgGameStat
+<https://example.org/ccgGameStat> rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/2002/07/owlClass> ,
+                                           <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                  <http://purl.org/dc/terms/description> "A statistic about the game."@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemalabel> "Game Statistic"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreexample> "Player HP, Active Tokens"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Game Statistic"@en .
+
+
+###  https://example.org/ccgHiddenPlayZone
+<https://example.org/ccgHiddenPlayZone> rdf:type owl:NamedIndividual ,
+                                                 <http://www.w3.org/2002/07/owlClass> ,
+                                                 <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                        <http://purl.org/dc/terms/description> "Any zone whose contents are not expected to be visible to all players."@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemalabel> "Private Zone"@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgPlayZone> ;
+                                        <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgPlayZone> ;
+                                        <http://www.w3.org/2004/02/skos/coreprefLabel> "Private Zone"@en .
+
+
+###  https://example.org/ccgPermanentCard
+<https://example.org/ccgPermanentCard> rdf:type owl:NamedIndividual ,
+                                                <http://www.w3.org/2002/07/owlClass> ,
+                                                <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                       <http://www.w3.org/2000/01/rdf-schemacomment> "Represents cards that remain on the playing field after being played."@en ;
+                                       <http://www.w3.org/2000/01/rdf-schemalabel> "Permanent Card"@en ;
+                                       <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgCard> ;
+                                       <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgCard> .
+
+
+###  https://example.org/ccgPhase
+<https://example.org/ccgPhase> rdf:type owl:NamedIndividual ,
+                                        <http://www.w3.org/2002/07/owlClass> ;
+                               <http://purl.org/dc/terms/description> "A specific phase of a game turn."@en ;
+                               <http://www.w3.org/2000/01/rdf-schemalabel> "Phase"@en ;
+                               <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgTurnStructure> ;
+                               <http://www.w3.org/2004/02/skos/coreexample> "Main phase, combat phase"@en ;
+                               <http://www.w3.org/2004/02/skos/coreprefLabel> "Phase"@en .
+
+
+###  https://example.org/ccgPlayArea
+<https://example.org/ccgPlayArea> rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/2002/07/owlClass> ,
+                                           <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                  <http://purl.org/dc/terms/description> "Any distinct area of play."@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemalabel> "Play Area"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreexample> "Playmat, Player Area"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Play Area"@en .
+
+
+###  https://example.org/ccgPlayZone
+<https://example.org/ccgPlayZone> rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/2002/07/owlClass> ,
+                                           <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                  <http://purl.org/dc/terms/description> "Any distinct zone within a play area."@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemalabel> "Play Zone"@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgPlayArea> ;
+                                  <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgPlayArea> ;
+                                  <http://www.w3.org/2004/02/skos/coreexample> "Library, Bench, Active Slot"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Play Zone"@en .
+
+
+###  https://example.org/ccgPlayer
+<https://example.org/ccgPlayer> rdf:type owl:NamedIndividual ,
+                                         <http://www.w3.org/2002/07/owlClass> ,
+                                         <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                <http://purl.org/dc/terms/description> "A player of the game"@en ;
+                                <http://www.w3.org/2000/01/rdf-schemalabel> "Player"@en ;
+                                <http://www.w3.org/2004/02/skos/coreprefLabel> "Player"@en .
+
+
+###  https://example.org/ccgPlayerHand
+<https://example.org/ccgPlayerHand> rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/2002/07/owlClass> ,
+                                             <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                    <http://purl.org/dc/terms/description> "Represents the cards that a player has in their hand."@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemalabel> "Hand"@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgCardPool> ;
+                                    <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgCardPool> ;
+                                    <http://www.w3.org/2004/02/skos/coreprefLabel> "Hand"@en .
+
+
+###  https://example.org/ccgPlayerStat
+<https://example.org/ccgPlayerStat> rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/2002/07/owlClass> ,
+                                             <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                    <http://purl.org/dc/terms/description> "A game statistic that applies to a player."@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemalabel> "Player Statistic"@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgGameStat> ;
+                                    <http://www.w3.org/2004/02/skos/coreexample> "Player HP"@en ;
+                                    <http://www.w3.org/2004/02/skos/coreprefLabel> "Player Statistic"@en .
+
+
+###  https://example.org/ccgPublicPlayZone
+<https://example.org/ccgPublicPlayZone> rdf:type owl:NamedIndividual ,
+                                                 <http://www.w3.org/2002/07/owlClass> ,
+                                                 <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                        <http://purl.org/dc/terms/description> "Any zone whose contents are visible to all players."@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemalabel> "Public Zone"@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgPlayZone> ;
+                                        <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgPlayZone> ;
+                                        <http://www.w3.org/2004/02/skos/coreprefLabel> "Public Zone"@en .
+
+
+###  https://example.org/ccgResource
+<https://example.org/ccgResource> rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/2002/07/owlClass> ,
+                                           <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                  <http://purl.org/dc/terms/description> "Anything that needs to be managed by the player but has no direct physical representation in the game"@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemalabel> "Resource"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreexample> "Mana, Player Health"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Resource"@en .
+
+
+###  https://example.org/ccgResourceAction
+<https://example.org/ccgResourceAction> rdf:type owl:NamedIndividual ,
+                                                 <http://www.w3.org/2002/07/owlClass> ,
+                                                 <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                        <http://purl.org/dc/terms/description> "Do something with a resource: transfer, add, remove, or something else."@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemalabel> "Resource Action"@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgGameAction> ;
+                                        <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgGameAction> ;
+                                        <http://www.w3.org/2004/02/skos/coreprefLabel> "Resource Action"@en ;
+                                        <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/ccgResource> .
+
+
+###  https://example.org/ccgResourceCost
+<https://example.org/ccgResourceCost> rdf:type owl:NamedIndividual ,
+                                               <http://www.w3.org/2002/07/owlClass> ,
+                                               <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                      <http://purl.org/dc/terms/description> "The type and cost of resource to be paid for an effect."@en ;
+                                      <http://www.w3.org/2000/01/rdf-schemalabel> "Resource Cost"@en ;
+                                      <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgResourcePool> ;
+                                      <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgResourcePool> ;
+                                      <http://www.w3.org/2004/02/skos/coreexample> "2 Red Mana, 1 Leaf Energy"@en ;
+                                      <http://www.w3.org/2004/02/skos/coreprefLabel> "Resource Cost"@en .
+
+
+###  https://example.org/ccgResourcePool
+<https://example.org/ccgResourcePool> rdf:type owl:NamedIndividual ,
+                                               <http://www.w3.org/2002/07/owlClass> ,
+                                               <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                      <http://purl.org/dc/terms/description> "A collection of resources that is countable"@en ;
+                                      <http://www.w3.org/2000/01/rdf-schemalabel> "Resource Pool"@en ;
+                                      <http://www.w3.org/2004/02/skos/coreexample> "Mana Pool, Attached Energy"@en ;
+                                      <http://www.w3.org/2004/02/skos/coreprefLabel> "Resource Pool"@en ;
+                                      <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/ccgResource> .
+
+
+###  https://example.org/ccgRule
+<https://example.org/ccgRule> rdf:type owl:NamedIndividual ,
+                                       <http://www.w3.org/2002/07/owlClass> ,
+                                       <http://www.w3.org/2004/02/skos/coreConcept> ;
+                              <http://purl.org/dc/terms/description> "A rule that pertains to the game."@en ;
+                              <http://www.w3.org/2000/01/rdf-schemalabel> "Rule"@en ;
+                              <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgRuleSection> ;
+                              <http://www.w3.org/2004/02/skos/coreprefLabel> "Rule"@en .
+
+
+###  https://example.org/ccgRuleBook
+<https://example.org/ccgRuleBook> rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/2002/07/owlClass> ,
+                                           <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                  <http://purl.org/dc/terms/description> "A set of rules for a specific game. A game can have multiple rule books if there are multiple styles or modes of play."@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemalabel> "Rule Book"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreexample> "Tournament Rules, House Rules, Draft"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Rule Book"@en .
+
+
+###  https://example.org/ccgRuleSection
+<https://example.org/ccgRuleSection> rdf:type owl:NamedIndividual ,
+                                              <http://www.w3.org/2002/07/owlClass> ,
+                                              <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                     <http://purl.org/dc/terms/description> "A specific section of the rules."@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemalabel> "Rule Section"@en ;
+                                     <http://www.w3.org/2004/02/skos/coreprefLabel> "Rule Section"@en .
+
+
+###  https://example.org/ccgShuffleAction
+<https://example.org/ccgShuffleAction> rdf:type owl:NamedIndividual ,
+                                                <http://www.w3.org/2002/07/owlClass> ,
+                                                <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                       <http://purl.org/dc/terms/description> "Shuffle some card pool."@en ;
+                                       <http://www.w3.org/2000/01/rdf-schemalabel> "Shuffle"@en ;
+                                       <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccgCardAction> ;
+                                       <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgGameAction> ;
+                                       <http://www.w3.org/2004/02/skos/coreprefLabel> "Shuffle"@en ;
+                                       <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/ccgCardPool> .
+
+
+###  https://example.org/ccgStep
+<https://example.org/ccgStep> rdf:type owl:NamedIndividual ,
+                                       <http://www.w3.org/2002/07/owlClass> ,
+                                       <http://www.w3.org/2004/02/skos/coreConcept> ;
+                              <http://purl.org/dc/terms/description> "A single step that can be performed during a phase"@en ;
+                              <http://www.w3.org/2000/01/rdf-schemalabel> "Step"@en ;
+                              <http://www.w3.org/2004/02/skos/corebroader> <https://example.org/ccgPhase> ;
+                              <http://www.w3.org/2004/02/skos/coreexample> "Upkeep, untap"@en ;
+                              <http://www.w3.org/2004/02/skos/coreprefLabel> "Step"@en .
+
+
+###  https://example.org/ccgTurnStructure
+<https://example.org/ccgTurnStructure> rdf:type owl:NamedIndividual ,
+                                                <http://www.w3.org/2002/07/owlClass> ,
+                                                <http://www.w3.org/2004/02/skos/coreConcept> ;
+                                       <http://purl.org/dc/terms/description> "Defines the overall turn structure of that game."@en ;
+                                       <http://www.w3.org/2000/01/rdf-schemalabel> "Turn Structure"@en ;
+                                       <http://www.w3.org/2004/02/skos/coreprefLabel> "Turn Structure"@en .
+
+
+###  https://example.org/ccgcontainsRule
+<https://example.org/ccgcontainsRule> rdf:type owl:NamedIndividual ,
+                                               <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                      <http://purl.org/dc/terms/description> "Relates a rule book section to the rules it contains."@en ;
+                                      <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgRuleSection> ;
+                                      <http://www.w3.org/2000/01/rdf-schemalabel> "contains rule"@en ;
+                                      <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgRule> ;
+                                      <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccgisDefinedIn> ;
+                                      <http://www.w3.org/2004/02/skos/coreprefLabel> "contains rule"@en .
+
+
+###  https://example.org/ccgforResource
+<https://example.org/ccgforResource> rdf:type owl:NamedIndividual ,
+                                              <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                     <http://purl.org/dc/terms/description> "Relates a resource type to a resource pool."@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgResourcePool> ;
+                                     <http://www.w3.org/2000/01/rdf-schemalabel> "for resource"@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgResource> ;
+                                     <http://www.w3.org/2004/02/skos/coreprefLabel> "for resource"@en .
+
+
+###  https://example.org/ccggoverns
+<https://example.org/ccggoverns> rdf:type owl:NamedIndividual ,
+                                          <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                 <http://purl.org/dc/terms/description> "Relates a rule to some part of the game."@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgRule> ;
+                                 <http://www.w3.org/2000/01/rdf-schemalabel> "governs"@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemarange> <http://www.w3.org/2000/01/rdf-schemaResource> ;
+                                 <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccghasRule> ;
+                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "governs"@en .
+
+
+###  https://example.org/ccghasAction
+<https://example.org/ccghasAction> rdf:type owl:NamedIndividual ,
+                                            <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                   <http://purl.org/dc/terms/description> "Relates an effect to the action that it produces."@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgEffect> ,
+                                                                                <https://example.org/ccgStep> ;
+                                   <http://www.w3.org/2000/01/rdf-schemalabel> "has action"@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgGameAction> ;
+                                   <http://www.w3.org/2004/02/skos/coreprefLabel> "has action"@en .
+
+
+###  https://example.org/ccghasCard
+<https://example.org/ccghasCard> rdf:type owl:NamedIndividual ,
+                                          <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                 <http://purl.org/dc/terms/description> "relates different items that can contain cards like decks, card sets,hands, etc..."@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgCardPool> ;
+                                 <http://www.w3.org/2000/01/rdf-schemalabel> "has card"@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgCard> ;
+                                 <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccgisCardIn> ;
+                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "has card"@en .
+
+
+###  https://example.org/ccghasCardCount
+<https://example.org/ccghasCardCount> rdf:type owl:NamedIndividual ,
+                                               <http://www.w3.org/2002/07/owlDatatypeProperty> ;
+                                      <http://purl.org/dc/terms/description> "Relates the total available cards to the card set or pool."@en ;
+                                      <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgCardPool> ;
+                                      <http://www.w3.org/2000/01/rdf-schemalabel> "has card count"@en ;
+                                      <http://www.w3.org/2000/01/rdf-schemarange> <http://www.w3.org/2001/XMLSchemanonNegativeInteger> ;
+                                      <http://www.w3.org/2004/02/skos/coreprefLabel> "has card count"@en .
+
+
+###  https://example.org/ccghasCardPool
+<https://example.org/ccghasCardPool> rdf:type owl:NamedIndividual ,
+                                              <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                     <http://purl.org/dc/terms/description> "Relates a card pool to an area or zone of play."@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemadomain> _:genid2 ;
+                                     <http://www.w3.org/2000/01/rdf-schemalabel> "has pool"@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgCardPool> ;
+                                     <http://www.w3.org/2004/02/skos/coreprefLabel> "has pool"@en .
+
+_:genid2 rdf:type <http://www.w3.org/2002/07/owlClass> ;
+          <http://www.w3.org/2002/07/owlunionOf> [ ] .
+
+
+###  https://example.org/ccghasChoice
+<https://example.org/ccghasChoice> rdf:type owl:NamedIndividual ,
+                                            <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                   <http://purl.org/dc/terms/description> "Relates a choice of actions that a player can take."@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgChoiceAction> ;
+                                   <http://www.w3.org/2000/01/rdf-schemalabel> "has choice"@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgAction> ;
+                                   <http://www.w3.org/2004/02/skos/coreprefLabel> "has choice"@en .
+
+
+###  https://example.org/ccghasCurrentValue
+<https://example.org/ccghasCurrentValue> rdf:type owl:NamedIndividual ,
+                                                  <http://www.w3.org/2000/01/rdf-schemaProperty> ,
+                                                  <http://www.w3.org/2002/07/owldatatypeProperty> ;
+                                         <http://purl.org/dc/terms/description> "Relates a statistic to its current value."@en ;
+                                         <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgGameStat> ;
+                                         <http://www.w3.org/2000/01/rdf-schemalabel> "has current value"@en ;
+                                         <http://www.w3.org/2000/01/rdf-schemarange> <http://www.w3.org/2001/XMLSchemadecimal> ;
+                                         <http://www.w3.org/2004/02/skos/coreprefLabel> "has current value"@en .
+
+
+###  https://example.org/ccghasEdition
+<https://example.org/ccghasEdition> rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                    <http://purl.org/dc/terms/description> "Relates a card game to a specific edition of the game."@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgCardGame> ;
+                                    <http://www.w3.org/2000/01/rdf-schemalabel> "has edition"@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgEdition> ;
+                                    <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccgisEditionOf> ;
+                                    <http://www.w3.org/2004/02/skos/coreprefLabel> "has edition"@en .
+
+
+###  https://example.org/ccghasEffect
+<https://example.org/ccghasEffect> rdf:type owl:NamedIndividual ,
+                                            <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                   <http://purl.org/dc/terms/description> "Relates an effect to a card, generally the effect is found in the rule box of the card."@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgCard> ;
+                                   <http://www.w3.org/2000/01/rdf-schemalabel> "has effect"@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgEffect> ;
+                                   <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccgisEffectOf> ;
+                                   <http://www.w3.org/2004/02/skos/coreprefLabel> "has effect"@en .
+
+
+###  https://example.org/ccghasFlavourText
+<https://example.org/ccghasFlavourText> rdf:type owl:NamedIndividual ,
+                                                 <http://www.w3.org/2002/07/owlDatatypeProperty> ;
+                                        <http://purl.org/dc/terms/description> "Relates the card to the exact flavour text that shows up on it."@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgCard> ;
+                                        <http://www.w3.org/2000/01/rdf-schemalabel> "has flavour text"@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemarange> <http://www.w3.org/2001/XMLSchemastring> ;
+                                        <http://www.w3.org/2004/02/skos/coreprefLabel> "has flavour text"@en .
+
+
+###  https://example.org/ccghasMaximumValue
+<https://example.org/ccghasMaximumValue> rdf:type owl:NamedIndividual ,
+                                                  <http://www.w3.org/2000/01/rdf-schemaProperty> ,
+                                                  <http://www.w3.org/2002/07/owldatatypeProperty> ;
+                                         <http://purl.org/dc/terms/description> "Relates a statistic to its maximum value."@en ;
+                                         <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgGameStat> ;
+                                         <http://www.w3.org/2000/01/rdf-schemalabel> "has maximum value"@en ;
+                                         <http://www.w3.org/2000/01/rdf-schemarange> <http://www.w3.org/2001/XMLSchemadecimal> ;
+                                         <http://www.w3.org/2004/02/skos/coreprefLabel> "has maximum value"@en .
+
+
+###  https://example.org/ccghasMinimumValue
+<https://example.org/ccghasMinimumValue> rdf:type owl:NamedIndividual ,
+                                                  <http://www.w3.org/2000/01/rdf-schemaProperty> ,
+                                                  <http://www.w3.org/2002/07/owldatatypeProperty> ;
+                                         <http://purl.org/dc/terms/description> "Relates a statistic to its minimum value."@en ;
+                                         <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgGameStat> ;
+                                         <http://www.w3.org/2000/01/rdf-schemalabel> "has minimum value"@en ;
+                                         <http://www.w3.org/2000/01/rdf-schemarange> <http://www.w3.org/2001/XMLSchemadecimal> ;
+                                         <http://www.w3.org/2004/02/skos/coreprefLabel> "has minimum value"@en .
+
+
+###  https://example.org/ccghasPhase
+<https://example.org/ccghasPhase> rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                  <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgTurnStructure> ;
+                                  <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgPhase> ;
+                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "has phase"@en .
+
+
+###  https://example.org/ccghasPlayArea
+<https://example.org/ccghasPlayArea> rdf:type owl:NamedIndividual ,
+                                              <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                     <http://purl.org/dc/terms/description> "Relates a player or play areas to other play areas."@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemadomain> _:genid4 ;
+                                     <http://www.w3.org/2000/01/rdf-schemalabel> "has play area"@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgPlayArea> ;
+                                     <http://www.w3.org/2004/02/skos/coreprefLabel> "has play area"@en .
+
+_:genid4 rdf:type <http://www.w3.org/2002/07/owlClass> ;
+          <http://www.w3.org/2002/07/owlunionOf> [ ] .
+
+
+###  https://example.org/ccghasPlayZone
+<https://example.org/ccghasPlayZone> rdf:type owl:NamedIndividual ,
+                                              <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                     <http://purl.org/dc/terms/description> "Relates a player or play areas/zones to other play zones."@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemadomain> _:genid6 ;
+                                     <http://www.w3.org/2000/01/rdf-schemalabel> "has play zone"@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgPlayZone> ;
+                                     <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccghasPlayArea> ;
+                                     <http://www.w3.org/2004/02/skos/coreprefLabel> "has play zone"@en .
+
+_:genid6 rdf:type <http://www.w3.org/2002/07/owlClass> ;
+          <http://www.w3.org/2002/07/owlunionOf> [ ] .
+
+
+###  https://example.org/ccghasPostcondition
+<https://example.org/ccghasPostcondition> rdf:type owl:NamedIndividual ,
+                                                   <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                          <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgGameAction> ;
+                                          <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgRule> ;
+                                          <http://www.w3.org/2004/02/skos/coreprefLabel> "has postcondition"@en .
+
+
+###  https://example.org/ccghasPrecondition
+<https://example.org/ccghasPrecondition> rdf:type owl:NamedIndividual ,
+                                                  <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                         <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgGameAction> ;
+                                         <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgRule> ;
+                                         <http://www.w3.org/2004/02/skos/coreprefLabel> "has precondition"@en .
+
+
+###  https://example.org/ccghasPriorityRule
+<https://example.org/ccghasPriorityRule> rdf:type owl:NamedIndividual ,
+                                                  <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                         <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgTurnStructure> ;
+                                         <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgRule> ;
+                                         <http://www.w3.org/2004/02/skos/coreprefLabel> "has priority rule"@en .
+
+
+###  https://example.org/ccghasRarity
+<https://example.org/ccghasRarity> rdf:type owl:NamedIndividual ,
+                                            <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                   <http://purl.org/dc/terms/description> "Relates a card to its rarity."@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgCard> ;
+                                   <http://www.w3.org/2000/01/rdf-schemalabel> "has rarity"@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgCardRarity> ;
+                                   <http://www.w3.org/2004/02/skos/coreprefLabel> "has rarity"@en .
+
+
+###  https://example.org/ccghasResourceCount
+<https://example.org/ccghasResourceCount> rdf:type owl:NamedIndividual ,
+                                                   <http://www.w3.org/2002/07/owlDatatypeProperty> ;
+                                          <http://purl.org/dc/terms/description> "Relates an effect to its cost in resources."@en ;
+                                          <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgResourcePool> ;
+                                          <http://www.w3.org/2000/01/rdf-schemalabel> "has cost"@en ;
+                                          <http://www.w3.org/2000/01/rdf-schemarange> <http://www.w3.org/2001/XMLSchemaDecimal> ;
+                                          <http://www.w3.org/2004/02/skos/coreprefLabel> "has cost"@en .
+
+
+###  https://example.org/ccghasRule
+<https://example.org/ccghasRule> rdf:type owl:NamedIndividual ,
+                                          <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                 <http://purl.org/dc/terms/description> "Relates some part to a rule that governs it."@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemadomain> <http://www.w3.org/2000/01/rdf-schemaResource> ;
+                                 <http://www.w3.org/2000/01/rdf-schemalabel> "has rule"@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgRule> ;
+                                 <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccgGoverns> ;
+                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "has rule"@en .
+
+
+###  https://example.org/ccghasRuleSection
+<https://example.org/ccghasRuleSection> rdf:type owl:NamedIndividual ,
+                                                 <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                        <http://purl.org/dc/terms/description> "Relates a rulbook to the sections it contains."@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgRuleBook> ;
+                                        <http://www.w3.org/2000/01/rdf-schemalabel> "has section"@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgRuleSection> ;
+                                        <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccginRuleBook> ;
+                                        <http://www.w3.org/2004/02/skos/coreprefLabel> "has section"@en .
+
+
+###  https://example.org/ccghasRuleText
+<https://example.org/ccghasRuleText> rdf:type owl:NamedIndividual ,
+                                              <http://www.w3.org/2002/07/owlDatatypeProperty> ;
+                                     <http://purl.org/dc/terms/description> "Relates the card to the exact rule text that shows up on it."@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgCard> ;
+                                     <http://www.w3.org/2000/01/rdf-schemalabel> "has rule text"@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemarange> <http://www.w3.org/2001/XMLSchemastring> ;
+                                     <http://www.w3.org/2004/02/skos/coreprefLabel> "has rule text"@en .
+
+
+###  https://example.org/ccghasSet
+<https://example.org/ccghasSet> rdf:type owl:NamedIndividual ,
+                                         <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                <http://purl.org/dc/terms/description> "Relates a card game to its sets of cards. A set is generally a release of cards as a grouping and all having a similar theme. Sometimes called an expansion."@en ;
+                                <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgEdition> ;
+                                <http://www.w3.org/2000/01/rdf-schemalabel> "has card set"@en ;
+                                <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgCardSet> ;
+                                <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccgisSetOf> ;
+                                <http://www.w3.org/2004/02/skos/coreprefLabel> "has card set"@en .
+
+
+###  https://example.org/ccghasSource
+<https://example.org/ccghasSource> rdf:type owl:NamedIndividual ,
+                                            <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                   <http://purl.org/dc/terms/description> "Relates an effect to a source that it acts upon."@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgEffect> ;
+                                   <http://www.w3.org/2000/01/rdf-schemalabel> "has source"@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemarange> <http://www.w3.org/2000/01/rdf-schemaResource> ;
+                                   <http://www.w3.org/2004/02/skos/coreprefLabel> "has source"@en .
+
+
+###  https://example.org/ccghasStat
+<https://example.org/ccghasStat> rdf:type owl:NamedIndividual ,
+                                          <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                 <http://purl.org/dc/terms/description> "Relates a card or stat to its (sub)statistic."@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemadomain> _:genid8 ;
+                                 <http://www.w3.org/2000/01/rdf-schemalabel> "has stat"@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgGameStat> ;
+                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "has stat"@en .
+
+_:genid8 rdf:type <http://www.w3.org/2002/07/owlClass> ;
+          <http://www.w3.org/2002/07/owlunionOf> [ ] .
+
+
+###  https://example.org/ccghasStep
+<https://example.org/ccghasStep> rdf:type owl:NamedIndividual ,
+                                          <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                 <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgPhase> ;
+                                 <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgStep> ;
+                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "has step"@en .
+
+
+###  https://example.org/ccghasTarget
+<https://example.org/ccghasTarget> rdf:type owl:NamedIndividual ,
+                                            <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                   <http://purl.org/dc/terms/description> "Relates an effect to a target that it acts upon."@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgEffect> ;
+                                   <http://www.w3.org/2000/01/rdf-schemalabel> "has target"@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemarange> <http://www.w3.org/2000/01/rdf-schemaResource> ;
+                                   <http://www.w3.org/2004/02/skos/coreprefLabel> "has target"@en .
+
+
+###  https://example.org/ccghasTrigger
+<https://example.org/ccghasTrigger> rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                    <http://purl.org/dc/terms/description> "Relates an effect to its trigger."@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgEffect> ;
+                                    <http://www.w3.org/2000/01/rdf-schemalabel> "has trigger"@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgGameAction> ;
+                                    <http://www.w3.org/2004/02/skos/coreprefLabel> "has trigger"@en .
+
+
+###  https://example.org/ccghasTurnOrder
+<https://example.org/ccghasTurnOrder> rdf:type owl:NamedIndividual ,
+                                               <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                      <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgTurnStructure> ;
+                                      <http://www.w3.org/2000/01/rdf-schemarange> <http://www.w3.org/2001/XMLSchemastring> ;
+                                      <http://www.w3.org/2004/02/skos/coreprefLabel> "has turn order"@en .
+
+
+###  https://example.org/ccginRuleBook
+<https://example.org/ccginRuleBook> rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                    <http://purl.org/dc/terms/description> "Relates a rule section to the rule book that it belongs to."@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgRuleSection> ;
+                                    <http://www.w3.org/2000/01/rdf-schemalabel> "in rule book"@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgRuleBook> ;
+                                    <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccghasRuleSection> ;
+                                    <http://www.w3.org/2004/02/skos/coreprefLabel> "in rule book"@en .
+
+
+###  https://example.org/ccgisAllowedDuring
+<https://example.org/ccgisAllowedDuring> rdf:type owl:NamedIndividual ,
+                                                  <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                         <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgGameAction> ;
+                                         <http://www.w3.org/2000/01/rdf-schemarange> _:genid10 ;
+                                         <http://www.w3.org/2004/02/skos/coreprefLabel> "is allowed during"@en .
+
+_:genid10 rdf:type <http://www.w3.org/2002/07/owlClass> ;
+           <http://www.w3.org/2002/07/owlunionOf> [ ] .
+
+
+###  https://example.org/ccgisCardIn
+<https://example.org/ccgisCardIn> rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                  <http://purl.org/dc/terms/description> "relates different items that can contain cards like decks, card sets,hands, etc..."@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemadomain> _:genid12 ;
+                                  <http://www.w3.org/2000/01/rdf-schemalabel> "card is in"@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgCardPool> ;
+                                  <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccghasCard> ;
+                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "card is in"@en .
+
+_:genid12 rdf:type <http://www.w3.org/2002/07/owlClass> ;
+           <http://www.w3.org/2002/07/owlunionOf> [ ] .
+
+
+###  https://example.org/ccgisDefinedIn
+<https://example.org/ccgisDefinedIn> rdf:type owl:NamedIndividual ,
+                                              <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                     <http://purl.org/dc/terms/description> "Relates a rule the the section in the rule book of where it is defined."@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgRule> ;
+                                     <http://www.w3.org/2000/01/rdf-schemalabel> "is defined in"@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgRuleSection> ;
+                                     <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccgcontainsRule> ;
+                                     <http://www.w3.org/2004/02/skos/coreprefLabel> "is defined in"@en .
+
+
+###  https://example.org/ccgisEditionOf
+<https://example.org/ccgisEditionOf> rdf:type owl:NamedIndividual ,
+                                              <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                     <http://purl.org/dc/terms/description> "Relates a card game to a specific edition of the game."@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgEdition> ;
+                                     <http://www.w3.org/2000/01/rdf-schemalabel> "is edition of"@en ;
+                                     <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgCardGame> ;
+                                     <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccghasEdition> ;
+                                     <http://www.w3.org/2004/02/skos/coreprefLabel> "is edition of"@en .
+
+
+###  https://example.org/ccgisEffectOf
+<https://example.org/ccgisEffectOf> rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                    <http://purl.org/dc/terms/description> "Relates an effect to a card, generally the effect is found in the rule box of the card."@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgEffect> ;
+                                    <http://www.w3.org/2000/01/rdf-schemalabel> "is effect of"@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgCard> ;
+                                    <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccghasEffect> ;
+                                    <http://www.w3.org/2004/02/skos/coreprefLabel> "is effect of"@en .
+
+
+###  https://example.org/ccgisSetOf
+<https://example.org/ccgisSetOf> rdf:type owl:NamedIndividual ,
+                                          <http://www.w3.org/2002/07/owlObjectProperty> ;
+                                 <http://purl.org/dc/terms/description> "Relates a set of cards to its game. A set is generally a release of cards as a grouping and all having a similar theme. Sometimes called an expansion."@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemadomain> <https://example.org/ccgCardSet> ;
+                                 <http://www.w3.org/2000/01/rdf-schemalabel> "is card set of"@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemarange> <https://example.org/ccgEdition> ;
+                                 <http://www.w3.org/2002/07/owlinverseOf> <https://example.org/ccghasSet> ;
+                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "is card set of"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://example.org/ccg> <http://purl.org/dc/terms/audience> "Intended for anyone interested in the semantic representation of CCG's." ;
+                          <http://purl.org/dc/terms/created> "2024-05-12" ;
+                          <http://purl.org/dc/terms/creator> _:genid14 ;
+                          <http://purl.org/dc/terms/description> "This Ontology is intended to provide a comprehensive way of representing CCG's in a semantic way." ;
+                          <http://purl.org/dc/terms/issued> "2024-05-12" ;
+                          <http://purl.org/dc/terms/language> "en" ;
+                          <http://purl.org/dc/terms/title> "Collectible Card Game Ontology" ;
+                          <http://www.w3.org/1999/02/22-rdf-syntax-nstype> <http://www.w3.org/2002/07/owlOntology> ;
+                          <http://www.w3.org/2000/01/rdf-schemacomment> "This Ontology exists to encode the rules and concepts of Collectible Card Games into a machine readable format." ;
+                          <http://www.w3.org/2000/01/rdf-schemalabel> "CCG Ontology" ;
+                          <http://www.w3.org/2002/07/owlimports> <http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf> ;
+                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" ;
+                          <http://www.w3.org/2004/02/skos/coreprefLabel> "Collectible Card Game Ontology" ;
+                          <http://www.w3.org/2004/02/skos/corescopeNote> "Intended to be used for understanding digital and print CCG's" .
+
+_:genid14 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+           <http://purl.org/dc/terms/comment> "Contributors should document their contributions clearly with a structure similar to this. It should be a blank node of type foaf:Person with some identifiers from the foaf and dct Ontologies. The dct:contributor property should be used."@en ;
+           <http://xmlns.com/foaf/0.1/mbox> "ritchie.brent@gmail.com" ;
+           <http://xmlns.com/foaf/0.1/name> "Brent Ritchie" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
