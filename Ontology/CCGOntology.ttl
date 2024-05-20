@@ -48,13 +48,24 @@ ccg:CardGame a owl:Class
     rdfs:label "Card Game"@en ;
     dct:description "Represents a card game that can be played."@en .
 
+ccg:Edition a owl:Class
+        , skos:Concept ;
+    rdfs:subClassOf ccg:CardPool ;
+    skos:related ccg:Card ;
+    skos:related ccg:CardSet ;
+    skos:prefLabel "Card Set"@en ;
+    rdfs:label "Card Set"@en ;
+    dct:description "Represents a release of the game, generally introduces changes to the core game."@en ;
+    skos:example "Pokemon 1st Edition, Magic Alpha Series, Magic Theros Block"@en .
+
 ccg:CardSet a owl:Class
         , skos:Concept ;
     rdfs:subClassOf ccg:CardPool ;
     skos:related ccg:Card ;
     skos:prefLabel "Card Set"@en ;
     rdfs:label "Card Set"@en ;
-    dct:description "Represents a card set for a game. Sometimes called an expansion or a release."@en .
+    dct:description "Represents a card set for a game. Sometimes called an expansion or a release."@en ;
+    skos:example "Magic Theros, Magic Journey into Nyx"@en .
 
 ccg:Card a owl:Class
         , skos:Concept ;
@@ -325,8 +336,24 @@ ccg:hasChoice a owl:ObjectProperty ;
     rdfs:label "has choice"@en ;
     dct:description "Relates a choice of actions that a player can take."@en .
 
-ccg:hasSet a owl:ObjectProperty ;
+ccg:hasEdition a owl:ObjectProperty ;
     rdfs:domain ccg:CardGame ;
+    rdfs:range ccg:Edition ;
+    owl:inverseOf ccg:isEditionOf ;
+    skos:prefLabel "has edition"@en ;
+    rdfs:label "has edition"@en ;
+    dct:description "Relates a card game to a specific edition of the game."@en .
+
+ccg:isEditionOf a owl:ObjectProperty ;
+    rdfs:domain ccg:Edition ;
+    rdfs:range ccg:CardGame ;
+    owl:inverseOf ccg:hasEdition ;
+    skos:prefLabel "is edition of"@en ;
+    rdfs:label "is edition of"@en ;
+    dct:description "Relates a card game to a specific edition of the game."@en .
+
+ccg:hasSet a owl:ObjectProperty ;
+    rdfs:domain ccg:Expansion ;
     rdfs:range ccg:CardSet ;
     owl:inverseOf ccg:isSetOf ;
     skos:prefLabel "has card set"@en ;
@@ -335,7 +362,7 @@ ccg:hasSet a owl:ObjectProperty ;
 
 ccg:isSetOf a owl:ObjectProperty ;
     rdfs:domain ccg:CardSet ;
-    rdfs:range ccg:CardGame ;
+    rdfs:range ccg:Expansion ;
     owl:inverseOf ccg:hasSet ;
     skos:prefLabel "is card set of"@en ;
     rdfs:label "is card set of"@en ;
