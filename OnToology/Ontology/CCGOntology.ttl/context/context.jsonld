@@ -1,0 +1,106 @@
+{
+  "@context" : {
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "coredefinition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/coredefinition"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "coreConcept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "coreeditorialNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/coreeditorialNote"
+    },
+    "owlClass" : {
+      "@id" : "http://www.w3.org/2002/07/owlClass"
+    },
+    "rdf-schemalabel" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schemalabel"
+    },
+    "rdf-schemaProperty" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schemaProperty"
+    },
+    "rdf-schemasubClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schemasubClassOf"
+    },
+    "corebroader" : {
+      "@id" : "http://www.w3.org/2004/02/skos/corebroader"
+    },
+    "rdf-syntax-nstype" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-nstype"
+    },
+    "rdf-schemadomain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schemadomain"
+    },
+    "owlObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+    },
+    "owlimports" : {
+      "@id" : "http://www.w3.org/2002/07/owlimports"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "rdf-schemacomment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schemacomment"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "owlDatatypeProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owlDatatypeProperty"
+    },
+    "corescopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/corescopeNote"
+    },
+    "owldatatypeProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owldatatypeProperty"
+    },
+    "corehasTopConcept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/corehasTopConcept"
+    },
+    "coreexample" : {
+      "@id" : "http://www.w3.org/2004/02/skos/coreexample"
+    },
+    "coreConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/coreConceptScheme"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "owlinverseOf" : {
+      "@id" : "http://www.w3.org/2002/07/owlinverseOf"
+    },
+    "corerelated" : {
+      "@id" : "http://www.w3.org/2004/02/skos/corerelated"
+    },
+    "coreprefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/coreprefLabel"
+    },
+    "audience" : {
+      "@id" : "http://purl.org/dc/terms/audience"
+    },
+    "rdf-schemarange" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schemarange"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/terms/language"
+    },
+    "owlunionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owlunionOf"
+    },
+    "corehistoryNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/corehistoryNote"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    }
+  }
+}

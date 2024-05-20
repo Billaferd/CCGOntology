@@ -1,0 +1,1493 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="http://www.w3.org/2002/07/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:www2="http://www.w3.org/2000/01/"
+     xmlns:www3="http://www.w3.org/1999/02/22-"
+     xmlns:skos1="http://www.w3.org/2004/02/skos/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/audience -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/audience"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/comment -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/comment"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-nstype -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-nstype"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schemacomment -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schemacomment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schemadomain -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schemadomain"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schemalabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schemalabel"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schemarange -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schemarange"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schemasubClassOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schemasubClassOf"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlimports -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owlimports"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlinverseOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owlinverseOf"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlunionOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owlunionOf"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/corebroader -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/corebroader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/coredefinition -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/coredefinition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/coreeditorialNote -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/coreeditorialNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/coreexample -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/coreexample"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/corehasTopConcept -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/corehasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/corehistoryNote -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/corehistoryNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/coreprefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/coreprefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/corerelated -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/corerelated"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/corescopeNote -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/corescopeNote"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schemaProperty -->
+
+
+    <Class rdf:about="http://www.w3.org/2000/01/rdf-schemaProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlClass -->
+
+
+    <Class rdf:about="http://www.w3.org/2002/07/owlClass"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlDatatypeProperty -->
+
+
+    <Class rdf:about="http://www.w3.org/2002/07/owlDatatypeProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlObjectProperty -->
+
+
+    <Class rdf:about="http://www.w3.org/2002/07/owlObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owldatatypeProperty -->
+
+
+    <Class rdf:about="http://www.w3.org/2002/07/owldatatypeProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/coreConcept -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/coreConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/coreConceptScheme -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/coreConceptScheme"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://example.org/ccgActivateAction -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgActivateAction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Activate some rule, effect, or other part of the game.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Activate</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgGameAction"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgGameAction"/>
+        <skos1:coreprefLabel xml:lang="en">Activate</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgCard -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgCard">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">The most basic part of a CCG is the Card. These can take many shapes and sizes, and they are the primary means by which players interact with the game.</terms:description>
+        <www2:rdf-schemacomment xml:lang="en">Cards are the building blocks of any CCG. They represent characters, actions, events, resources, and other elements that are integral to the game&apos;s mechanics. Each card typically has attributes such as name, type, cost, and effects that define its role within the game. Cards are collected, traded, and used in gameplay to achieve objectives and compete against opponents.</www2:rdf-schemacomment>
+        <skos1:coredefinition xml:lang="en">In the context of a Collectible Card Game, a card is a physical or digital artifact that represents a game element with various attributes and abilities. It is used by players to perform actions and strategies during play.</skos1:coredefinition>
+        <skos1:coreeditorialNote xml:lang="en">Ensure that the card class is flexible enough to accommodate the diverse range of cards found across various CCGs, from simple to complex.</skos1:coreeditorialNote>
+        <skos1:coreexample xml:lang="en">A &apos;Fireball&apos; spell card that costs 3 mana to cast and deals 4 damage to any target.</skos1:coreexample>
+        <skos1:corehistoryNote xml:lang="en">The concept of the card has evolved over time, with early CCGs featuring simple designs and mechanics, while modern CCGs offer a wide range of complex and thematic cards.</skos1:corehistoryNote>
+        <skos1:coreprefLabel xml:lang="en">Card</skos1:coreprefLabel>
+        <skos1:corescopeNote xml:lang="en">This class can be extended to include various subclasses representing different categories of cards found in specific CCGs, such as creature cards, spell cards, or equipment cards.</skos1:corescopeNote>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgCardAction -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgCardAction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Any action taken with cards.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Card Action</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgGameAction"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgGameAction"/>
+        <skos1:coreprefLabel xml:lang="en">Card Action</skos1:coreprefLabel>
+        <skos1:corerelated rdf:resource="https://example.org/ccgCard"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgCardGame -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgCardGame">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Represents a card game that can be played.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Card Game</www2:rdf-schemalabel>
+        <skos1:coreprefLabel xml:lang="en">Card Game</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgCardPool -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgCardPool">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Any collection of cards that is used as part of the game.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Card Pool</www2:rdf-schemalabel>
+        <skos1:coreexample xml:lang="en">Deck, hand, discard pile</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Card Pool</skos1:coreprefLabel>
+        <skos1:corerelated rdf:resource="https://example.org/ccgCard"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgCardRarity -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgCardRarity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">The rarity of a card in relation to other cards in a game, set, or some other sub-geouping</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Card Rarity</www2:rdf-schemalabel>
+        <skos1:coreexample>Common, Uncommon, Rare, Mythical, Secret Rare, Illustrated Rare</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Card Rarity</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgCardSet -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgCardSet">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Represents a card set for a game. Sometimes called an expansion or a release.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Card Set</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgCardPool"/>
+        <skos1:coreexample xml:lang="en">Magic Theros, Magic Journey into Nyx</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Card Set</skos1:coreprefLabel>
+        <skos1:corerelated rdf:resource="https://example.org/ccgCard"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgCardStat -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgCardStat">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">A statistic about the card, usually for battle or other bookkeeping purposes.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Card Statistic</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgGameStat"/>
+        <skos1:coreexample xml:lang="en">HP, Attack, Defense, Tokens, Counters</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Card Statistic</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgChoiceAction -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgChoiceAction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">An action that requires a choice py a player.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Choice Action</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgGameAction"/>
+        <skos1:coreprefLabel xml:lang="en">Choice Action</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgCollectibleCardHobby -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgCollectibleCardHobby">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConceptScheme"/>
+        <terms:description xml:lang="en">The hobby of playing, trading, and collecting cards for the purposes of a game.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Collectible Card Hobby</www2:rdf-schemalabel>
+        <skos1:corehasTopConcept rdf:resource="https://example.org/ccgCardGame"/>
+        <skos1:corehasTopConcept rdf:resource="https://example.org/ccgCardRarity"/>
+        <skos1:corehasTopConcept rdf:resource="https://example.org/ccgGameAction"/>
+        <skos1:corehasTopConcept rdf:resource="https://example.org/ccgPlayArea"/>
+        <skos1:corehasTopConcept rdf:resource="https://example.org/ccgRule"/>
+        <skos1:coreprefLabel xml:lang="en">Collectible Card Hobby</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgDeck -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgDeck">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Represents a deck of cards in some form.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Deck</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgCardPool"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgCardPool"/>
+        <skos1:coreexample xml:lang="en">Player Deck, Deck List</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Deck</skos1:coreprefLabel>
+        <skos1:corerelated rdf:resource="https://example.org/ccgCard"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgDiscardAction -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgDiscardAction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Discard a card or other thing.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Discard</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgCardAction"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgCardAction"/>
+        <skos1:coreprefLabel xml:lang="en">Discard</skos1:coreprefLabel>
+        <skos1:corerelated rdf:resource="https://example.org/ccgCard"/>
+        <skos1:corerelated rdf:resource="https://example.org/ccgCardPool"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgDiscardPile -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgDiscardPile">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Represents the cards that a player discarded.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Discard Pile</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgCardPool"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgCardPool"/>
+        <skos1:coreprefLabel xml:lang="en">Discard Pile</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgDrawAction -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgDrawAction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Draw a card from some card pool.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Draw</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgCardAction"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgCardAction"/>
+        <skos1:coreprefLabel xml:lang="en">Draw</skos1:coreprefLabel>
+        <skos1:corerelated rdf:resource="https://example.org/ccgCard"/>
+        <skos1:corerelated rdf:resource="https://example.org/ccgCardPool"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgEdition -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgEdition">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Represents a release of the game, generally introduces changes to the core game.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Card Set</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgCardPool"/>
+        <skos1:coreexample xml:lang="en">Pokemon 1st Edition, Magic Alpha Series, Magic Theros Block</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Card Set</skos1:coreprefLabel>
+        <skos1:corerelated rdf:resource="https://example.org/ccgCard"/>
+        <skos1:corerelated rdf:resource="https://example.org/ccgCardSet"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgEffect -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgEffect">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Effects caused by cards.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Effect</www2:rdf-schemalabel>
+        <skos1:coreprefLabel xml:lang="en">Effect</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgGameAction -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgGameAction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Represents an in game action.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Game Action</www2:rdf-schemalabel>
+        <skos1:coreprefLabel xml:lang="en">Game Action</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgGameStat -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgGameStat">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">A statistic about the game.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Game Statistic</www2:rdf-schemalabel>
+        <skos1:coreexample xml:lang="en">Player HP, Active Tokens</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Game Statistic</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgHiddenPlayZone -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgHiddenPlayZone">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Any zone whose contents are not expected to be visible to all players.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Private Zone</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgPlayZone"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgPlayZone"/>
+        <skos1:coreprefLabel xml:lang="en">Private Zone</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgPermanentCard -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgPermanentCard">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <www2:rdf-schemacomment xml:lang="en">Represents cards that remain on the playing field after being played.</www2:rdf-schemacomment>
+        <www2:rdf-schemalabel xml:lang="en">Permanent Card</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgCard"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgCard"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgPhase -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgPhase">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <terms:description xml:lang="en">A specific phase of a game turn.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Phase</www2:rdf-schemalabel>
+        <skos1:corebroader rdf:resource="https://example.org/ccgTurnStructure"/>
+        <skos1:coreexample xml:lang="en">Main phase, combat phase</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Phase</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgPlayArea -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgPlayArea">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Any distinct area of play.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Play Area</www2:rdf-schemalabel>
+        <skos1:coreexample xml:lang="en">Playmat, Player Area</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Play Area</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgPlayZone -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgPlayZone">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Any distinct zone within a play area.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Play Zone</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgPlayArea"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgPlayArea"/>
+        <skos1:coreexample xml:lang="en">Library, Bench, Active Slot</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Play Zone</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgPlayer -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgPlayer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">A player of the game</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Player</www2:rdf-schemalabel>
+        <skos1:coreprefLabel xml:lang="en">Player</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgPlayerHand -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgPlayerHand">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Represents the cards that a player has in their hand.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Hand</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgCardPool"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgCardPool"/>
+        <skos1:coreprefLabel xml:lang="en">Hand</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgPlayerStat -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgPlayerStat">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">A game statistic that applies to a player.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Player Statistic</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgGameStat"/>
+        <skos1:coreexample xml:lang="en">Player HP</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Player Statistic</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgPublicPlayZone -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgPublicPlayZone">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Any zone whose contents are visible to all players.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Public Zone</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgPlayZone"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgPlayZone"/>
+        <skos1:coreprefLabel xml:lang="en">Public Zone</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgResource -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgResource">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Anything that needs to be managed by the player but has no direct physical representation in the game</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Resource</www2:rdf-schemalabel>
+        <skos1:coreexample xml:lang="en">Mana, Player Health</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Resource</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgResourceAction -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgResourceAction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Do something with a resource: transfer, add, remove, or something else.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Resource Action</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgGameAction"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgGameAction"/>
+        <skos1:coreprefLabel xml:lang="en">Resource Action</skos1:coreprefLabel>
+        <skos1:corerelated rdf:resource="https://example.org/ccgResource"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgResourceCost -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgResourceCost">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">The type and cost of resource to be paid for an effect.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Resource Cost</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgResourcePool"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgResourcePool"/>
+        <skos1:coreexample xml:lang="en">2 Red Mana, 1 Leaf Energy</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Resource Cost</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgResourcePool -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgResourcePool">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">A collection of resources that is countable</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Resource Pool</www2:rdf-schemalabel>
+        <skos1:coreexample xml:lang="en">Mana Pool, Attached Energy</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Resource Pool</skos1:coreprefLabel>
+        <skos1:corerelated rdf:resource="https://example.org/ccgResource"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgRule -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgRule">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">A rule that pertains to the game.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Rule</www2:rdf-schemalabel>
+        <skos1:corebroader rdf:resource="https://example.org/ccgRuleSection"/>
+        <skos1:coreprefLabel xml:lang="en">Rule</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgRuleBook -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgRuleBook">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">A set of rules for a specific game. A game can have multiple rule books if there are multiple styles or modes of play.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Rule Book</www2:rdf-schemalabel>
+        <skos1:coreexample xml:lang="en">Tournament Rules, House Rules, Draft</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Rule Book</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgRuleSection -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgRuleSection">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">A specific section of the rules.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Rule Section</www2:rdf-schemalabel>
+        <skos1:coreprefLabel xml:lang="en">Rule Section</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgShuffleAction -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgShuffleAction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Shuffle some card pool.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Shuffle</www2:rdf-schemalabel>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccgCardAction"/>
+        <skos1:corebroader rdf:resource="https://example.org/ccgGameAction"/>
+        <skos1:coreprefLabel xml:lang="en">Shuffle</skos1:coreprefLabel>
+        <skos1:corerelated rdf:resource="https://example.org/ccgCardPool"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgStep -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgStep">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">A single step that can be performed during a phase</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Step</www2:rdf-schemalabel>
+        <skos1:corebroader rdf:resource="https://example.org/ccgPhase"/>
+        <skos1:coreexample xml:lang="en">Upkeep, untap</skos1:coreexample>
+        <skos1:coreprefLabel xml:lang="en">Step</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgTurnStructure -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgTurnStructure">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/coreConcept"/>
+        <terms:description xml:lang="en">Defines the overall turn structure of that game.</terms:description>
+        <www2:rdf-schemalabel xml:lang="en">Turn Structure</www2:rdf-schemalabel>
+        <skos1:coreprefLabel xml:lang="en">Turn Structure</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgcontainsRule -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgcontainsRule">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a rule book section to the rules it contains.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgRuleSection"/>
+        <www2:rdf-schemalabel xml:lang="en">contains rule</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgRule"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccgisDefinedIn"/>
+        <skos1:coreprefLabel xml:lang="en">contains rule</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgforResource -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgforResource">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a resource type to a resource pool.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgResourcePool"/>
+        <www2:rdf-schemalabel xml:lang="en">for resource</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgResource"/>
+        <skos1:coreprefLabel xml:lang="en">for resource</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccggoverns -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccggoverns">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a rule to some part of the game.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgRule"/>
+        <www2:rdf-schemalabel xml:lang="en">governs</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="http://www.w3.org/2000/01/rdf-schemaResource"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccghasRule"/>
+        <skos1:coreprefLabel xml:lang="en">governs</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasAction -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasAction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates an effect to the action that it produces.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgEffect"/>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgStep"/>
+        <www2:rdf-schemalabel xml:lang="en">has action</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgGameAction"/>
+        <skos1:coreprefLabel xml:lang="en">has action</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasCard -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasCard">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">relates different items that can contain cards like decks, card sets,hands, etc...</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgCardPool"/>
+        <www2:rdf-schemalabel xml:lang="en">has card</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgCard"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccgisCardIn"/>
+        <skos1:coreprefLabel xml:lang="en">has card</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasCardCount -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasCardCount">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlDatatypeProperty"/>
+        <terms:description xml:lang="en">Relates the total available cards to the card set or pool.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgCardPool"/>
+        <www2:rdf-schemalabel xml:lang="en">has card count</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="http://www.w3.org/2001/XMLSchemanonNegativeInteger"/>
+        <skos1:coreprefLabel xml:lang="en">has card count</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasCardPool -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasCardPool">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a card pool to an area or zone of play.</terms:description>
+        <www2:rdf-schemadomain rdf:nodeID="genid2"/>
+        <www2:rdf-schemalabel xml:lang="en">has pool</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgCardPool"/>
+        <skos1:coreprefLabel xml:lang="en">has pool</skos1:coreprefLabel>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid2">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <www:owlunionOf>
+            <rdf:Description/>
+        </www:owlunionOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccghasChoice -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasChoice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a choice of actions that a player can take.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgChoiceAction"/>
+        <www2:rdf-schemalabel xml:lang="en">has choice</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgAction"/>
+        <skos1:coreprefLabel xml:lang="en">has choice</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasCurrentValue -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasCurrentValue">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schemaProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owldatatypeProperty"/>
+        <terms:description xml:lang="en">Relates a statistic to its current value.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgGameStat"/>
+        <www2:rdf-schemalabel xml:lang="en">has current value</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="http://www.w3.org/2001/XMLSchemadecimal"/>
+        <skos1:coreprefLabel xml:lang="en">has current value</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasEdition -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasEdition">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a card game to a specific edition of the game.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgCardGame"/>
+        <www2:rdf-schemalabel xml:lang="en">has edition</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgEdition"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccgisEditionOf"/>
+        <skos1:coreprefLabel xml:lang="en">has edition</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasEffect -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasEffect">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates an effect to a card, generally the effect is found in the rule box of the card.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgCard"/>
+        <www2:rdf-schemalabel xml:lang="en">has effect</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgEffect"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccgisEffectOf"/>
+        <skos1:coreprefLabel xml:lang="en">has effect</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasFlavourText -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasFlavourText">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlDatatypeProperty"/>
+        <terms:description xml:lang="en">Relates the card to the exact flavour text that shows up on it.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgCard"/>
+        <www2:rdf-schemalabel xml:lang="en">has flavour text</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="http://www.w3.org/2001/XMLSchemastring"/>
+        <skos1:coreprefLabel xml:lang="en">has flavour text</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasMaximumValue -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasMaximumValue">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schemaProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owldatatypeProperty"/>
+        <terms:description xml:lang="en">Relates a statistic to its maximum value.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgGameStat"/>
+        <www2:rdf-schemalabel xml:lang="en">has maximum value</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="http://www.w3.org/2001/XMLSchemadecimal"/>
+        <skos1:coreprefLabel xml:lang="en">has maximum value</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasMinimumValue -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasMinimumValue">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schemaProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owldatatypeProperty"/>
+        <terms:description xml:lang="en">Relates a statistic to its minimum value.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgGameStat"/>
+        <www2:rdf-schemalabel xml:lang="en">has minimum value</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="http://www.w3.org/2001/XMLSchemadecimal"/>
+        <skos1:coreprefLabel xml:lang="en">has minimum value</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasPhase -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasPhase">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgTurnStructure"/>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgPhase"/>
+        <skos1:coreprefLabel xml:lang="en">has phase</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasPlayArea -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasPlayArea">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a player or play areas to other play areas.</terms:description>
+        <www2:rdf-schemadomain rdf:nodeID="genid4"/>
+        <www2:rdf-schemalabel xml:lang="en">has play area</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgPlayArea"/>
+        <skos1:coreprefLabel xml:lang="en">has play area</skos1:coreprefLabel>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid4">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <www:owlunionOf>
+            <rdf:Description/>
+        </www:owlunionOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccghasPlayZone -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasPlayZone">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a player or play areas/zones to other play zones.</terms:description>
+        <www2:rdf-schemadomain rdf:nodeID="genid6"/>
+        <www2:rdf-schemalabel xml:lang="en">has play zone</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgPlayZone"/>
+        <www2:rdf-schemasubClassOf rdf:resource="https://example.org/ccghasPlayArea"/>
+        <skos1:coreprefLabel xml:lang="en">has play zone</skos1:coreprefLabel>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid6">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <www:owlunionOf>
+            <rdf:Description/>
+        </www:owlunionOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccghasPostcondition -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasPostcondition">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgGameAction"/>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgRule"/>
+        <skos1:coreprefLabel xml:lang="en">has postcondition</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasPrecondition -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasPrecondition">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgGameAction"/>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgRule"/>
+        <skos1:coreprefLabel xml:lang="en">has precondition</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasPriorityRule -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasPriorityRule">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgTurnStructure"/>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgRule"/>
+        <skos1:coreprefLabel xml:lang="en">has priority rule</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasRarity -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasRarity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a card to its rarity.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgCard"/>
+        <www2:rdf-schemalabel xml:lang="en">has rarity</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgCardRarity"/>
+        <skos1:coreprefLabel xml:lang="en">has rarity</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasResourceCount -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasResourceCount">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlDatatypeProperty"/>
+        <terms:description xml:lang="en">Relates an effect to its cost in resources.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgResourcePool"/>
+        <www2:rdf-schemalabel xml:lang="en">has cost</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="http://www.w3.org/2001/XMLSchemaDecimal"/>
+        <skos1:coreprefLabel xml:lang="en">has cost</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasRule -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasRule">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates some part to a rule that governs it.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="http://www.w3.org/2000/01/rdf-schemaResource"/>
+        <www2:rdf-schemalabel xml:lang="en">has rule</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgRule"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccgGoverns"/>
+        <skos1:coreprefLabel xml:lang="en">has rule</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasRuleSection -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasRuleSection">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a rulbook to the sections it contains.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgRuleBook"/>
+        <www2:rdf-schemalabel xml:lang="en">has section</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgRuleSection"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccginRuleBook"/>
+        <skos1:coreprefLabel xml:lang="en">has section</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasRuleText -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasRuleText">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlDatatypeProperty"/>
+        <terms:description xml:lang="en">Relates the card to the exact rule text that shows up on it.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgCard"/>
+        <www2:rdf-schemalabel xml:lang="en">has rule text</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="http://www.w3.org/2001/XMLSchemastring"/>
+        <skos1:coreprefLabel xml:lang="en">has rule text</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasSet -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasSet">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a card game to its sets of cards. A set is generally a release of cards as a grouping and all having a similar theme. Sometimes called an expansion.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgEdition"/>
+        <www2:rdf-schemalabel xml:lang="en">has card set</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgCardSet"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccgisSetOf"/>
+        <skos1:coreprefLabel xml:lang="en">has card set</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasSource -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasSource">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates an effect to a source that it acts upon.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgEffect"/>
+        <www2:rdf-schemalabel xml:lang="en">has source</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="http://www.w3.org/2000/01/rdf-schemaResource"/>
+        <skos1:coreprefLabel xml:lang="en">has source</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasStat -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasStat">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a card or stat to its (sub)statistic.</terms:description>
+        <www2:rdf-schemadomain rdf:nodeID="genid8"/>
+        <www2:rdf-schemalabel xml:lang="en">has stat</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgGameStat"/>
+        <skos1:coreprefLabel xml:lang="en">has stat</skos1:coreprefLabel>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid8">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <www:owlunionOf>
+            <rdf:Description/>
+        </www:owlunionOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccghasStep -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasStep">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgPhase"/>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgStep"/>
+        <skos1:coreprefLabel xml:lang="en">has step</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasTarget -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasTarget">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates an effect to a target that it acts upon.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgEffect"/>
+        <www2:rdf-schemalabel xml:lang="en">has target</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="http://www.w3.org/2000/01/rdf-schemaResource"/>
+        <skos1:coreprefLabel xml:lang="en">has target</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasTrigger -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasTrigger">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates an effect to its trigger.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgEffect"/>
+        <www2:rdf-schemalabel xml:lang="en">has trigger</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgGameAction"/>
+        <skos1:coreprefLabel xml:lang="en">has trigger</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccghasTurnOrder -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccghasTurnOrder">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgTurnStructure"/>
+        <www2:rdf-schemarange rdf:resource="http://www.w3.org/2001/XMLSchemastring"/>
+        <skos1:coreprefLabel xml:lang="en">has turn order</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccginRuleBook -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccginRuleBook">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a rule section to the rule book that it belongs to.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgRuleSection"/>
+        <www2:rdf-schemalabel xml:lang="en">in rule book</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgRuleBook"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccghasRuleSection"/>
+        <skos1:coreprefLabel xml:lang="en">in rule book</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgisAllowedDuring -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgisAllowedDuring">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgGameAction"/>
+        <www2:rdf-schemarange rdf:nodeID="genid10"/>
+        <skos1:coreprefLabel xml:lang="en">is allowed during</skos1:coreprefLabel>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid10">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <www:owlunionOf>
+            <rdf:Description/>
+        </www:owlunionOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccgisCardIn -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgisCardIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">relates different items that can contain cards like decks, card sets,hands, etc...</terms:description>
+        <www2:rdf-schemadomain rdf:nodeID="genid12"/>
+        <www2:rdf-schemalabel xml:lang="en">card is in</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgCardPool"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccghasCard"/>
+        <skos1:coreprefLabel xml:lang="en">card is in</skos1:coreprefLabel>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid12">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <www:owlunionOf>
+            <rdf:Description/>
+        </www:owlunionOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccgisDefinedIn -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgisDefinedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a rule the the section in the rule book of where it is defined.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgRule"/>
+        <www2:rdf-schemalabel xml:lang="en">is defined in</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgRuleSection"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccgcontainsRule"/>
+        <skos1:coreprefLabel xml:lang="en">is defined in</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgisEditionOf -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgisEditionOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a card game to a specific edition of the game.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgEdition"/>
+        <www2:rdf-schemalabel xml:lang="en">is edition of</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgCardGame"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccghasEdition"/>
+        <skos1:coreprefLabel xml:lang="en">is edition of</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgisEffectOf -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgisEffectOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates an effect to a card, generally the effect is found in the rule box of the card.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgEffect"/>
+        <www2:rdf-schemalabel xml:lang="en">is effect of</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgCard"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccghasEffect"/>
+        <skos1:coreprefLabel xml:lang="en">is effect of</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccgisSetOf -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccgisSetOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlObjectProperty"/>
+        <terms:description xml:lang="en">Relates a set of cards to its game. A set is generally a release of cards as a grouping and all having a similar theme. Sometimes called an expansion.</terms:description>
+        <www2:rdf-schemadomain rdf:resource="https://example.org/ccgCardSet"/>
+        <www2:rdf-schemalabel xml:lang="en">is card set of</www2:rdf-schemalabel>
+        <www2:rdf-schemarange rdf:resource="https://example.org/ccgEdition"/>
+        <www:owlinverseOf rdf:resource="https://example.org/ccghasSet"/>
+        <skos1:coreprefLabel xml:lang="en">is card set of</skos1:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://example.org/ccg">
+        <terms:audience>Intended for anyone interested in the semantic representation of CCG&apos;s.</terms:audience>
+        <terms:created>2024-05-12</terms:created>
+        <terms:creator rdf:nodeID="genid14"/>
+        <terms:description>This Ontology is intended to provide a comprehensive way of representing CCG&apos;s in a semantic way.</terms:description>
+        <terms:issued>2024-05-12</terms:issued>
+        <terms:language>en</terms:language>
+        <terms:title>Collectible Card Game Ontology</terms:title>
+        <www3:rdf-syntax-nstype rdf:resource="http://www.w3.org/2002/07/owlOntology"/>
+        <www2:rdf-schemacomment>This Ontology exists to encode the rules and concepts of Collectible Card Games into a machine readable format.</www2:rdf-schemacomment>
+        <www2:rdf-schemalabel>CCG Ontology</www2:rdf-schemalabel>
+        <www:owlimports rdf:resource="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"/>
+        <ns:term_status>unstable</ns:term_status>
+        <skos1:coreprefLabel>Collectible Card Game Ontology</skos1:coreprefLabel>
+        <skos1:corescopeNote>Intended to be used for understanding digital and print CCG&apos;s</skos1:corescopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid14">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <terms:comment xml:lang="en">Contributors should document their contributions clearly with a structure similar to this. It should be a blank node of type foaf:Person with some identifiers from the foaf and dct Ontologies. The dct:contributor property should be used.</terms:comment>
+        <foaf:mbox>ritchie.brent@gmail.com</foaf:mbox>
+        <foaf:name>Brent Ritchie</foaf:name>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

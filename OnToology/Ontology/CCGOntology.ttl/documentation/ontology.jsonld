@@ -1,0 +1,2127 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "_:genid10",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2002/07/owlunionOf" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2002/07/owlunionOf" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "http://purl.org/dc/terms/comment" : [ {
+    "@language" : "en",
+    "@value" : "Contributors should document their contributions clearly with a structure similar to this. It should be a blank node of type foaf:Person with some identifiers from the foaf and dct Ontologies. The dct:contributor property should be used."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "ritchie.brent@gmail.com"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Brent Ritchie"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2002/07/owlunionOf" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2002/07/owlunionOf" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2002/07/owlunionOf" : [ {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2002/07/owlunionOf" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/audience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-nstype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schemaProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schemacomment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schemadomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schemalabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schemarange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schemasubClassOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlDatatypeProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owldatatypeProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlimports",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlinverseOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlunionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/coreConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/coreConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/corebroader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/coredefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/coreeditorialNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/coreexample",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/corehasTopConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/corehistoryNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/coreprefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/corerelated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/corescopeNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg",
+  "http://purl.org/dc/terms/audience" : [ {
+    "@value" : "Intended for anyone interested in the semantic representation of CCG's."
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2024-05-12"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "_:genid14"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "This Ontology is intended to provide a comprehensive way of representing CCG's in a semantic way."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2024-05-12"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "en"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Collectible Card Game Ontology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-nstype" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemacomment" : [ {
+    "@value" : "This Ontology exists to encode the rules and concepts of Collectible Card Games into a machine readable format."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@value" : "CCG Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owlimports" : [ {
+    "@id" : "http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@value" : "Collectible Card Game Ontology"
+  } ],
+  "http://www.w3.org/2004/02/skos/corescopeNote" : [ {
+    "@value" : "Intended to be used for understanding digital and print CCG's"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgActivateAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Activate some rule, effect, or other part of the game."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Activate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Activate"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The most basic part of a CCG is the Card. These can take many shapes and sizes, and they are the primary means by which players interact with the game."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemacomment" : [ {
+    "@language" : "en",
+    "@value" : "Cards are the building blocks of any CCG. They represent characters, actions, events, resources, and other elements that are integral to the game's mechanics. Each card typically has attributes such as name, type, cost, and effects that define its role within the game. Cards are collected, traded, and used in gameplay to achieve objectives and compete against opponents."
+  } ],
+  "http://www.w3.org/2004/02/skos/coredefinition" : [ {
+    "@language" : "en",
+    "@value" : "In the context of a Collectible Card Game, a card is a physical or digital artifact that represents a game element with various attributes and abilities. It is used by players to perform actions and strategies during play."
+  } ],
+  "http://www.w3.org/2004/02/skos/coreeditorialNote" : [ {
+    "@language" : "en",
+    "@value" : "Ensure that the card class is flexible enough to accommodate the diverse range of cards found across various CCGs, from simple to complex."
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "A 'Fireball' spell card that costs 3 mana to cast and deals 4 damage to any target."
+  } ],
+  "http://www.w3.org/2004/02/skos/corehistoryNote" : [ {
+    "@language" : "en",
+    "@value" : "The concept of the card has evolved over time, with early CCGs featuring simple designs and mechanics, while modern CCGs offer a wide range of complex and thematic cards."
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Card"
+  } ],
+  "http://www.w3.org/2004/02/skos/corescopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class can be extended to include various subclasses representing different categories of cards found in specific CCGs, such as creature cards, spell cards, or equipment cards."
+  } ]
+}, {
+  "@id" : "https://example.org/ccgCardAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Any action taken with cards."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Action"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/ccgCard"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgCardGame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Represents a card game that can be played."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Game"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Game"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgCardPool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Any collection of cards that is used as part of the game."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Pool"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Deck, hand, discard pile"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Pool"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/ccgCard"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgCardRarity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The rarity of a card in relation to other cards in a game, set, or some other sub-geouping"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Rarity"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@value" : "Common, Uncommon, Rare, Mythical, Secret Rare, Illustrated Rare"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Rarity"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgCardSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Represents a card set for a game. Sometimes called an expansion or a release."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Set"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Magic Theros, Magic Journey into Nyx"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Set"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/ccgCard"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgCardStat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A statistic about the card, usually for battle or other bookkeeping purposes."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Statistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgGameStat"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "HP, Attack, Defense, Tokens, Counters"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Statistic"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgChoiceAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "An action that requires a choice py a player."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Choice Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Choice Action"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgCollectibleCardHobby",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The hobby of playing, trading, and collecting cards for the purposes of a game."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Collectible Card Hobby"
+  } ],
+  "http://www.w3.org/2004/02/skos/corehasTopConcept" : [ {
+    "@id" : "https://example.org/ccgCardGame"
+  }, {
+    "@id" : "https://example.org/ccgCardRarity"
+  }, {
+    "@id" : "https://example.org/ccgGameAction"
+  }, {
+    "@id" : "https://example.org/ccgPlayArea"
+  }, {
+    "@id" : "https://example.org/ccgRule"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Collectible Card Hobby"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgDeck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Represents a deck of cards in some form."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Deck"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Player Deck, Deck List"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Deck"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/ccgCard"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgDiscardAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Discard a card or other thing."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Discard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgCardAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgCardAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Discard"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/ccgCard"
+  }, {
+    "@id" : "https://example.org/ccgCardPool"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgDiscardPile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Represents the cards that a player discarded."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Discard Pile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Discard Pile"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgDrawAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Draw a card from some card pool."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Draw"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgCardAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgCardAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Draw"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/ccgCard"
+  }, {
+    "@id" : "https://example.org/ccgCardPool"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgEdition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Represents a release of the game, generally introduces changes to the core game."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Set"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Pokemon 1st Edition, Magic Alpha Series, Magic Theros Block"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Card Set"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/ccgCard"
+  }, {
+    "@id" : "https://example.org/ccgCardSet"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Effects caused by cards."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Effect"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Effect"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgGameAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Represents an in game action."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Game Action"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Game Action"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgGameStat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A statistic about the game."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Game Statistic"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Player HP, Active Tokens"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Game Statistic"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgHiddenPlayZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Any zone whose contents are not expected to be visible to all players."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Private Zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgPlayZone"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgPlayZone"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Private Zone"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgPermanentCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemacomment" : [ {
+    "@language" : "en",
+    "@value" : "Represents cards that remain on the playing field after being played."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Permanent Card"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgCard"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgCard"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A specific phase of a game turn."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Phase"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgTurnStructure"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Main phase, combat phase"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Phase"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgPlayArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Any distinct area of play."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Play Area"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Playmat, Player Area"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Play Area"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgPlayZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Any distinct zone within a play area."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Play Zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgPlayArea"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgPlayArea"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Library, Bench, Active Slot"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Play Zone"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgPlayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A player of the game"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Player"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Player"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgPlayerHand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Represents the cards that a player has in their hand."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Hand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Hand"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgPlayerStat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A game statistic that applies to a player."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Player Statistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgGameStat"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Player HP"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Player Statistic"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgPublicPlayZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Any zone whose contents are visible to all players."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Public Zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgPlayZone"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgPlayZone"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Public Zone"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Anything that needs to be managed by the player but has no direct physical representation in the game"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Resource"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Mana, Player Health"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Resource"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgResourceAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Do something with a resource: transfer, add, remove, or something else."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Resource Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Resource Action"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/ccgResource"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgResourceCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The type and cost of resource to be paid for an effect."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Resource Cost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgResourcePool"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgResourcePool"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "2 Red Mana, 1 Leaf Energy"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Resource Cost"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgResourcePool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A collection of resources that is countable"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Resource Pool"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Mana Pool, Attached Energy"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Resource Pool"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/ccgResource"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgRule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A rule that pertains to the game."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Rule"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgRuleSection"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Rule"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgRuleBook",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A set of rules for a specific game. A game can have multiple rule books if there are multiple styles or modes of play."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Rule Book"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Tournament Rules, House Rules, Draft"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Rule Book"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgRuleSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A specific section of the rules."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Rule Section"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Rule Section"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgShuffleAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Shuffle some card pool."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Shuffle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccgCardAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Shuffle"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A single step that can be performed during a phase"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Step"
+  } ],
+  "http://www.w3.org/2004/02/skos/corebroader" : [ {
+    "@id" : "https://example.org/ccgPhase"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreexample" : [ {
+    "@language" : "en",
+    "@value" : "Upkeep, untap"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Step"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgTurnStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Defines the overall turn structure of that game."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/coreConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Turn Structure"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Turn Structure"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgcontainsRule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a rule book section to the rules it contains."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgRuleSection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "contains rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgRule"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccgisDefinedIn"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "contains rule"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgforResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a resource type to a resource pool."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgResourcePool"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "for resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgResource"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "for resource"
+  } ]
+}, {
+  "@id" : "https://example.org/ccggoverns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a rule to some part of the game."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "governs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schemaResource"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccghasRule"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "governs"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates an effect to the action that it produces."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgEffect"
+  }, {
+    "@id" : "https://example.org/ccgStep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has action"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "relates different items that can contain cards like decks, card sets,hands, etc..."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has card"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgCard"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccgisCardIn"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has card"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasCardCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates the total available cards to the card set or pool."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlDatatypeProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has card count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchemanonNegativeInteger"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has card count"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasCardPool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a card pool to an area or zone of play."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has pool"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has pool"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a choice of actions that a player can take."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgChoiceAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has choice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has choice"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasCurrentValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a statistic to its current value."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schemaProperty"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owldatatypeProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgGameStat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has current value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchemadecimal"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has current value"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasEdition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a card game to a specific edition of the game."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgCardGame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has edition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgEdition"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccgisEditionOf"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has edition"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates an effect to a card, generally the effect is found in the rule box of the card."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has effect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgEffect"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccgisEffectOf"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has effect"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasFlavourText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates the card to the exact flavour text that shows up on it."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlDatatypeProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has flavour text"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchemastring"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has flavour text"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasMaximumValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a statistic to its maximum value."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schemaProperty"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owldatatypeProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgGameStat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has maximum value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchemadecimal"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has maximum value"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasMinimumValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a statistic to its minimum value."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schemaProperty"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owldatatypeProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgGameStat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has minimum value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchemadecimal"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has minimum value"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgTurnStructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgPhase"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has phase"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasPlayArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a player or play areas to other play areas."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has play area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgPlayArea"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has play area"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasPlayZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a player or play areas/zones to other play zones."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has play zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgPlayZone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccghasPlayArea"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has play zone"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasPostcondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgRule"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has postcondition"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasPrecondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgRule"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has precondition"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasPriorityRule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgTurnStructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgRule"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has priority rule"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasRarity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a card to its rarity."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has rarity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgCardRarity"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has rarity"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasResourceCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates an effect to its cost in resources."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlDatatypeProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgResourcePool"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has cost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchemaDecimal"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has cost"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasRule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates some part to a rule that governs it."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schemaResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgRule"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccgGoverns"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has rule"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasRuleSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a rulbook to the sections it contains."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgRuleBook"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has section"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgRuleSection"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccginRuleBook"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has section"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasRuleText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates the card to the exact rule text that shows up on it."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlDatatypeProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has rule text"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchemastring"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has rule text"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a card game to its sets of cards. A set is generally a release of cards as a grouping and all having a similar theme. Sometimes called an expansion."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgEdition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has card set"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgCardSet"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccgisSetOf"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has card set"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates an effect to a source that it acts upon."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgEffect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schemaResource"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has source"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasStat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a card or stat to its (sub)statistic."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "_:genid8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has stat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgGameStat"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has stat"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgPhase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgStep"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has step"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates an effect to a target that it acts upon."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgEffect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has target"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schemaResource"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has target"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasTrigger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates an effect to its trigger."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgEffect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "has trigger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has trigger"
+  } ]
+}, {
+  "@id" : "https://example.org/ccghasTurnOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgTurnStructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchemastring"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has turn order"
+  } ]
+}, {
+  "@id" : "https://example.org/ccginRuleBook",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a rule section to the rule book that it belongs to."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgRuleSection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "in rule book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgRuleBook"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccghasRuleSection"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "in rule book"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgisAllowedDuring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgGameAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "is allowed during"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgisCardIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "relates different items that can contain cards like decks, card sets,hands, etc..."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "_:genid12"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "card is in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgCardPool"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccghasCard"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "card is in"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgisDefinedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a rule the the section in the rule book of where it is defined."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "is defined in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgRuleSection"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccgcontainsRule"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "is defined in"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgisEditionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a card game to a specific edition of the game."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgEdition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "is edition of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgCardGame"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccghasEdition"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "is edition of"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgisEffectOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates an effect to a card, generally the effect is found in the rule box of the card."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgEffect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "is effect of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgCard"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccghasEffect"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "is effect of"
+  } ]
+}, {
+  "@id" : "https://example.org/ccgisSetOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Relates a set of cards to its game. A set is generally a release of cards as a grouping and all having a similar theme. Sometimes called an expansion."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemadomain" : [ {
+    "@id" : "https://example.org/ccgCardSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "is card set of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemarange" : [ {
+    "@id" : "https://example.org/ccgEdition"
+  } ],
+  "http://www.w3.org/2002/07/owlinverseOf" : [ {
+    "@id" : "https://example.org/ccghasSet"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "is card set of"
+  } ]
+} ]
