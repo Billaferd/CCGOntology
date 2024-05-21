@@ -7,7 +7,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 
-@prefix ccg: <https://example.org> .
+@prefix ccg: <https://example.org/ccg#> .
 
 @prefix mtg: <https://example.org/MagicTheGathering/> .
 
@@ -352,6 +352,27 @@ mtg:BasicTurnStructure a ccg:TurnStructure ;
     skos:prefLabel "Basic Turn Structure"@en ;
     rdfs:label "Basic Turn Structure"@en ;
     dct:description "The basic and most common turn structure of Magic: The Gathering."@en ;
+    ccg:hasPhase (mtg:BeginPhase mtg:PreCombatMainPhase mtg:CombatPhase) .
+
+mtg:BeginPhase a ccg:Phase ;
+    skos:prefLabel "Begin"@en ;
+    rdfs:label "Begin"@en ;
+    skos:altLabel "Start"@en ;
+    rdfs:comment "The first phase of a players turn."@en .
+
+mtg:PreCombatMainPhase a ccg:Phase ;
+    skos:prefLabel "Main Phase"@en ;
+    rdfs:label "Main Phase"@en ;
+    rdfs:comment "The first of two main phases of the game."@en .
+
+mtg:CombatPhase a ccg:Phase ;
+    skos:prefLabel "Combat Phase"@en ;
+    rdfs:label "Combat Phase"@en ;
+    rdfs:comment "The combat phase."@en .
+
+mtg:DrawCardStep a ccg:Step ;
+    ccg:hasAction mtg:UntapAction ;
+    ccg:hasAction ccg:DrawAction .
 
 mtg:ComprehensiveRules a ccg:RuleBook ;
     dct:title "Magic: The Gathering Comprehensive Rules"@en ;
