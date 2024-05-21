@@ -1,0 +1,1478 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:ccg="https://example.org/ccg#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="http://www.w3.org/2002/07/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:www1="http://www.w3.org/2000/01/"
+     xmlns:www3="http://www.w3.org/1999/02/22-"
+     xmlns:skos2="http://www.w3.org/2004/02/skos/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-nstype -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-nstype"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schemacomment -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schemacomment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schemalabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schemalabel"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schemaseeAlso -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schemaseeAlso"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schemasubClassOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schemasubClassOf"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlintersectionOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owlintersectionOf"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlmaxCardinality -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owlmaxCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlminCardinality -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owlminCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlonProperty -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owlonProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlsomeValuesFrom -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owlsomeValuesFrom"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/corealtLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/corealtLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/coreprefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/coreprefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/corerelated -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/corerelated"/>
+    
+
+
+    <!-- https://example.org/ccg#hasAction -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasAction"/>
+    
+
+
+    <!-- https://example.org/ccg#hasAmount -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasAmount"/>
+    
+
+
+    <!-- https://example.org/ccg#hasCardPool -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasCardPool"/>
+    
+
+
+    <!-- https://example.org/ccg#hasCondition -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasCondition"/>
+    
+
+
+    <!-- https://example.org/ccg#hasCurrentValue -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasCurrentValue"/>
+    
+
+
+    <!-- https://example.org/ccg#hasDestination -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasDestination"/>
+    
+
+
+    <!-- https://example.org/ccg#hasDuration -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasDuration"/>
+    
+
+
+    <!-- https://example.org/ccg#hasEffect -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasEffect"/>
+    
+
+
+    <!-- https://example.org/ccg#hasManaCost -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasManaCost"/>
+    
+
+
+    <!-- https://example.org/ccg#hasOption -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasOption"/>
+    
+
+
+    <!-- https://example.org/ccg#hasPhase -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasPhase"/>
+    
+
+
+    <!-- https://example.org/ccg#hasPlayZone -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasPlayZone"/>
+    
+
+
+    <!-- https://example.org/ccg#hasResource -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasResource"/>
+    
+
+
+    <!-- https://example.org/ccg#hasResourceCount -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasResourceCount"/>
+    
+
+
+    <!-- https://example.org/ccg#hasRuleSection -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasRuleSection"/>
+    
+
+
+    <!-- https://example.org/ccg#hasRuleText -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasRuleText"/>
+    
+
+
+    <!-- https://example.org/ccg#hasSideEffect -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasSideEffect"/>
+    
+
+
+    <!-- https://example.org/ccg#hasStat -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasStat"/>
+    
+
+
+    <!-- https://example.org/ccg#hasSubSection -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasSubSection"/>
+    
+
+
+    <!-- https://example.org/ccg#hasTarget -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasTarget"/>
+    
+
+
+    <!-- https://example.org/ccg#hasTrigger -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#hasTrigger"/>
+    
+
+
+    <!-- https://example.org/ccg#isDefinedIn -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#isDefinedIn"/>
+    
+
+
+    <!-- https://example.org/ccg#isType -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#isType"/>
+    
+
+
+    <!-- https://example.org/ccg#requiresMana -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#requiresMana"/>
+    
+
+
+    <!-- https://example.org/ccg#requiresManaCount -->
+
+
+    <AnnotationProperty rdf:about="https://example.org/ccg#requiresManaCount"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchemanonNegativeInteger -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchemanonNegativeInteger"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlClass -->
+
+
+    <Class rdf:about="http://www.w3.org/2002/07/owlClass"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owlRestriction -->
+
+
+    <Class rdf:about="http://www.w3.org/2002/07/owlRestriction"/>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/ManaPool -->
+
+
+    <Class rdf:about="https://example.org/MagicTheGathering/ManaPool"/>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/PowerStat -->
+
+
+    <Class rdf:about="https://example.org/MagicTheGathering/PowerStat"/>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/ToughnessStat -->
+
+
+    <Class rdf:about="https://example.org/MagicTheGathering/ToughnessStat"/>
+    
+
+
+    <!-- https://example.org/ccg#ArtifactCard -->
+
+
+    <Class rdf:about="https://example.org/ccg#ArtifactCard"/>
+    
+
+
+    <!-- https://example.org/ccg#CardGame -->
+
+
+    <Class rdf:about="https://example.org/ccg#CardGame"/>
+    
+
+
+    <!-- https://example.org/ccg#CardStat -->
+
+
+    <Class rdf:about="https://example.org/ccg#CardStat"/>
+    
+
+
+    <!-- https://example.org/ccg#ChoiceAction -->
+
+
+    <Class rdf:about="https://example.org/ccg#ChoiceAction"/>
+    
+
+
+    <!-- https://example.org/ccg#CreatureCard -->
+
+
+    <Class rdf:about="https://example.org/ccg#CreatureCard"/>
+    
+
+
+    <!-- https://example.org/ccg#DamageAction -->
+
+
+    <Class rdf:about="https://example.org/ccg#DamageAction"/>
+    
+
+
+    <!-- https://example.org/ccg#Deck -->
+
+
+    <Class rdf:about="https://example.org/ccg#Deck"/>
+    
+
+
+    <!-- https://example.org/ccg#DestroyAction -->
+
+
+    <Class rdf:about="https://example.org/ccg#DestroyAction"/>
+    
+
+
+    <!-- https://example.org/ccg#DiscardOption -->
+
+
+    <Class rdf:about="https://example.org/ccg#DiscardOption"/>
+    
+
+
+    <!-- https://example.org/ccg#Effect -->
+
+
+    <Class rdf:about="https://example.org/ccg#Effect"/>
+    
+
+
+    <!-- https://example.org/ccg#HiddenZone -->
+
+
+    <Class rdf:about="https://example.org/ccg#HiddenZone"/>
+    
+
+
+    <!-- https://example.org/ccg#InstantCard -->
+
+
+    <Class rdf:about="https://example.org/ccg#InstantCard"/>
+    
+
+
+    <!-- https://example.org/ccg#LandCard -->
+
+
+    <Class rdf:about="https://example.org/ccg#LandCard"/>
+    
+
+
+    <!-- https://example.org/ccg#ManaCost -->
+
+
+    <Class rdf:about="https://example.org/ccg#ManaCost"/>
+    
+
+
+    <!-- https://example.org/ccg#ModifyPTAction -->
+
+
+    <Class rdf:about="https://example.org/ccg#ModifyPTAction"/>
+    
+
+
+    <!-- https://example.org/ccg#PermanentCard -->
+
+
+    <Class rdf:about="https://example.org/ccg#PermanentCard"/>
+    
+
+
+    <!-- https://example.org/ccg#Phase -->
+
+
+    <Class rdf:about="https://example.org/ccg#Phase"/>
+    
+
+
+    <!-- https://example.org/ccg#PublicZone -->
+
+
+    <Class rdf:about="https://example.org/ccg#PublicZone"/>
+    
+
+
+    <!-- https://example.org/ccg#Resource -->
+
+
+    <Class rdf:about="https://example.org/ccg#Resource"/>
+    
+
+
+    <!-- https://example.org/ccg#ResourceAction -->
+
+
+    <Class rdf:about="https://example.org/ccg#ResourceAction"/>
+    
+
+
+    <!-- https://example.org/ccg#Rule -->
+
+
+    <Class rdf:about="https://example.org/ccg#Rule"/>
+    
+
+
+    <!-- https://example.org/ccg#RuleBook -->
+
+
+    <Class rdf:about="https://example.org/ccg#RuleBook"/>
+    
+
+
+    <!-- https://example.org/ccg#RuleSection -->
+
+
+    <Class rdf:about="https://example.org/ccg#RuleSection"/>
+    
+
+
+    <!-- https://example.org/ccg#RulesSection -->
+
+
+    <Class rdf:about="https://example.org/ccg#RulesSection"/>
+    
+
+
+    <!-- https://example.org/ccg#Step -->
+
+
+    <Class rdf:about="https://example.org/ccg#Step"/>
+    
+
+
+    <!-- https://example.org/ccg#TurnStructure -->
+
+
+    <Class rdf:about="https://example.org/ccg#TurnStructure"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://example.org/MagicTheGathering/BasicTurnStructure -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/BasicTurnStructure">
+        <rdf:type rdf:resource="https://example.org/ccg#TurnStructure"/>
+        <terms:description xml:lang="en">The basic and most common turn structure of Magic: The Gathering.</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Basic Turn Structure</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Basic Turn Structure</skos2:coreprefLabel>
+        <ccg:hasPhase>
+            <rdf:Description/>
+        </ccg:hasPhase>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/BeginPhase -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/BeginPhase">
+        <rdf:type rdf:resource="https://example.org/ccg#Phase"/>
+        <www1:rdf-schemacomment xml:lang="en">The first phase of a players turn.</www1:rdf-schemacomment>
+        <www1:rdf-schemalabel xml:lang="en">Begin</www1:rdf-schemalabel>
+        <skos2:corealtLabel xml:lang="en">Start</skos2:corealtLabel>
+        <skos2:coreprefLabel xml:lang="en">Begin</skos2:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/BlackMana -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/BlackMana">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <terms:description xml:lang="en">Black Mana is generally produced by Swamp Cards</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Black Mana</www1:rdf-schemalabel>
+        <www1:rdf-schemasubClassOf rdf:resource="https://example.org/MagicTheGathering/Mana"/>
+        <skos2:coreprefLabel xml:lang="en">Black Mana</skos2:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/BlueMana -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/BlueMana">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <terms:description xml:lang="en">Blue Mana is generally produced by FlIsland Cards</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Blue Mana</www1:rdf-schemalabel>
+        <www1:rdf-schemasubClassOf rdf:resource="https://example.org/MagicTheGathering/Mana"/>
+        <skos2:coreprefLabel xml:lang="en">Blue Mana</skos2:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/CombatPhase -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/CombatPhase">
+        <rdf:type rdf:resource="https://example.org/ccg#Phase"/>
+        <www1:rdf-schemacomment xml:lang="en">The combat phase.</www1:rdf-schemacomment>
+        <www1:rdf-schemalabel xml:lang="en">Combat Phase</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Combat Phase</skos2:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/ComprehensiveRules -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/ComprehensiveRules">
+        <rdf:type rdf:resource="https://example.org/ccg#RuleBook"/>
+        <terms:title xml:lang="en">Magic: The Gathering Comprehensive Rules</terms:title>
+        <ccg:hasRuleSection rdf:resource="https://example.org/MagicTheGathering/GameConcepts"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Deck -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Deck">
+        <rdf:type rdf:resource="https://example.org/ccg#Deck"/>
+        <terms:description xml:lang="en">the deck of cards that a player draws from</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Deck</www1:rdf-schemalabel>
+        <www1:rdf-schemasubClassOf rdf:nodeID="genid3"/>
+        <skos2:coreprefLabel xml:lang="en">Deck</skos2:coreprefLabel>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid3">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlRestriction"/>
+        <www:owlmaxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchemanonNegativeInteger">60</www:owlmaxCardinality>
+        <www:owlminCardinality rdf:datatype="http://www.w3.org/2001/XMLSchemanonNegativeInteger">40</www:owlminCardinality>
+        <www:owlonProperty rdf:resource="https://example.org/ccg#hasCard"/>
+        <www:owlsomeValuesFrom rdf:nodeID="genid4"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid4">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <www:owlintersectionOf>
+            <rdf:Description/>
+        </www:owlintersectionOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/DrawCardStep -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/DrawCardStep">
+        <rdf:type rdf:resource="https://example.org/ccg#Step"/>
+        <ccg:hasAction rdf:resource="https://example.org/MagicTheGathering/UntapAction"/>
+        <ccg:hasAction rdf:resource="https://example.org/ccg#DrawAction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/GameConceptsRuleSection -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/GameConceptsRuleSection">
+        <rdf:type rdf:resource="https://example.org/ccg#RuleSection"/>
+        <terms:title xml:lang="en">Game Concepts</terms:title>
+        <ccg:hasSubSection rdf:resource="https://example.org/ccg#GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/GeneralRulesSection -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/GeneralRulesSection">
+        <rdf:type rdf:resource="https://example.org/ccg#RulesSection"/>
+        <terms:title xml:lang="en">1. General</terms:title>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Graveyard -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Graveyard">
+        <rdf:type rdf:resource="https://example.org/ccg#PublicZone"/>
+        <ccg:hasCardPool rdf:resource="https://example.org/ccg#DiscardPile"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/GreenMana -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/GreenMana">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <terms:description xml:lang="en">Green Mana is generally produced by Forest Cards</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Green Mana</www1:rdf-schemalabel>
+        <www1:rdf-schemasubClassOf rdf:resource="https://example.org/MagicTheGathering/Mana"/>
+        <skos2:coreprefLabel xml:lang="en">Green Mana</skos2:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/LandCard -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/LandCard">
+        <rdf:type rdf:resource="https://example.org/ccg#PermanentCard"/>
+        <terms:description xml:lang="en">Land cards are used to produce Mana. Some lands have other special effects.</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Lan Card</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Land Card</skos2:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Library -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Library">
+        <rdf:type rdf:resource="https://example.org/ccg#HiddenZone"/>
+        <ccg:hasCardPool rdf:resource="https://example.org/ccg#Deck"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/MagicTheGathering -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/MagicTheGathering">
+        <rdf:type rdf:resource="https://example.org/ccg#CardGame"/>
+        <www1:rdf-schemalabel xml:lang="en">Magic: The Gathering</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Magic: The Gathering</skos2:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Mana -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Mana">
+        <rdf:type rdf:resource="https://example.org/ccg#Resource"/>
+        <terms:description xml:lang="en">Mana is required for deploying cards and activating abilities. It can come in five six variations.</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Mana</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Mana</skos2:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/PowerStat -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/PowerStat">
+        <rdf:type rdf:resource="https://example.org/ccg#CardStat"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/PreCombatMainPhase -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/PreCombatMainPhase">
+        <rdf:type rdf:resource="https://example.org/ccg#Phase"/>
+        <www1:rdf-schemacomment xml:lang="en">The first of two main phases of the game.</www1:rdf-schemacomment>
+        <www1:rdf-schemalabel xml:lang="en">Main Phase</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Main Phase</skos2:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/RedMana -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/RedMana">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <terms:description xml:lang="en">Red Mana is generally produced by Mountain Cards</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Red Mana</www1:rdf-schemalabel>
+        <www1:rdf-schemasubClassOf rdf:resource="https://example.org/MagicTheGathering/Mana"/>
+        <skos2:coreprefLabel xml:lang="en">Red Mana</skos2:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/TapAction -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/TapAction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <terms:description xml:lang="en">To Tap your card, you turn it sideways. This is how you activate a card in Magic.</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Tap</www1:rdf-schemalabel>
+        <www1:rdf-schemasubClassOf rdf:resource="https://example.org/ccg#ActivateAction"/>
+        <skos2:coreprefLabel xml:lang="en">Tap</skos2:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/ToughnessStat -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/ToughnessStat">
+        <rdf:type rdf:resource="https://example.org/ccg#CardStat"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/WhiteMana -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/WhiteMana">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <terms:description xml:lang="en">White Mana is generally produced by Plains Cards</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">White Mana</www1:rdf-schemalabel>
+        <www1:rdf-schemasubClassOf rdf:resource="https://example.org/MagicTheGathering/Mana"/>
+        <skos2:coreprefLabel xml:lang="en">White Mana</skos2:coreprefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e1 -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e1">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.1. These Magic rules apply to any Magic game with two or more players, including two-player games and multiplayer games.</terms:description>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e1a -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e1a">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.1a A two-player game is a game that begins with only two players.</terms:description>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Player"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e1b -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e1b">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.1b A multiplayer game is a game that begins with more than two players. See section 8, &amp;quot;Multiplayer Rules.&amp;quot;</terms:description>
+        <www1:rdf-schemaseeAlso rdf:resource="https://example.org/MagicTheGathering/MultiplayerRulesSection"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Player"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e2 -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e2">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.2. To play, each player needs their own deck of traditional Magic cards, small items to represent any tokens and counters, and some way to clearly track life totals.</terms:description>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Deck"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Player"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e2a -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e2a">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.2a In constructed play (a way of playing in which each player creates their own deck ahead of time), each deck has a minimum deck size of 60 cards. A constructed deck may contain any number of basic land cards and no more than four of any card with a particular English name other than basic land cards. For the purposes of deck construction, cards with interchangeable names have the same English name (see rule 201.3).</terms:description>
+        <www1:rdf-schemaseeAlso rdf:resource="https://example.org/MagicTheGathering/Rule201%2e3"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Deck"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Player"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e2b -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e2b">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.2b In limited play (a way of playing in which each player gets the same quantity of unopened Magic product such as booster packs and creates their own deck using only this product and basic land cards), each deck has a minimum deck size of 40 cards. A limited deck may contain as many duplicates of a card as are included with the product.</terms:description>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Deck"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Player"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e2c -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e2c">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.2c Commander decks are subject to additional deckbuilding restrictions and requirements. See rule 903, &amp;quot;Commander,&amp;quot; for details.</terms:description>
+        <www1:rdf-schemaseeAlso rdf:resource="https://example.org/MagicTheGathering/Rule903"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Deck"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e2d -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e2d">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.2d Some formats and casual play variants allow players to use a supplementary deck of nontraditional Magic cards (see rule 108.2a). These supplementary decks have their own deck construction rules. See rule 717, &amp;quot;Attraction Cards;&amp;quot; rule 901, &amp;quot;Planechase;&amp;quot; and rule 904, &amp;quot;Archenemy.&amp;quot;</terms:description>
+        <www1:rdf-schemaseeAlso rdf:resource="https://example.org/MagicTheGathering/Rule717"/>
+        <www1:rdf-schemaseeAlso rdf:resource="https://example.org/MagicTheGathering/Rule901"/>
+        <www1:rdf-schemaseeAlso rdf:resource="https://example.org/MagicTheGathering/Rule904"/>
+        <www1:rdf-schemaseeAlso rdf:resource="https://example.org/MagicTheGathering/Rule108%2e2a"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Deck"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Player"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e3 -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e3">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.3. Some cards require coins or traditional dice. Some casual variants require additional items, such as specially designated cards, nontraditional Magic cards, and specialized dice.</terms:description>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Card"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e4 -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e4">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.4. Each player may also have a sideboard, which is a group of additional cards the player may use to modify their deck between games of a match.</terms:description>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Card"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Deck"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Player"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Sideboard"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e4a -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e4a">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.4a In constructed play, a sideboard may contain no more than fifteen cards. The four-card limit (see rule 100.2a) applies to the combined deck and sideboard.</terms:description>
+        <www1:rdf-schemaseeAlso rdf:resource="https://example.org/MagicTheGathering/Rule100%2e2a"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Deck"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Sideboard"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e4b -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e4b">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.4b In limited play involving individual players, all cards in a player’s card pool not included in their deck are in that player’s sideboard.</terms:description>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Deck"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Player"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Sideboard"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e4c -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e4c">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.4c In limited play involving the Two-Headed Giant multiplayer variant, all cards in a team’s card pool but not in either player’s deck are in that team’s sideboard.</terms:description>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Deck"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Player"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Sideboard"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e4d -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e4d">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.4d In limited play involving other multiplayer team variants, each card in a team’s card pool but not in any player’s deck is assigned to the sideboard of one of those players. Each player has their own sideboard; cards may not be transferred between players.</terms:description>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Card"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Player"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Sideboard"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/MagicTheGathering/Rule100%2e5 -->
+
+
+    <NamedIndividual rdf:about="https://example.org/MagicTheGathering/Rule100%2e5">
+        <rdf:type rdf:resource="https://example.org/ccg#Rule"/>
+        <terms:description xml:lang="en">100.5. If a deck must contain at least a certain number of cards, that number is referred to as a minimum deck size. There is no maximum deck size for non-Commander decks.</terms:description>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Card"/>
+        <skos2:corerelated rdf:resource="https://example.org/MagicTheGathering/Deck"/>
+        <ccg:isDefinedIn rdf:resource="https://example.org/MagicTheGathering/GeneralRulesSection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccg#ArtifactCard -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#ArtifactCard">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccg#CreatureCard -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#CreatureCard">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccg#EnchantmentCard -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#EnchantmentCard">
+        <rdf:type rdf:resource="https://example.org/ccg#PermanentCard"/>
+        <www1:rdf-schemacomment xml:lang="en">Represents cards that provide continuous effects or modify game rules.</www1:rdf-schemacomment>
+        <www1:rdf-schemalabel xml:lang="en">Enchantment Card</www1:rdf-schemalabel>
+        <www1:rdf-schemasubClassOf rdf:resource="https://example.org/ccg#Card"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccg#Forest -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#Forest">
+        <rdf:type rdf:resource="https://example.org/ccg#LandCard"/>
+        <terms:description xml:lang="en">Generates a Green Mana when tapped.</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Forest</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Forest</skos2:coreprefLabel>
+        <ccg:hasEffect rdf:nodeID="genid6"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid6">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasAction rdf:nodeID="genid7"/>
+        <ccg:hasTrigger rdf:resource="https://example.org/MagicTheGathering/TapAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <rdf:type rdf:resource="https://example.org/ccg#ResourceAction"/>
+        <ccg:hasSideEffect rdf:nodeID="genid8"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid8">
+        <rdf:type rdf:resource="https://example.org/MagicTheGathering/ManaPool"/>
+        <ccg:hasResource rdf:resource="https://example.org/MagicTheGathering/GreenMana"/>
+        <ccg:hasResourceCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccg:hasResourceCount>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccg#GiantGrowth -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#GiantGrowth">
+        <rdf:type rdf:resource="https://example.org/ccg#InstantCard"/>
+        <www1:rdf-schemalabel xml:lang="en">Giant Growth</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Giant Growth</skos2:coreprefLabel>
+        <ccg:hasEffect rdf:nodeID="genid9"/>
+        <ccg:hasRuleText xml:lang="en">Target creature gets +3/+3 until end of turn.</ccg:hasRuleText>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid9">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasAction rdf:nodeID="genid10"/>
+        <ccg:hasTarget rdf:resource="https://example.org/MagicTheGathering/CreatureCard"/>
+        <ccg:hasTrigger rdf:resource="https://example.org/MagicTheGathering/CastAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid10">
+        <rdf:type rdf:resource="https://example.org/ccg#ModifyPTAction"/>
+        <ccg:hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ccg:hasAmount>
+        <ccg:hasDuration rdf:resource="https://example.org/MagicTheGathering/EndOfTurn"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccg#InstantCard -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#InstantCard">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccg#Island -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#Island">
+        <rdf:type rdf:resource="https://example.org/ccg#LandCard"/>
+        <terms:description xml:lang="en">Generates a Blue Mana when tapped.</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Island</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Island</skos2:coreprefLabel>
+        <ccg:hasEffect rdf:nodeID="genid11"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid11">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasAction rdf:nodeID="genid12"/>
+        <ccg:hasTrigger rdf:resource="https://example.org/MagicTheGathering/TapAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid12">
+        <rdf:type rdf:resource="https://example.org/ccg#ResourceAction"/>
+        <ccg:hasSideEffect rdf:nodeID="genid13"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid13">
+        <rdf:type rdf:resource="https://example.org/MagicTheGathering/ManaPool"/>
+        <ccg:hasResource rdf:resource="https://example.org/MagicTheGathering/BlueMana"/>
+        <ccg:hasResourceCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccg:hasResourceCount>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccg#LibraryOfLeng -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#LibraryOfLeng">
+        <rdf:type rdf:resource="https://example.org/ccg#ArtifactCard"/>
+        <www1:rdf-schemalabel xml:lang="en">Library of Leng</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Library of Leng</skos2:coreprefLabel>
+        <ccg:hasEffect rdf:nodeID="genid14"/>
+        <ccg:hasRuleText xml:lang="en">You have no maximum hand size. If an effect causes you to discard a card, discard it, but you may put it on top of your library instead of into your graveyard.</ccg:hasRuleText>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid14">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasAction rdf:nodeID="genid15"/>
+        <ccg:hasEffect rdf:nodeID="genid18"/>
+        <ccg:hasTrigger rdf:resource="https://example.org/MagicTheGathering/DiscardAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid15">
+        <rdf:type rdf:resource="https://example.org/ccg#ChoiceAction"/>
+        <ccg:hasOption rdf:nodeID="genid16"/>
+        <ccg:hasOption rdf:nodeID="genid17"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid18">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasCondition rdf:resource="https://example.org/MagicTheGathering/NoMaximumHandSizeCondition"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid16">
+        <rdf:type rdf:resource="https://example.org/ccg#DiscardOption"/>
+        <ccg:hasDestination rdf:resource="https://example.org/MagicTheGathering/Graveyard"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid17">
+        <rdf:type rdf:resource="https://example.org/ccg#DiscardOption"/>
+        <ccg:hasDestination rdf:resource="https://example.org/MagicTheGathering/LibraryTop"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccg#LightningBolt -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#LightningBolt">
+        <rdf:type rdf:resource="https://example.org/ccg#InstantCard"/>
+        <www1:rdf-schemalabel xml:lang="en">Lightning Bolt</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Lightning Bolt</skos2:coreprefLabel>
+        <ccg:hasEffect rdf:nodeID="genid19"/>
+        <ccg:hasRuleText xml:lang="en">Lightning Bolt deals 3 damage to any target.</ccg:hasRuleText>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid19">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasAction rdf:nodeID="genid20"/>
+        <ccg:hasTrigger rdf:resource="https://example.org/MagicTheGathering/CastAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid20">
+        <rdf:type rdf:resource="https://example.org/ccg#DamageAction"/>
+        <ccg:hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ccg:hasAmount>
+        <ccg:hasTarget rdf:resource="https://example.org/MagicTheGathering/AnyTarget"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccg#LlanowarElves -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#LlanowarElves">
+        <rdf:type rdf:resource="https://example.org/ccg#CreatureCard"/>
+        <terms:description xml:lang="en">One of the most well-known creatures, Llanowar Elves have been used by generations of players for mana acceleration.</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Llanowar Elves</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Llanowar Elves</skos2:coreprefLabel>
+        <ccg:hasEffect rdf:nodeID="genid21"/>
+        <ccg:hasManaCost rdf:nodeID="genid24"/>
+        <ccg:hasRuleText xml:lang="en">{T}: Add {G}.</ccg:hasRuleText>
+        <ccg:hasStat rdf:nodeID="genid25"/>
+        <ccg:hasStat rdf:nodeID="genid26"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid21">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasAction rdf:nodeID="genid22"/>
+        <ccg:hasTrigger rdf:resource="https://example.org/MagicTheGathering/TapAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid24">
+        <rdf:type rdf:resource="https://example.org/ccg#ManaCost"/>
+        <ccg:requiresMana rdf:resource="https://example.org/MagicTheGathering/GreenMana"/>
+        <ccg:requiresManaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccg:requiresManaCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid25">
+        <rdf:type rdf:resource="https://example.org/MagicTheGathering/ToughnessStat"/>
+        <ccg:hasCurrentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccg:hasCurrentValue>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid26">
+        <rdf:type rdf:resource="https://example.org/MagicTheGathering/PowerStat"/>
+        <ccg:hasCurrentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccg:hasCurrentValue>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid22">
+        <rdf:type rdf:resource="https://example.org/ccg#ResourceAction"/>
+        <ccg:hasSideEffect rdf:nodeID="genid23"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid23">
+        <rdf:type rdf:resource="https://example.org/MagicTheGathering/ManaPool"/>
+        <ccg:hasResource rdf:resource="https://example.org/MagicTheGathering/GreenMana"/>
+        <ccg:hasResourceCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccg:hasResourceCount>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccg#Mountain -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#Mountain">
+        <rdf:type rdf:resource="https://example.org/ccg#LandCard"/>
+        <terms:description xml:lang="en">Generates a Red Mana when tapped.</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Mountain</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Mountain</skos2:coreprefLabel>
+        <ccg:hasEffect rdf:nodeID="genid27"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid27">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasAction rdf:nodeID="genid28"/>
+        <ccg:hasTrigger rdf:resource="https://example.org/MagicTheGathering/TapAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid28">
+        <rdf:type rdf:resource="https://example.org/ccg#ResourceAction"/>
+        <ccg:hasSideEffect rdf:nodeID="genid29"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid29">
+        <rdf:type rdf:resource="https://example.org/MagicTheGathering/ManaPool"/>
+        <ccg:hasResource rdf:resource="https://example.org/MagicTheGathering/RedMana"/>
+        <ccg:hasResourceCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccg:hasResourceCount>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccg#Plains -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#Plains">
+        <rdf:type rdf:resource="https://example.org/ccg#LandCard"/>
+        <terms:description xml:lang="en">Generates a White Mana when tapped.</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Plains</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Plains</skos2:coreprefLabel>
+        <ccg:hasEffect rdf:nodeID="genid30"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid30">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasAction rdf:nodeID="genid31"/>
+        <ccg:hasTrigger rdf:resource="https://example.org/MagicTheGathering/TapAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid31">
+        <rdf:type rdf:resource="https://example.org/ccg#ResourceAction"/>
+        <ccg:hasSideEffect rdf:nodeID="genid32"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid32">
+        <rdf:type rdf:resource="https://example.org/MagicTheGathering/ManaPool"/>
+        <ccg:hasResource rdf:resource="https://example.org/MagicTheGathering/WhiteMana"/>
+        <ccg:hasResourceCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccg:hasResourceCount>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccg#SolRing -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#SolRing">
+        <rdf:type rdf:resource="https://example.org/ccg#ArtifactCard"/>
+        <terms:description xml:lang="en">Provides an abundant source of mana by tapping into the core of a distant star.</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Sol Ring</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Sol Ring</skos2:coreprefLabel>
+        <ccg:hasEffect rdf:nodeID="genid33"/>
+        <ccg:hasManaCost rdf:nodeID="genid36"/>
+        <ccg:hasRuleText xml:lang="en">{T}: Add {C}{C}.</ccg:hasRuleText>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid33">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasAction rdf:nodeID="genid34"/>
+        <ccg:hasTrigger rdf:resource="https://example.org/MagicTheGathering/TapAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid36">
+        <rdf:type rdf:resource="https://example.org/ccg#ManaCost"/>
+        <ccg:requiresMana rdf:resource="https://example.org/MagicTheGathering/ColorlessMana"/>
+        <ccg:requiresManaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccg:requiresManaCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid34">
+        <rdf:type rdf:resource="https://example.org/ccg#ResourceAction"/>
+        <ccg:hasSideEffect rdf:nodeID="genid35"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid35">
+        <rdf:type rdf:resource="https://example.org/MagicTheGathering/ManaPool"/>
+        <ccg:hasResource rdf:resource="https://example.org/MagicTheGathering/ColorlessMana"/>
+        <ccg:hasResourceCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ccg:hasResourceCount>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccg#SpellCard -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#SpellCard">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlClass"/>
+        <www1:rdf-schemacomment xml:lang="en">Represents cards that cast spells, perform actions, or have immediate effects.</www1:rdf-schemacomment>
+        <www1:rdf-schemalabel xml:lang="en">Spell Card</www1:rdf-schemalabel>
+        <www1:rdf-schemasubClassOf rdf:resource="https://example.org/ccg#Card"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://example.org/ccg#StripMine -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#StripMine">
+        <rdf:type rdf:resource="https://example.org/ccg#LandCard"/>
+        <www1:rdf-schemalabel xml:lang="en">Strip Mine</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Strip Mine</skos2:coreprefLabel>
+        <ccg:hasEffect rdf:nodeID="genid37"/>
+        <ccg:hasEffect rdf:nodeID="genid40"/>
+        <ccg:hasRuleText xml:lang="en">Adds 1 colorless mana to your mana pool or sacrifices to destroy target land.</ccg:hasRuleText>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid37">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasAction rdf:nodeID="genid38"/>
+        <ccg:hasTrigger rdf:resource="https://example.org/MagicTheGathering/TapAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid40">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasAction rdf:nodeID="genid41"/>
+        <ccg:hasTrigger rdf:resource="https://example.org/MagicTheGathering/SacrificeAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid38">
+        <rdf:type rdf:resource="https://example.org/ccg#ResourceAction"/>
+        <ccg:hasSideEffect rdf:nodeID="genid39"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid41">
+        <rdf:type rdf:resource="https://example.org/ccg#DestroyAction"/>
+        <ccg:hasTarget rdf:resource="https://example.org/MagicTheGathering/LandCard"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid39">
+        <rdf:type rdf:resource="https://example.org/MagicTheGathering/ManaPool"/>
+        <ccg:hasResource rdf:resource="https://example.org/MagicTheGathering/ColorlessMana"/>
+        <ccg:hasResourceCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccg:hasResourceCount>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.org/ccg#Swamp -->
+
+
+    <NamedIndividual rdf:about="https://example.org/ccg#Swamp">
+        <rdf:type rdf:resource="https://example.org/ccg#LandCard"/>
+        <terms:description xml:lang="en">Generates a Black Mana when tapped.</terms:description>
+        <www1:rdf-schemalabel xml:lang="en">Swamp</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Swamp</skos2:coreprefLabel>
+        <ccg:hasEffect rdf:nodeID="genid42"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid42">
+        <rdf:type rdf:resource="https://example.org/ccg#Effect"/>
+        <ccg:hasAction rdf:nodeID="genid43"/>
+        <ccg:hasTrigger rdf:resource="https://example.org/MagicTheGathering/TapAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid43">
+        <rdf:type rdf:resource="https://example.org/ccg#ResourceAction"/>
+        <ccg:hasSideEffect rdf:nodeID="genid44"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid44">
+        <rdf:type rdf:resource="https://example.org/MagicTheGathering/ManaPool"/>
+        <ccg:hasResource rdf:resource="https://example.org/MagicTheGathering/BlackMana"/>
+        <ccg:hasResourceCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccg:hasResourceCount>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid45">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owlRestriction"/>
+        <www:owlmaxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchemanonNegativeInteger">4</www:owlmaxCardinality>
+        <www:owlonProperty rdf:resource="https://example.org/ccg#hasCard"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://example.org/MagicTheGathering/Battlefield">
+        <www3:rdf-syntax-nstype rdf:resource="https://example.org/ccg#PlayArea"/>
+        <ccg:hasPlayZone rdf:resource="https://example.org/MagicTheGathering/Graveyard"/>
+        <ccg:hasPlayZone rdf:resource="https://example.org/MagicTheGathering/Library"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://example.org/MagicTheGathering/PowerStat">
+        <www1:rdf-schemalabel xml:lang="en">Power</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Power</skos2:coreprefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://example.org/MagicTheGathering/ToughnessStat">
+        <www1:rdf-schemalabel xml:lang="en">Toughness</www1:rdf-schemalabel>
+        <skos2:coreprefLabel xml:lang="en">Toughness</skos2:coreprefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://example.org/ccg#ArtifactCard">
+        <www1:rdf-schemacomment xml:lang="en">Represents cards that depict magical items, equipment, or artifacts.</www1:rdf-schemacomment>
+        <www1:rdf-schemalabel xml:lang="en">Artifact Card</www1:rdf-schemalabel>
+        <www1:rdf-schemasubClassOf rdf:resource="https://example.org/ccg#PermanentCard"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://example.org/ccg#CreatureCard">
+        <www1:rdf-schemacomment xml:lang="en">Represents cards that depict creatures, characters, or entities within the game.</www1:rdf-schemacomment>
+        <www1:rdf-schemalabel xml:lang="en">Creature Card</www1:rdf-schemalabel>
+        <www1:rdf-schemasubClassOf rdf:resource="https://example.org/ccg#PermanentCard"/>
+        <ccg:isType rdf:resource="https://example.org/MagicTheGathering/Permanent"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://example.org/ccg#InstantCard">
+        <www1:rdf-schemacomment xml:lang="en">Represents cards that take effect instantly.</www1:rdf-schemacomment>
+        <www1:rdf-schemalabel xml:lang="en">Instant</www1:rdf-schemalabel>
+        <www1:rdf-schemasubClassOf rdf:resource="https://example.org/ccg#SpellCard"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,1657 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "_:genid10",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ModifyPTAction"
+  } ],
+  "https://example.org/ccg#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "https://example.org/ccg#hasDuration" : [ {
+    "@id" : "https://example.org/MagicTheGathering/EndOfTurn"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "_:genid12"
+  } ],
+  "https://example.org/ccg#hasTrigger" : [ {
+    "@id" : "https://example.org/MagicTheGathering/TapAction"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ResourceAction"
+  } ],
+  "https://example.org/ccg#hasSideEffect" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/MagicTheGathering/ManaPool"
+  } ],
+  "https://example.org/ccg#hasResource" : [ {
+    "@id" : "https://example.org/MagicTheGathering/BlueMana"
+  } ],
+  "https://example.org/ccg#hasResourceCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "_:genid15"
+  } ],
+  "https://example.org/ccg#hasEffect" : [ {
+    "@id" : "_:genid18"
+  } ],
+  "https://example.org/ccg#hasTrigger" : [ {
+    "@id" : "https://example.org/MagicTheGathering/DiscardAction"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ChoiceAction"
+  } ],
+  "https://example.org/ccg#hasOption" : [ {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#DiscardOption"
+  } ],
+  "https://example.org/ccg#hasDestination" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Graveyard"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#DiscardOption"
+  } ],
+  "https://example.org/ccg#hasDestination" : [ {
+    "@id" : "https://example.org/MagicTheGathering/LibraryTop"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasCondition" : [ {
+    "@id" : "https://example.org/MagicTheGathering/NoMaximumHandSizeCondition"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "_:genid20"
+  } ],
+  "https://example.org/ccg#hasTrigger" : [ {
+    "@id" : "https://example.org/MagicTheGathering/CastAction"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#DamageAction"
+  } ],
+  "https://example.org/ccg#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "https://example.org/ccg#hasTarget" : [ {
+    "@id" : "https://example.org/MagicTheGathering/AnyTarget"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "_:genid22"
+  } ],
+  "https://example.org/ccg#hasTrigger" : [ {
+    "@id" : "https://example.org/MagicTheGathering/TapAction"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ResourceAction"
+  } ],
+  "https://example.org/ccg#hasSideEffect" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/MagicTheGathering/ManaPool"
+  } ],
+  "https://example.org/ccg#hasResource" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GreenMana"
+  } ],
+  "https://example.org/ccg#hasResourceCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ManaCost"
+  } ],
+  "https://example.org/ccg#requiresMana" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GreenMana"
+  } ],
+  "https://example.org/ccg#requiresManaCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/MagicTheGathering/ToughnessStat"
+  } ],
+  "https://example.org/ccg#hasCurrentValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/MagicTheGathering/PowerStat"
+  } ],
+  "https://example.org/ccg#hasCurrentValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "_:genid28"
+  } ],
+  "https://example.org/ccg#hasTrigger" : [ {
+    "@id" : "https://example.org/MagicTheGathering/TapAction"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ResourceAction"
+  } ],
+  "https://example.org/ccg#hasSideEffect" : [ {
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/MagicTheGathering/ManaPool"
+  } ],
+  "https://example.org/ccg#hasResource" : [ {
+    "@id" : "https://example.org/MagicTheGathering/RedMana"
+  } ],
+  "https://example.org/ccg#hasResourceCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlRestriction"
+  } ],
+  "http://www.w3.org/2002/07/owlmaxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchemanonNegativeInteger",
+    "@value" : "60"
+  } ],
+  "http://www.w3.org/2002/07/owlminCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchemanonNegativeInteger",
+    "@value" : "40"
+  } ],
+  "http://www.w3.org/2002/07/owlonProperty" : [ {
+    "@id" : "https://example.org/ccg#hasCard"
+  } ],
+  "http://www.w3.org/2002/07/owlsomeValuesFrom" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "_:genid31"
+  } ],
+  "https://example.org/ccg#hasTrigger" : [ {
+    "@id" : "https://example.org/MagicTheGathering/TapAction"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ResourceAction"
+  } ],
+  "https://example.org/ccg#hasSideEffect" : [ {
+    "@id" : "_:genid32"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/MagicTheGathering/ManaPool"
+  } ],
+  "https://example.org/ccg#hasResource" : [ {
+    "@id" : "https://example.org/MagicTheGathering/WhiteMana"
+  } ],
+  "https://example.org/ccg#hasResourceCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "_:genid34"
+  } ],
+  "https://example.org/ccg#hasTrigger" : [ {
+    "@id" : "https://example.org/MagicTheGathering/TapAction"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ResourceAction"
+  } ],
+  "https://example.org/ccg#hasSideEffect" : [ {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/MagicTheGathering/ManaPool"
+  } ],
+  "https://example.org/ccg#hasResource" : [ {
+    "@id" : "https://example.org/MagicTheGathering/ColorlessMana"
+  } ],
+  "https://example.org/ccg#hasResourceCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ManaCost"
+  } ],
+  "https://example.org/ccg#requiresMana" : [ {
+    "@id" : "https://example.org/MagicTheGathering/ColorlessMana"
+  } ],
+  "https://example.org/ccg#requiresManaCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "_:genid38"
+  } ],
+  "https://example.org/ccg#hasTrigger" : [ {
+    "@id" : "https://example.org/MagicTheGathering/TapAction"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ResourceAction"
+  } ],
+  "https://example.org/ccg#hasSideEffect" : [ {
+    "@id" : "_:genid39"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/MagicTheGathering/ManaPool"
+  } ],
+  "https://example.org/ccg#hasResource" : [ {
+    "@id" : "https://example.org/MagicTheGathering/ColorlessMana"
+  } ],
+  "https://example.org/ccg#hasResourceCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2002/07/owlintersectionOf" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "_:genid41"
+  } ],
+  "https://example.org/ccg#hasTrigger" : [ {
+    "@id" : "https://example.org/MagicTheGathering/SacrificeAction"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#DestroyAction"
+  } ],
+  "https://example.org/ccg#hasTarget" : [ {
+    "@id" : "https://example.org/MagicTheGathering/LandCard"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "_:genid43"
+  } ],
+  "https://example.org/ccg#hasTrigger" : [ {
+    "@id" : "https://example.org/MagicTheGathering/TapAction"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ResourceAction"
+  } ],
+  "https://example.org/ccg#hasSideEffect" : [ {
+    "@id" : "_:genid44"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/MagicTheGathering/ManaPool"
+  } ],
+  "https://example.org/ccg#hasResource" : [ {
+    "@id" : "https://example.org/MagicTheGathering/BlackMana"
+  } ],
+  "https://example.org/ccg#hasResourceCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlRestriction"
+  } ],
+  "http://www.w3.org/2002/07/owlmaxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchemanonNegativeInteger",
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/2002/07/owlonProperty" : [ {
+    "@id" : "https://example.org/ccg#hasCard"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "https://example.org/ccg#hasTrigger" : [ {
+    "@id" : "https://example.org/MagicTheGathering/TapAction"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ResourceAction"
+  } ],
+  "https://example.org/ccg#hasSideEffect" : [ {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/MagicTheGathering/ManaPool"
+  } ],
+  "https://example.org/ccg#hasResource" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GreenMana"
+  } ],
+  "https://example.org/ccg#hasResourceCount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Effect"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "_:genid10"
+  } ],
+  "https://example.org/ccg#hasTarget" : [ {
+    "@id" : "https://example.org/MagicTheGathering/CreatureCard"
+  } ],
+  "https://example.org/ccg#hasTrigger" : [ {
+    "@id" : "https://example.org/MagicTheGathering/CastAction"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-nstype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schemacomment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schemalabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schemaseeAlso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schemasubClassOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchemanonNegativeInteger",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlRestriction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlintersectionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlmaxCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlminCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlonProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owlsomeValuesFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/corealtLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/coreprefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/corerelated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/BasicTurnStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The basic and most common turn structure of Magic: The Gathering."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#TurnStructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Basic Turn Structure"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Basic Turn Structure"
+  } ],
+  "https://example.org/ccg#hasPhase" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Battlefield",
+  "http://www.w3.org/1999/02/22-rdf-syntax-nstype" : [ {
+    "@id" : "https://example.org/ccg#PlayArea"
+  } ],
+  "https://example.org/ccg#hasPlayZone" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Graveyard"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Library"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/BeginPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemacomment" : [ {
+    "@language" : "en",
+    "@value" : "The first phase of a players turn."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Begin"
+  } ],
+  "http://www.w3.org/2004/02/skos/corealtLabel" : [ {
+    "@language" : "en",
+    "@value" : "Start"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Begin"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/BlackMana",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Black Mana is generally produced by Swamp Cards"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Black Mana"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Mana"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Black Mana"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/BlueMana",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Blue Mana is generally produced by FlIsland Cards"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Blue Mana"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Mana"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Blue Mana"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/CombatPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemacomment" : [ {
+    "@language" : "en",
+    "@value" : "The combat phase."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Combat Phase"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Combat Phase"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/ComprehensiveRules",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Magic: The Gathering Comprehensive Rules"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#RuleBook"
+  } ],
+  "https://example.org/ccg#hasRuleSection" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GameConcepts"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Deck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "the deck of cards that a player draws from"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Deck"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Deck"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Deck"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/DrawCardStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Step"
+  } ],
+  "https://example.org/ccg#hasAction" : [ {
+    "@id" : "https://example.org/MagicTheGathering/UntapAction"
+  }, {
+    "@id" : "https://example.org/ccg#DrawAction"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/GameConceptsRuleSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Game Concepts"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#RuleSection"
+  } ],
+  "https://example.org/ccg#hasSubSection" : [ {
+    "@id" : "https://example.org/ccg#GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "1. General"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#RulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Graveyard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#PublicZone"
+  } ],
+  "https://example.org/ccg#hasCardPool" : [ {
+    "@id" : "https://example.org/ccg#DiscardPile"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/GreenMana",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Green Mana is generally produced by Forest Cards"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Green Mana"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Mana"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Green Mana"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/LandCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Land cards are used to produce Mana. Some lands have other special effects."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#PermanentCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Lan Card"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Land Card"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Library",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#HiddenZone"
+  } ],
+  "https://example.org/ccg#hasCardPool" : [ {
+    "@id" : "https://example.org/ccg#Deck"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/MagicTheGathering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#CardGame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Magic: The Gathering"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Magic: The Gathering"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Mana",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Mana is required for deploying cards and activating abilities. It can come in five six variations."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Mana"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Mana"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/ManaPool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/PowerStat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#CardStat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Power"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Power"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/PreCombatMainPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemacomment" : [ {
+    "@language" : "en",
+    "@value" : "The first of two main phases of the game."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Main Phase"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Main Phase"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/RedMana",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Red Mana is generally produced by Mountain Cards"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Red Mana"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Mana"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Red Mana"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.1. These Magic rules apply to any Magic game with two or more players, including two-player games and multiplayer games."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e1a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.1a A two-player game is a game that begins with only two players."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Player"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e1b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.1b A multiplayer game is a game that begins with more than two players. See section 8, &quot;Multiplayer Rules.&quot;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemaseeAlso" : [ {
+    "@id" : "https://example.org/MagicTheGathering/MultiplayerRulesSection"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Player"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.2. To play, each player needs their own deck of traditional Magic cards, small items to represent any tokens and counters, and some way to clearly track life totals."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Deck"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Player"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e2a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.2a In constructed play (a way of playing in which each player creates their own deck ahead of time), each deck has a minimum deck size of 60 cards. A constructed deck may contain any number of basic land cards and no more than four of any card with a particular English name other than basic land cards. For the purposes of deck construction, cards with interchangeable names have the same English name (see rule 201.3)."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemaseeAlso" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Rule201%2e3"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Deck"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Player"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e2b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.2b In limited play (a way of playing in which each player gets the same quantity of unopened Magic product such as booster packs and creates their own deck using only this product and basic land cards), each deck has a minimum deck size of 40 cards. A limited deck may contain as many duplicates of a card as are included with the product."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Deck"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Player"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e2c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.2c Commander decks are subject to additional deckbuilding restrictions and requirements. See rule 903, &quot;Commander,&quot; for details."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemaseeAlso" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Rule903"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Deck"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e2d",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.2d Some formats and casual play variants allow players to use a supplementary deck of nontraditional Magic cards (see rule 108.2a). These supplementary decks have their own deck construction rules. See rule 717, &quot;Attraction Cards;&quot; rule 901, &quot;Planechase;&quot; and rule 904, &quot;Archenemy.&quot;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemaseeAlso" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Rule717"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Rule901"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Rule904"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Rule108%2e2a"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Deck"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Player"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.3. Some cards require coins or traditional dice. Some casual variants require additional items, such as specially designated cards, nontraditional Magic cards, and specialized dice."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Card"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.4. Each player may also have a sideboard, which is a group of additional cards the player may use to modify their deck between games of a match."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Card"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Deck"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Player"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Sideboard"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e4a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.4a In constructed play, a sideboard may contain no more than fifteen cards. The four-card limit (see rule 100.2a) applies to the combined deck and sideboard."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemaseeAlso" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Rule100%2e2a"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Deck"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Sideboard"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e4b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.4b In limited play involving individual players, all cards in a player’s card pool not included in their deck are in that player’s sideboard."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Deck"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Player"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Sideboard"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e4c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.4c In limited play involving the Two-Headed Giant multiplayer variant, all cards in a team’s card pool but not in either player’s deck are in that team’s sideboard."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Deck"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Player"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Sideboard"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e4d",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.4d In limited play involving other multiplayer team variants, each card in a team’s card pool but not in any player’s deck is assigned to the sideboard of one of those players. Each player has their own sideboard; cards may not be transferred between players."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Card"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Player"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Sideboard"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/Rule100%2e5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "100.5. If a deck must contain at least a certain number of cards, that number is referred to as a minimum deck size. There is no maximum deck size for non-Commander decks."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#Rule"
+  } ],
+  "http://www.w3.org/2004/02/skos/corerelated" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Card"
+  }, {
+    "@id" : "https://example.org/MagicTheGathering/Deck"
+  } ],
+  "https://example.org/ccg#isDefinedIn" : [ {
+    "@id" : "https://example.org/MagicTheGathering/GeneralRulesSection"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/TapAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "To Tap your card, you turn it sideways. This is how you activate a card in Magic."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Tap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccg#ActivateAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Tap"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/ToughnessStat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#CardStat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Toughness"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Toughness"
+  } ]
+}, {
+  "@id" : "https://example.org/MagicTheGathering/WhiteMana",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "White Mana is generally produced by Plains Cards"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "White Mana"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Mana"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "White Mana"
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#ArtifactCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemacomment" : [ {
+    "@language" : "en",
+    "@value" : "Represents cards that depict magical items, equipment, or artifacts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Artifact Card"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccg#PermanentCard"
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#CardGame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#CardStat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#ChoiceAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#CreatureCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemacomment" : [ {
+    "@language" : "en",
+    "@value" : "Represents cards that depict creatures, characters, or entities within the game."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Creature Card"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccg#PermanentCard"
+  } ],
+  "https://example.org/ccg#isType" : [ {
+    "@id" : "https://example.org/MagicTheGathering/Permanent"
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#DamageAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#Deck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#DestroyAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#DiscardOption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#Effect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#EnchantmentCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#PermanentCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemacomment" : [ {
+    "@language" : "en",
+    "@value" : "Represents cards that provide continuous effects or modify game rules."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Enchantment Card"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccg#Card"
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#Forest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Generates a Green Mana when tapped."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#LandCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Forest"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Forest"
+  } ],
+  "https://example.org/ccg#hasEffect" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#GiantGrowth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#InstantCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Giant Growth"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Giant Growth"
+  } ],
+  "https://example.org/ccg#hasEffect" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "https://example.org/ccg#hasRuleText" : [ {
+    "@language" : "en",
+    "@value" : "Target creature gets +3/+3 until end of turn."
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#HiddenZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#InstantCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemacomment" : [ {
+    "@language" : "en",
+    "@value" : "Represents cards that take effect instantly."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Instant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccg#SpellCard"
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#Island",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Generates a Blue Mana when tapped."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#LandCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Island"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Island"
+  } ],
+  "https://example.org/ccg#hasEffect" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#LandCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#LibraryOfLeng",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ArtifactCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Library of Leng"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Library of Leng"
+  } ],
+  "https://example.org/ccg#hasEffect" : [ {
+    "@id" : "_:genid14"
+  } ],
+  "https://example.org/ccg#hasRuleText" : [ {
+    "@language" : "en",
+    "@value" : "You have no maximum hand size. If an effect causes you to discard a card, discard it, but you may put it on top of your library instead of into your graveyard."
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#LightningBolt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#InstantCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Lightning Bolt"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Lightning Bolt"
+  } ],
+  "https://example.org/ccg#hasEffect" : [ {
+    "@id" : "_:genid19"
+  } ],
+  "https://example.org/ccg#hasRuleText" : [ {
+    "@language" : "en",
+    "@value" : "Lightning Bolt deals 3 damage to any target."
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#LlanowarElves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "One of the most well-known creatures, Llanowar Elves have been used by generations of players for mana acceleration."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#CreatureCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Llanowar Elves"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Llanowar Elves"
+  } ],
+  "https://example.org/ccg#hasEffect" : [ {
+    "@id" : "_:genid21"
+  } ],
+  "https://example.org/ccg#hasManaCost" : [ {
+    "@id" : "_:genid24"
+  } ],
+  "https://example.org/ccg#hasRuleText" : [ {
+    "@language" : "en",
+    "@value" : "{T}: Add {G}."
+  } ],
+  "https://example.org/ccg#hasStat" : [ {
+    "@id" : "_:genid25"
+  }, {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#ManaCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#ModifyPTAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#Mountain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Generates a Red Mana when tapped."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#LandCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Mountain"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Mountain"
+  } ],
+  "https://example.org/ccg#hasEffect" : [ {
+    "@id" : "_:genid27"
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#PermanentCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#Phase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#Plains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Generates a White Mana when tapped."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#LandCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Plains"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Plains"
+  } ],
+  "https://example.org/ccg#hasEffect" : [ {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#PublicZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#ResourceAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#Rule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#RuleBook",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#RuleSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#RulesSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#SolRing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Provides an abundant source of mana by tapping into the core of a distant star."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#ArtifactCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Sol Ring"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Sol Ring"
+  } ],
+  "https://example.org/ccg#hasEffect" : [ {
+    "@id" : "_:genid33"
+  } ],
+  "https://example.org/ccg#hasManaCost" : [ {
+    "@id" : "_:genid36"
+  } ],
+  "https://example.org/ccg#hasRuleText" : [ {
+    "@language" : "en",
+    "@value" : "{T}: Add {C}{C}."
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#SpellCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owlClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemacomment" : [ {
+    "@language" : "en",
+    "@value" : "Represents cards that cast spells, perform actions, or have immediate effects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Spell Card"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemasubClassOf" : [ {
+    "@id" : "https://example.org/ccg#Card"
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#Step",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#StripMine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#LandCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Strip Mine"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Strip Mine"
+  } ],
+  "https://example.org/ccg#hasEffect" : [ {
+    "@id" : "_:genid37"
+  }, {
+    "@id" : "_:genid40"
+  } ],
+  "https://example.org/ccg#hasRuleText" : [ {
+    "@language" : "en",
+    "@value" : "Adds 1 colorless mana to your mana pool or sacrifices to destroy target land."
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#Swamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Generates a Black Mana when tapped."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://example.org/ccg#LandCard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schemalabel" : [ {
+    "@language" : "en",
+    "@value" : "Swamp"
+  } ],
+  "http://www.w3.org/2004/02/skos/coreprefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Swamp"
+  } ],
+  "https://example.org/ccg#hasEffect" : [ {
+    "@id" : "_:genid42"
+  } ]
+}, {
+  "@id" : "https://example.org/ccg#TurnStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://example.org/ccg#hasAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasAmount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasCardPool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasCurrentValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasManaCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasOption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasPlayZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasResourceCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasRuleSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasRuleText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasSideEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasStat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasSubSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#hasTrigger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#isDefinedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#isType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#requiresMana",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://example.org/ccg#requiresManaCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
