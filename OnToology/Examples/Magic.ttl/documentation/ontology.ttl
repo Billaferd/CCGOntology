@@ -1,0 +1,953 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-nstype
+<http://www.w3.org/1999/02/22-rdf-syntax-nstype> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schemacomment
+<http://www.w3.org/2000/01/rdf-schemacomment> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schemalabel
+<http://www.w3.org/2000/01/rdf-schemalabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schemaseeAlso
+<http://www.w3.org/2000/01/rdf-schemaseeAlso> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schemasubClassOf
+<http://www.w3.org/2000/01/rdf-schemasubClassOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owlintersectionOf
+<http://www.w3.org/2002/07/owlintersectionOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owlmaxCardinality
+<http://www.w3.org/2002/07/owlmaxCardinality> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owlminCardinality
+<http://www.w3.org/2002/07/owlminCardinality> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owlonProperty
+<http://www.w3.org/2002/07/owlonProperty> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owlsomeValuesFrom
+<http://www.w3.org/2002/07/owlsomeValuesFrom> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/corealtLabel
+<http://www.w3.org/2004/02/skos/corealtLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/coreprefLabel
+<http://www.w3.org/2004/02/skos/coreprefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/corerelated
+<http://www.w3.org/2004/02/skos/corerelated> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasAction
+<https://example.org/ccg#hasAction> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasAmount
+<https://example.org/ccg#hasAmount> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasCardPool
+<https://example.org/ccg#hasCardPool> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasCondition
+<https://example.org/ccg#hasCondition> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasCurrentValue
+<https://example.org/ccg#hasCurrentValue> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasDestination
+<https://example.org/ccg#hasDestination> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasDuration
+<https://example.org/ccg#hasDuration> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasEffect
+<https://example.org/ccg#hasEffect> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasManaCost
+<https://example.org/ccg#hasManaCost> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasOption
+<https://example.org/ccg#hasOption> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasPhase
+<https://example.org/ccg#hasPhase> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasPlayZone
+<https://example.org/ccg#hasPlayZone> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasResource
+<https://example.org/ccg#hasResource> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasResourceCount
+<https://example.org/ccg#hasResourceCount> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasRuleSection
+<https://example.org/ccg#hasRuleSection> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasRuleText
+<https://example.org/ccg#hasRuleText> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasSideEffect
+<https://example.org/ccg#hasSideEffect> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasStat
+<https://example.org/ccg#hasStat> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasSubSection
+<https://example.org/ccg#hasSubSection> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasTarget
+<https://example.org/ccg#hasTarget> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#hasTrigger
+<https://example.org/ccg#hasTrigger> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#isDefinedIn
+<https://example.org/ccg#isDefinedIn> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#isType
+<https://example.org/ccg#isType> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#requiresMana
+<https://example.org/ccg#requiresMana> rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/ccg#requiresManaCount
+<https://example.org/ccg#requiresManaCount> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchemanonNegativeInteger
+<http://www.w3.org/2001/XMLSchemanonNegativeInteger> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2002/07/owlClass
+<http://www.w3.org/2002/07/owlClass> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owlRestriction
+<http://www.w3.org/2002/07/owlRestriction> rdf:type owl:Class .
+
+
+###  https://example.org/MagicTheGathering/ManaPool
+<https://example.org/MagicTheGathering/ManaPool> rdf:type owl:Class .
+
+
+###  https://example.org/MagicTheGathering/PowerStat
+<https://example.org/MagicTheGathering/PowerStat> rdf:type owl:Class .
+
+
+###  https://example.org/MagicTheGathering/ToughnessStat
+<https://example.org/MagicTheGathering/ToughnessStat> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#ArtifactCard
+<https://example.org/ccg#ArtifactCard> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#CardGame
+<https://example.org/ccg#CardGame> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#CardStat
+<https://example.org/ccg#CardStat> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#ChoiceAction
+<https://example.org/ccg#ChoiceAction> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#CreatureCard
+<https://example.org/ccg#CreatureCard> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#DamageAction
+<https://example.org/ccg#DamageAction> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#Deck
+<https://example.org/ccg#Deck> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#DestroyAction
+<https://example.org/ccg#DestroyAction> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#DiscardOption
+<https://example.org/ccg#DiscardOption> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#Effect
+<https://example.org/ccg#Effect> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#HiddenZone
+<https://example.org/ccg#HiddenZone> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#InstantCard
+<https://example.org/ccg#InstantCard> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#LandCard
+<https://example.org/ccg#LandCard> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#ManaCost
+<https://example.org/ccg#ManaCost> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#ModifyPTAction
+<https://example.org/ccg#ModifyPTAction> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#PermanentCard
+<https://example.org/ccg#PermanentCard> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#Phase
+<https://example.org/ccg#Phase> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#PublicZone
+<https://example.org/ccg#PublicZone> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#Resource
+<https://example.org/ccg#Resource> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#ResourceAction
+<https://example.org/ccg#ResourceAction> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#Rule
+<https://example.org/ccg#Rule> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#RuleBook
+<https://example.org/ccg#RuleBook> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#RuleSection
+<https://example.org/ccg#RuleSection> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#RulesSection
+<https://example.org/ccg#RulesSection> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#Step
+<https://example.org/ccg#Step> rdf:type owl:Class .
+
+
+###  https://example.org/ccg#TurnStructure
+<https://example.org/ccg#TurnStructure> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://example.org/MagicTheGathering/BasicTurnStructure
+<https://example.org/MagicTheGathering/BasicTurnStructure> rdf:type owl:NamedIndividual ,
+                                                                    <https://example.org/ccg#TurnStructure> ;
+                                                           <http://purl.org/dc/terms/description> "The basic and most common turn structure of Magic: The Gathering."@en ;
+                                                           <http://www.w3.org/2000/01/rdf-schemalabel> "Basic Turn Structure"@en ;
+                                                           <http://www.w3.org/2004/02/skos/coreprefLabel> "Basic Turn Structure"@en ;
+                                                           <https://example.org/ccg#hasPhase> [ ] .
+
+
+###  https://example.org/MagicTheGathering/BeginPhase
+<https://example.org/MagicTheGathering/BeginPhase> rdf:type owl:NamedIndividual ,
+                                                            <https://example.org/ccg#Phase> ;
+                                                   <http://www.w3.org/2000/01/rdf-schemacomment> "The first phase of a players turn."@en ;
+                                                   <http://www.w3.org/2000/01/rdf-schemalabel> "Begin"@en ;
+                                                   <http://www.w3.org/2004/02/skos/corealtLabel> "Start"@en ;
+                                                   <http://www.w3.org/2004/02/skos/coreprefLabel> "Begin"@en .
+
+
+###  https://example.org/MagicTheGathering/BlackMana
+<https://example.org/MagicTheGathering/BlackMana> rdf:type owl:NamedIndividual ,
+                                                           <http://www.w3.org/2002/07/owlClass> ;
+                                                  <http://purl.org/dc/terms/description> "Black Mana is generally produced by Swamp Cards"@en ;
+                                                  <http://www.w3.org/2000/01/rdf-schemalabel> "Black Mana"@en ;
+                                                  <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/MagicTheGathering/Mana> ;
+                                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Black Mana"@en .
+
+
+###  https://example.org/MagicTheGathering/BlueMana
+<https://example.org/MagicTheGathering/BlueMana> rdf:type owl:NamedIndividual ,
+                                                          <http://www.w3.org/2002/07/owlClass> ;
+                                                 <http://purl.org/dc/terms/description> "Blue Mana is generally produced by FlIsland Cards"@en ;
+                                                 <http://www.w3.org/2000/01/rdf-schemalabel> "Blue Mana"@en ;
+                                                 <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/MagicTheGathering/Mana> ;
+                                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "Blue Mana"@en .
+
+
+###  https://example.org/MagicTheGathering/CombatPhase
+<https://example.org/MagicTheGathering/CombatPhase> rdf:type owl:NamedIndividual ,
+                                                             <https://example.org/ccg#Phase> ;
+                                                    <http://www.w3.org/2000/01/rdf-schemacomment> "The combat phase."@en ;
+                                                    <http://www.w3.org/2000/01/rdf-schemalabel> "Combat Phase"@en ;
+                                                    <http://www.w3.org/2004/02/skos/coreprefLabel> "Combat Phase"@en .
+
+
+###  https://example.org/MagicTheGathering/ComprehensiveRules
+<https://example.org/MagicTheGathering/ComprehensiveRules> rdf:type owl:NamedIndividual ,
+                                                                    <https://example.org/ccg#RuleBook> ;
+                                                           <http://purl.org/dc/terms/title> "Magic: The Gathering Comprehensive Rules"@en ;
+                                                           <https://example.org/ccg#hasRuleSection> <https://example.org/MagicTheGathering/GameConcepts> .
+
+
+###  https://example.org/MagicTheGathering/Deck
+<https://example.org/MagicTheGathering/Deck> rdf:type owl:NamedIndividual ,
+                                                      <https://example.org/ccg#Deck> ;
+                                             <http://purl.org/dc/terms/description> "the deck of cards that a player draws from"@en ;
+                                             <http://www.w3.org/2000/01/rdf-schemalabel> "Deck"@en ;
+                                             <http://www.w3.org/2000/01/rdf-schemasubClassOf> _:genid3 ;
+                                             <http://www.w3.org/2004/02/skos/coreprefLabel> "Deck"@en .
+
+_:genid3 rdf:type <http://www.w3.org/2002/07/owlRestriction> ;
+          <http://www.w3.org/2002/07/owlmaxCardinality> "60"^^<http://www.w3.org/2001/XMLSchemanonNegativeInteger> ;
+          <http://www.w3.org/2002/07/owlminCardinality> "40"^^<http://www.w3.org/2001/XMLSchemanonNegativeInteger> ;
+          <http://www.w3.org/2002/07/owlonProperty> <https://example.org/ccg#hasCard> ;
+          <http://www.w3.org/2002/07/owlsomeValuesFrom> _:genid4 .
+
+_:genid4 rdf:type <http://www.w3.org/2002/07/owlClass> ;
+          <http://www.w3.org/2002/07/owlintersectionOf> [ ] .
+
+
+###  https://example.org/MagicTheGathering/DrawCardStep
+<https://example.org/MagicTheGathering/DrawCardStep> rdf:type owl:NamedIndividual ,
+                                                              <https://example.org/ccg#Step> ;
+                                                     <https://example.org/ccg#hasAction> <https://example.org/MagicTheGathering/UntapAction> ,
+                                                                                         <https://example.org/ccg#DrawAction> .
+
+
+###  https://example.org/MagicTheGathering/GameConceptsRuleSection
+<https://example.org/MagicTheGathering/GameConceptsRuleSection> rdf:type owl:NamedIndividual ,
+                                                                         <https://example.org/ccg#RuleSection> ;
+                                                                <http://purl.org/dc/terms/title> "Game Concepts"@en ;
+                                                                <https://example.org/ccg#hasSubSection> <https://example.org/ccg#GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/GeneralRulesSection
+<https://example.org/MagicTheGathering/GeneralRulesSection> rdf:type owl:NamedIndividual ,
+                                                                     <https://example.org/ccg#RulesSection> ;
+                                                            <http://purl.org/dc/terms/title> "1. General"@en .
+
+
+###  https://example.org/MagicTheGathering/Graveyard
+<https://example.org/MagicTheGathering/Graveyard> rdf:type owl:NamedIndividual ,
+                                                           <https://example.org/ccg#PublicZone> ;
+                                                  <https://example.org/ccg#hasCardPool> <https://example.org/ccg#DiscardPile> .
+
+
+###  https://example.org/MagicTheGathering/GreenMana
+<https://example.org/MagicTheGathering/GreenMana> rdf:type owl:NamedIndividual ,
+                                                           <http://www.w3.org/2002/07/owlClass> ;
+                                                  <http://purl.org/dc/terms/description> "Green Mana is generally produced by Forest Cards"@en ;
+                                                  <http://www.w3.org/2000/01/rdf-schemalabel> "Green Mana"@en ;
+                                                  <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/MagicTheGathering/Mana> ;
+                                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Green Mana"@en .
+
+
+###  https://example.org/MagicTheGathering/LandCard
+<https://example.org/MagicTheGathering/LandCard> rdf:type owl:NamedIndividual ,
+                                                          <https://example.org/ccg#PermanentCard> ;
+                                                 <http://purl.org/dc/terms/description> "Land cards are used to produce Mana. Some lands have other special effects."@en ;
+                                                 <http://www.w3.org/2000/01/rdf-schemalabel> "Lan Card"@en ;
+                                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "Land Card"@en .
+
+
+###  https://example.org/MagicTheGathering/Library
+<https://example.org/MagicTheGathering/Library> rdf:type owl:NamedIndividual ,
+                                                         <https://example.org/ccg#HiddenZone> ;
+                                                <https://example.org/ccg#hasCardPool> <https://example.org/ccg#Deck> .
+
+
+###  https://example.org/MagicTheGathering/MagicTheGathering
+<https://example.org/MagicTheGathering/MagicTheGathering> rdf:type owl:NamedIndividual ,
+                                                                   <https://example.org/ccg#CardGame> ;
+                                                          <http://www.w3.org/2000/01/rdf-schemalabel> "Magic: The Gathering"@en ;
+                                                          <http://www.w3.org/2004/02/skos/coreprefLabel> "Magic: The Gathering"@en .
+
+
+###  https://example.org/MagicTheGathering/Mana
+<https://example.org/MagicTheGathering/Mana> rdf:type owl:NamedIndividual ,
+                                                      <https://example.org/ccg#Resource> ;
+                                             <http://purl.org/dc/terms/description> "Mana is required for deploying cards and activating abilities. It can come in five six variations."@en ;
+                                             <http://www.w3.org/2000/01/rdf-schemalabel> "Mana"@en ;
+                                             <http://www.w3.org/2004/02/skos/coreprefLabel> "Mana"@en .
+
+
+###  https://example.org/MagicTheGathering/PowerStat
+<https://example.org/MagicTheGathering/PowerStat> rdf:type owl:NamedIndividual ,
+                                                           <https://example.org/ccg#CardStat> .
+
+
+###  https://example.org/MagicTheGathering/PreCombatMainPhase
+<https://example.org/MagicTheGathering/PreCombatMainPhase> rdf:type owl:NamedIndividual ,
+                                                                    <https://example.org/ccg#Phase> ;
+                                                           <http://www.w3.org/2000/01/rdf-schemacomment> "The first of two main phases of the game."@en ;
+                                                           <http://www.w3.org/2000/01/rdf-schemalabel> "Main Phase"@en ;
+                                                           <http://www.w3.org/2004/02/skos/coreprefLabel> "Main Phase"@en .
+
+
+###  https://example.org/MagicTheGathering/RedMana
+<https://example.org/MagicTheGathering/RedMana> rdf:type owl:NamedIndividual ,
+                                                         <http://www.w3.org/2002/07/owlClass> ;
+                                                <http://purl.org/dc/terms/description> "Red Mana is generally produced by Mountain Cards"@en ;
+                                                <http://www.w3.org/2000/01/rdf-schemalabel> "Red Mana"@en ;
+                                                <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/MagicTheGathering/Mana> ;
+                                                <http://www.w3.org/2004/02/skos/coreprefLabel> "Red Mana"@en .
+
+
+###  https://example.org/MagicTheGathering/TapAction
+<https://example.org/MagicTheGathering/TapAction> rdf:type owl:NamedIndividual ,
+                                                           <http://www.w3.org/2002/07/owlClass> ;
+                                                  <http://purl.org/dc/terms/description> "To Tap your card, you turn it sideways. This is how you activate a card in Magic."@en ;
+                                                  <http://www.w3.org/2000/01/rdf-schemalabel> "Tap"@en ;
+                                                  <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccg#ActivateAction> ;
+                                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Tap"@en .
+
+
+###  https://example.org/MagicTheGathering/ToughnessStat
+<https://example.org/MagicTheGathering/ToughnessStat> rdf:type owl:NamedIndividual ,
+                                                               <https://example.org/ccg#CardStat> .
+
+
+###  https://example.org/MagicTheGathering/WhiteMana
+<https://example.org/MagicTheGathering/WhiteMana> rdf:type owl:NamedIndividual ,
+                                                           <http://www.w3.org/2002/07/owlClass> ;
+                                                  <http://purl.org/dc/terms/description> "White Mana is generally produced by Plains Cards"@en ;
+                                                  <http://www.w3.org/2000/01/rdf-schemalabel> "White Mana"@en ;
+                                                  <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/MagicTheGathering/Mana> ;
+                                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "White Mana"@en .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e1
+<https://example.org/MagicTheGathering/Rule100%2e1> rdf:type owl:NamedIndividual ,
+                                                             <https://example.org/ccg#Rule> ;
+                                                    <http://purl.org/dc/terms/description> "100.1. These Magic rules apply to any Magic game with two or more players, including two-player games and multiplayer games."@en ;
+                                                    <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e1a
+<https://example.org/MagicTheGathering/Rule100%2e1a> rdf:type owl:NamedIndividual ,
+                                                              <https://example.org/ccg#Rule> ;
+                                                     <http://purl.org/dc/terms/description> "100.1a A two-player game is a game that begins with only two players."@en ;
+                                                     <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Player> ;
+                                                     <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e1b
+<https://example.org/MagicTheGathering/Rule100%2e1b> rdf:type owl:NamedIndividual ,
+                                                              <https://example.org/ccg#Rule> ;
+                                                     <http://purl.org/dc/terms/description> "100.1b A multiplayer game is a game that begins with more than two players. See section 8, &quot;Multiplayer Rules.&quot;"@en ;
+                                                     <http://www.w3.org/2000/01/rdf-schemaseeAlso> <https://example.org/MagicTheGathering/MultiplayerRulesSection> ;
+                                                     <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Player> ;
+                                                     <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e2
+<https://example.org/MagicTheGathering/Rule100%2e2> rdf:type owl:NamedIndividual ,
+                                                             <https://example.org/ccg#Rule> ;
+                                                    <http://purl.org/dc/terms/description> "100.2. To play, each player needs their own deck of traditional Magic cards, small items to represent any tokens and counters, and some way to clearly track life totals."@en ;
+                                                    <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Deck> ,
+                                                                                                 <https://example.org/MagicTheGathering/Player> ;
+                                                    <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e2a
+<https://example.org/MagicTheGathering/Rule100%2e2a> rdf:type owl:NamedIndividual ,
+                                                              <https://example.org/ccg#Rule> ;
+                                                     <http://purl.org/dc/terms/description> "100.2a In constructed play (a way of playing in which each player creates their own deck ahead of time), each deck has a minimum deck size of 60 cards. A constructed deck may contain any number of basic land cards and no more than four of any card with a particular English name other than basic land cards. For the purposes of deck construction, cards with interchangeable names have the same English name (see rule 201.3)."@en ;
+                                                     <http://www.w3.org/2000/01/rdf-schemaseeAlso> <https://example.org/MagicTheGathering/Rule201%2e3> ;
+                                                     <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Deck> ,
+                                                                                                  <https://example.org/MagicTheGathering/Player> ;
+                                                     <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e2b
+<https://example.org/MagicTheGathering/Rule100%2e2b> rdf:type owl:NamedIndividual ,
+                                                              <https://example.org/ccg#Rule> ;
+                                                     <http://purl.org/dc/terms/description> "100.2b In limited play (a way of playing in which each player gets the same quantity of unopened Magic product such as booster packs and creates their own deck using only this product and basic land cards), each deck has a minimum deck size of 40 cards. A limited deck may contain as many duplicates of a card as are included with the product."@en ;
+                                                     <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Deck> ,
+                                                                                                  <https://example.org/MagicTheGathering/Player> ;
+                                                     <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e2c
+<https://example.org/MagicTheGathering/Rule100%2e2c> rdf:type owl:NamedIndividual ,
+                                                              <https://example.org/ccg#Rule> ;
+                                                     <http://purl.org/dc/terms/description> "100.2c Commander decks are subject to additional deckbuilding restrictions and requirements. See rule 903, &quot;Commander,&quot; for details."@en ;
+                                                     <http://www.w3.org/2000/01/rdf-schemaseeAlso> <https://example.org/MagicTheGathering/Rule903> ;
+                                                     <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Deck> ;
+                                                     <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e2d
+<https://example.org/MagicTheGathering/Rule100%2e2d> rdf:type owl:NamedIndividual ,
+                                                              <https://example.org/ccg#Rule> ;
+                                                     <http://purl.org/dc/terms/description> "100.2d Some formats and casual play variants allow players to use a supplementary deck of nontraditional Magic cards (see rule 108.2a). These supplementary decks have their own deck construction rules. See rule 717, &quot;Attraction Cards;&quot; rule 901, &quot;Planechase;&quot; and rule 904, &quot;Archenemy.&quot;"@en ;
+                                                     <http://www.w3.org/2000/01/rdf-schemaseeAlso> <https://example.org/MagicTheGathering/Rule717> ,
+                                                                                                   <https://example.org/MagicTheGathering/Rule901> ,
+                                                                                                   <https://example.org/MagicTheGathering/Rule904> ,
+                                                                                                   <https://example.org/MagicTheGathering/Rule108%2e2a> ;
+                                                     <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Deck> ,
+                                                                                                  <https://example.org/MagicTheGathering/Player> ;
+                                                     <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e3
+<https://example.org/MagicTheGathering/Rule100%2e3> rdf:type owl:NamedIndividual ,
+                                                             <https://example.org/ccg#Rule> ;
+                                                    <http://purl.org/dc/terms/description> "100.3. Some cards require coins or traditional dice. Some casual variants require additional items, such as specially designated cards, nontraditional Magic cards, and specialized dice."@en ;
+                                                    <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Card> ;
+                                                    <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e4
+<https://example.org/MagicTheGathering/Rule100%2e4> rdf:type owl:NamedIndividual ,
+                                                             <https://example.org/ccg#Rule> ;
+                                                    <http://purl.org/dc/terms/description> "100.4. Each player may also have a sideboard, which is a group of additional cards the player may use to modify their deck between games of a match."@en ;
+                                                    <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Card> ,
+                                                                                                 <https://example.org/MagicTheGathering/Deck> ,
+                                                                                                 <https://example.org/MagicTheGathering/Player> ,
+                                                                                                 <https://example.org/MagicTheGathering/Sideboard> ;
+                                                    <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e4a
+<https://example.org/MagicTheGathering/Rule100%2e4a> rdf:type owl:NamedIndividual ,
+                                                              <https://example.org/ccg#Rule> ;
+                                                     <http://purl.org/dc/terms/description> "100.4a In constructed play, a sideboard may contain no more than fifteen cards. The four-card limit (see rule 100.2a) applies to the combined deck and sideboard."@en ;
+                                                     <http://www.w3.org/2000/01/rdf-schemaseeAlso> <https://example.org/MagicTheGathering/Rule100%2e2a> ;
+                                                     <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Deck> ,
+                                                                                                  <https://example.org/MagicTheGathering/Sideboard> ;
+                                                     <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e4b
+<https://example.org/MagicTheGathering/Rule100%2e4b> rdf:type owl:NamedIndividual ,
+                                                              <https://example.org/ccg#Rule> ;
+                                                     <http://purl.org/dc/terms/description> "100.4b In limited play involving individual players, all cards in a player’s card pool not included in their deck are in that player’s sideboard."@en ;
+                                                     <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Deck> ,
+                                                                                                  <https://example.org/MagicTheGathering/Player> ,
+                                                                                                  <https://example.org/MagicTheGathering/Sideboard> ;
+                                                     <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e4c
+<https://example.org/MagicTheGathering/Rule100%2e4c> rdf:type owl:NamedIndividual ,
+                                                              <https://example.org/ccg#Rule> ;
+                                                     <http://purl.org/dc/terms/description> "100.4c In limited play involving the Two-Headed Giant multiplayer variant, all cards in a team’s card pool but not in either player’s deck are in that team’s sideboard."@en ;
+                                                     <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Deck> ,
+                                                                                                  <https://example.org/MagicTheGathering/Player> ,
+                                                                                                  <https://example.org/MagicTheGathering/Sideboard> ;
+                                                     <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e4d
+<https://example.org/MagicTheGathering/Rule100%2e4d> rdf:type owl:NamedIndividual ,
+                                                              <https://example.org/ccg#Rule> ;
+                                                     <http://purl.org/dc/terms/description> "100.4d In limited play involving other multiplayer team variants, each card in a team’s card pool but not in any player’s deck is assigned to the sideboard of one of those players. Each player has their own sideboard; cards may not be transferred between players."@en ;
+                                                     <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Card> ,
+                                                                                                  <https://example.org/MagicTheGathering/Player> ,
+                                                                                                  <https://example.org/MagicTheGathering/Sideboard> ;
+                                                     <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/MagicTheGathering/Rule100%2e5
+<https://example.org/MagicTheGathering/Rule100%2e5> rdf:type owl:NamedIndividual ,
+                                                             <https://example.org/ccg#Rule> ;
+                                                    <http://purl.org/dc/terms/description> "100.5. If a deck must contain at least a certain number of cards, that number is referred to as a minimum deck size. There is no maximum deck size for non-Commander decks."@en ;
+                                                    <http://www.w3.org/2004/02/skos/corerelated> <https://example.org/MagicTheGathering/Card> ,
+                                                                                                 <https://example.org/MagicTheGathering/Deck> ;
+                                                    <https://example.org/ccg#isDefinedIn> <https://example.org/MagicTheGathering/GeneralRulesSection> .
+
+
+###  https://example.org/ccg#ArtifactCard
+<https://example.org/ccg#ArtifactCard> rdf:type owl:NamedIndividual ,
+                                                <http://www.w3.org/2002/07/owlClass> .
+
+
+###  https://example.org/ccg#CreatureCard
+<https://example.org/ccg#CreatureCard> rdf:type owl:NamedIndividual ,
+                                                <http://www.w3.org/2002/07/owlClass> .
+
+
+###  https://example.org/ccg#EnchantmentCard
+<https://example.org/ccg#EnchantmentCard> rdf:type owl:NamedIndividual ,
+                                                   <https://example.org/ccg#PermanentCard> ;
+                                          <http://www.w3.org/2000/01/rdf-schemacomment> "Represents cards that provide continuous effects or modify game rules."@en ;
+                                          <http://www.w3.org/2000/01/rdf-schemalabel> "Enchantment Card"@en ;
+                                          <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccg#Card> .
+
+
+###  https://example.org/ccg#Forest
+<https://example.org/ccg#Forest> rdf:type owl:NamedIndividual ,
+                                          <https://example.org/ccg#LandCard> ;
+                                 <http://purl.org/dc/terms/description> "Generates a Green Mana when tapped."@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemalabel> "Forest"@en ;
+                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "Forest"@en ;
+                                 <https://example.org/ccg#hasEffect> _:genid6 .
+
+_:genid6 rdf:type <https://example.org/ccg#Effect> ;
+          <https://example.org/ccg#hasAction> _:genid7 ;
+          <https://example.org/ccg#hasTrigger> <https://example.org/MagicTheGathering/TapAction> .
+
+_:genid7 rdf:type <https://example.org/ccg#ResourceAction> ;
+          <https://example.org/ccg#hasSideEffect> _:genid8 .
+
+_:genid8 rdf:type <https://example.org/MagicTheGathering/ManaPool> ;
+          <https://example.org/ccg#hasResource> <https://example.org/MagicTheGathering/GreenMana> ;
+          <https://example.org/ccg#hasResourceCount> 1 .
+
+
+###  https://example.org/ccg#GiantGrowth
+<https://example.org/ccg#GiantGrowth> rdf:type owl:NamedIndividual ,
+                                               <https://example.org/ccg#InstantCard> ;
+                                      <http://www.w3.org/2000/01/rdf-schemalabel> "Giant Growth"@en ;
+                                      <http://www.w3.org/2004/02/skos/coreprefLabel> "Giant Growth"@en ;
+                                      <https://example.org/ccg#hasEffect> _:genid9 ;
+                                      <https://example.org/ccg#hasRuleText> "Target creature gets +3/+3 until end of turn."@en .
+
+_:genid9 rdf:type <https://example.org/ccg#Effect> ;
+          <https://example.org/ccg#hasAction> _:genid10 ;
+          <https://example.org/ccg#hasTarget> <https://example.org/MagicTheGathering/CreatureCard> ;
+          <https://example.org/ccg#hasTrigger> <https://example.org/MagicTheGathering/CastAction> .
+
+_:genid10 rdf:type <https://example.org/ccg#ModifyPTAction> ;
+           <https://example.org/ccg#hasAmount> 3 ;
+           <https://example.org/ccg#hasDuration> <https://example.org/MagicTheGathering/EndOfTurn> .
+
+
+###  https://example.org/ccg#InstantCard
+<https://example.org/ccg#InstantCard> rdf:type owl:NamedIndividual ,
+                                               <http://www.w3.org/2002/07/owlClass> .
+
+
+###  https://example.org/ccg#Island
+<https://example.org/ccg#Island> rdf:type owl:NamedIndividual ,
+                                          <https://example.org/ccg#LandCard> ;
+                                 <http://purl.org/dc/terms/description> "Generates a Blue Mana when tapped."@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemalabel> "Island"@en ;
+                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "Island"@en ;
+                                 <https://example.org/ccg#hasEffect> _:genid11 .
+
+_:genid11 rdf:type <https://example.org/ccg#Effect> ;
+           <https://example.org/ccg#hasAction> _:genid12 ;
+           <https://example.org/ccg#hasTrigger> <https://example.org/MagicTheGathering/TapAction> .
+
+_:genid12 rdf:type <https://example.org/ccg#ResourceAction> ;
+           <https://example.org/ccg#hasSideEffect> _:genid13 .
+
+_:genid13 rdf:type <https://example.org/MagicTheGathering/ManaPool> ;
+           <https://example.org/ccg#hasResource> <https://example.org/MagicTheGathering/BlueMana> ;
+           <https://example.org/ccg#hasResourceCount> 1 .
+
+
+###  https://example.org/ccg#LibraryOfLeng
+<https://example.org/ccg#LibraryOfLeng> rdf:type owl:NamedIndividual ,
+                                                 <https://example.org/ccg#ArtifactCard> ;
+                                        <http://www.w3.org/2000/01/rdf-schemalabel> "Library of Leng"@en ;
+                                        <http://www.w3.org/2004/02/skos/coreprefLabel> "Library of Leng"@en ;
+                                        <https://example.org/ccg#hasEffect> _:genid14 ;
+                                        <https://example.org/ccg#hasRuleText> "You have no maximum hand size. If an effect causes you to discard a card, discard it, but you may put it on top of your library instead of into your graveyard."@en .
+
+_:genid14 rdf:type <https://example.org/ccg#Effect> ;
+           <https://example.org/ccg#hasAction> _:genid15 ;
+           <https://example.org/ccg#hasEffect> _:genid18 ;
+           <https://example.org/ccg#hasTrigger> <https://example.org/MagicTheGathering/DiscardAction> .
+
+_:genid15 rdf:type <https://example.org/ccg#ChoiceAction> ;
+           <https://example.org/ccg#hasOption> _:genid16 ,
+                                               _:genid17 .
+
+_:genid18 rdf:type <https://example.org/ccg#Effect> ;
+           <https://example.org/ccg#hasCondition> <https://example.org/MagicTheGathering/NoMaximumHandSizeCondition> .
+
+_:genid16 rdf:type <https://example.org/ccg#DiscardOption> ;
+           <https://example.org/ccg#hasDestination> <https://example.org/MagicTheGathering/Graveyard> .
+
+_:genid17 rdf:type <https://example.org/ccg#DiscardOption> ;
+           <https://example.org/ccg#hasDestination> <https://example.org/MagicTheGathering/LibraryTop> .
+
+
+###  https://example.org/ccg#LightningBolt
+<https://example.org/ccg#LightningBolt> rdf:type owl:NamedIndividual ,
+                                                 <https://example.org/ccg#InstantCard> ;
+                                        <http://www.w3.org/2000/01/rdf-schemalabel> "Lightning Bolt"@en ;
+                                        <http://www.w3.org/2004/02/skos/coreprefLabel> "Lightning Bolt"@en ;
+                                        <https://example.org/ccg#hasEffect> _:genid19 ;
+                                        <https://example.org/ccg#hasRuleText> "Lightning Bolt deals 3 damage to any target."@en .
+
+_:genid19 rdf:type <https://example.org/ccg#Effect> ;
+           <https://example.org/ccg#hasAction> _:genid20 ;
+           <https://example.org/ccg#hasTrigger> <https://example.org/MagicTheGathering/CastAction> .
+
+_:genid20 rdf:type <https://example.org/ccg#DamageAction> ;
+           <https://example.org/ccg#hasAmount> 3 ;
+           <https://example.org/ccg#hasTarget> <https://example.org/MagicTheGathering/AnyTarget> .
+
+
+###  https://example.org/ccg#LlanowarElves
+<https://example.org/ccg#LlanowarElves> rdf:type owl:NamedIndividual ,
+                                                 <https://example.org/ccg#CreatureCard> ;
+                                        <http://purl.org/dc/terms/description> "One of the most well-known creatures, Llanowar Elves have been used by generations of players for mana acceleration."@en ;
+                                        <http://www.w3.org/2000/01/rdf-schemalabel> "Llanowar Elves"@en ;
+                                        <http://www.w3.org/2004/02/skos/coreprefLabel> "Llanowar Elves"@en ;
+                                        <https://example.org/ccg#hasEffect> _:genid21 ;
+                                        <https://example.org/ccg#hasManaCost> _:genid24 ;
+                                        <https://example.org/ccg#hasRuleText> "{T}: Add {G}."@en ;
+                                        <https://example.org/ccg#hasStat> _:genid25 ,
+                                                                          _:genid26 .
+
+_:genid21 rdf:type <https://example.org/ccg#Effect> ;
+           <https://example.org/ccg#hasAction> _:genid22 ;
+           <https://example.org/ccg#hasTrigger> <https://example.org/MagicTheGathering/TapAction> .
+
+_:genid24 rdf:type <https://example.org/ccg#ManaCost> ;
+           <https://example.org/ccg#requiresMana> <https://example.org/MagicTheGathering/GreenMana> ;
+           <https://example.org/ccg#requiresManaCount> 1 .
+
+_:genid25 rdf:type <https://example.org/MagicTheGathering/ToughnessStat> ;
+           <https://example.org/ccg#hasCurrentValue> 1 .
+
+_:genid26 rdf:type <https://example.org/MagicTheGathering/PowerStat> ;
+           <https://example.org/ccg#hasCurrentValue> 1 .
+
+_:genid22 rdf:type <https://example.org/ccg#ResourceAction> ;
+           <https://example.org/ccg#hasSideEffect> _:genid23 .
+
+_:genid23 rdf:type <https://example.org/MagicTheGathering/ManaPool> ;
+           <https://example.org/ccg#hasResource> <https://example.org/MagicTheGathering/GreenMana> ;
+           <https://example.org/ccg#hasResourceCount> 1 .
+
+
+###  https://example.org/ccg#Mountain
+<https://example.org/ccg#Mountain> rdf:type owl:NamedIndividual ,
+                                            <https://example.org/ccg#LandCard> ;
+                                   <http://purl.org/dc/terms/description> "Generates a Red Mana when tapped."@en ;
+                                   <http://www.w3.org/2000/01/rdf-schemalabel> "Mountain"@en ;
+                                   <http://www.w3.org/2004/02/skos/coreprefLabel> "Mountain"@en ;
+                                   <https://example.org/ccg#hasEffect> _:genid27 .
+
+_:genid27 rdf:type <https://example.org/ccg#Effect> ;
+           <https://example.org/ccg#hasAction> _:genid28 ;
+           <https://example.org/ccg#hasTrigger> <https://example.org/MagicTheGathering/TapAction> .
+
+_:genid28 rdf:type <https://example.org/ccg#ResourceAction> ;
+           <https://example.org/ccg#hasSideEffect> _:genid29 .
+
+_:genid29 rdf:type <https://example.org/MagicTheGathering/ManaPool> ;
+           <https://example.org/ccg#hasResource> <https://example.org/MagicTheGathering/RedMana> ;
+           <https://example.org/ccg#hasResourceCount> 1 .
+
+
+###  https://example.org/ccg#Plains
+<https://example.org/ccg#Plains> rdf:type owl:NamedIndividual ,
+                                          <https://example.org/ccg#LandCard> ;
+                                 <http://purl.org/dc/terms/description> "Generates a White Mana when tapped."@en ;
+                                 <http://www.w3.org/2000/01/rdf-schemalabel> "Plains"@en ;
+                                 <http://www.w3.org/2004/02/skos/coreprefLabel> "Plains"@en ;
+                                 <https://example.org/ccg#hasEffect> _:genid30 .
+
+_:genid30 rdf:type <https://example.org/ccg#Effect> ;
+           <https://example.org/ccg#hasAction> _:genid31 ;
+           <https://example.org/ccg#hasTrigger> <https://example.org/MagicTheGathering/TapAction> .
+
+_:genid31 rdf:type <https://example.org/ccg#ResourceAction> ;
+           <https://example.org/ccg#hasSideEffect> _:genid32 .
+
+_:genid32 rdf:type <https://example.org/MagicTheGathering/ManaPool> ;
+           <https://example.org/ccg#hasResource> <https://example.org/MagicTheGathering/WhiteMana> ;
+           <https://example.org/ccg#hasResourceCount> 1 .
+
+
+###  https://example.org/ccg#SolRing
+<https://example.org/ccg#SolRing> rdf:type owl:NamedIndividual ,
+                                           <https://example.org/ccg#ArtifactCard> ;
+                                  <http://purl.org/dc/terms/description> "Provides an abundant source of mana by tapping into the core of a distant star."@en ;
+                                  <http://www.w3.org/2000/01/rdf-schemalabel> "Sol Ring"@en ;
+                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Sol Ring"@en ;
+                                  <https://example.org/ccg#hasEffect> _:genid33 ;
+                                  <https://example.org/ccg#hasManaCost> _:genid36 ;
+                                  <https://example.org/ccg#hasRuleText> "{T}: Add {C}{C}."@en .
+
+_:genid33 rdf:type <https://example.org/ccg#Effect> ;
+           <https://example.org/ccg#hasAction> _:genid34 ;
+           <https://example.org/ccg#hasTrigger> <https://example.org/MagicTheGathering/TapAction> .
+
+_:genid36 rdf:type <https://example.org/ccg#ManaCost> ;
+           <https://example.org/ccg#requiresMana> <https://example.org/MagicTheGathering/ColorlessMana> ;
+           <https://example.org/ccg#requiresManaCount> 1 .
+
+_:genid34 rdf:type <https://example.org/ccg#ResourceAction> ;
+           <https://example.org/ccg#hasSideEffect> _:genid35 .
+
+_:genid35 rdf:type <https://example.org/MagicTheGathering/ManaPool> ;
+           <https://example.org/ccg#hasResource> <https://example.org/MagicTheGathering/ColorlessMana> ;
+           <https://example.org/ccg#hasResourceCount> 2 .
+
+
+###  https://example.org/ccg#SpellCard
+<https://example.org/ccg#SpellCard> rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/2002/07/owlClass> ;
+                                    <http://www.w3.org/2000/01/rdf-schemacomment> "Represents cards that cast spells, perform actions, or have immediate effects."@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemalabel> "Spell Card"@en ;
+                                    <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccg#Card> .
+
+
+###  https://example.org/ccg#StripMine
+<https://example.org/ccg#StripMine> rdf:type owl:NamedIndividual ,
+                                             <https://example.org/ccg#LandCard> ;
+                                    <http://www.w3.org/2000/01/rdf-schemalabel> "Strip Mine"@en ;
+                                    <http://www.w3.org/2004/02/skos/coreprefLabel> "Strip Mine"@en ;
+                                    <https://example.org/ccg#hasEffect> _:genid37 ,
+                                                                        _:genid40 ;
+                                    <https://example.org/ccg#hasRuleText> "Adds 1 colorless mana to your mana pool or sacrifices to destroy target land."@en .
+
+_:genid37 rdf:type <https://example.org/ccg#Effect> ;
+           <https://example.org/ccg#hasAction> _:genid38 ;
+           <https://example.org/ccg#hasTrigger> <https://example.org/MagicTheGathering/TapAction> .
+
+_:genid40 rdf:type <https://example.org/ccg#Effect> ;
+           <https://example.org/ccg#hasAction> _:genid41 ;
+           <https://example.org/ccg#hasTrigger> <https://example.org/MagicTheGathering/SacrificeAction> .
+
+_:genid38 rdf:type <https://example.org/ccg#ResourceAction> ;
+           <https://example.org/ccg#hasSideEffect> _:genid39 .
+
+_:genid41 rdf:type <https://example.org/ccg#DestroyAction> ;
+           <https://example.org/ccg#hasTarget> <https://example.org/MagicTheGathering/LandCard> .
+
+_:genid39 rdf:type <https://example.org/MagicTheGathering/ManaPool> ;
+           <https://example.org/ccg#hasResource> <https://example.org/MagicTheGathering/ColorlessMana> ;
+           <https://example.org/ccg#hasResourceCount> 1 .
+
+
+###  https://example.org/ccg#Swamp
+<https://example.org/ccg#Swamp> rdf:type owl:NamedIndividual ,
+                                         <https://example.org/ccg#LandCard> ;
+                                <http://purl.org/dc/terms/description> "Generates a Black Mana when tapped."@en ;
+                                <http://www.w3.org/2000/01/rdf-schemalabel> "Swamp"@en ;
+                                <http://www.w3.org/2004/02/skos/coreprefLabel> "Swamp"@en ;
+                                <https://example.org/ccg#hasEffect> _:genid42 .
+
+_:genid42 rdf:type <https://example.org/ccg#Effect> ;
+           <https://example.org/ccg#hasAction> _:genid43 ;
+           <https://example.org/ccg#hasTrigger> <https://example.org/MagicTheGathering/TapAction> .
+
+_:genid43 rdf:type <https://example.org/ccg#ResourceAction> ;
+           <https://example.org/ccg#hasSideEffect> _:genid44 .
+
+_:genid44 rdf:type <https://example.org/MagicTheGathering/ManaPool> ;
+           <https://example.org/ccg#hasResource> <https://example.org/MagicTheGathering/BlackMana> ;
+           <https://example.org/ccg#hasResourceCount> 1 .
+
+
+_:genid45 rdf:type <http://www.w3.org/2002/07/owlRestriction> ;
+          <http://www.w3.org/2002/07/owlmaxCardinality> "4"^^<http://www.w3.org/2001/XMLSchemanonNegativeInteger> ;
+          <http://www.w3.org/2002/07/owlonProperty> <https://example.org/ccg#hasCard> .
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://example.org/MagicTheGathering/Battlefield> <http://www.w3.org/1999/02/22-rdf-syntax-nstype> <https://example.org/ccg#PlayArea> ;
+                                                     <https://example.org/ccg#hasPlayZone> <https://example.org/MagicTheGathering/Graveyard> ,
+                                                                                           <https://example.org/MagicTheGathering/Library> .
+
+
+<https://example.org/MagicTheGathering/PowerStat> <http://www.w3.org/2000/01/rdf-schemalabel> "Power"@en ;
+                                                  <http://www.w3.org/2004/02/skos/coreprefLabel> "Power"@en .
+
+
+<https://example.org/MagicTheGathering/ToughnessStat> <http://www.w3.org/2000/01/rdf-schemalabel> "Toughness"@en ;
+                                                      <http://www.w3.org/2004/02/skos/coreprefLabel> "Toughness"@en .
+
+
+<https://example.org/ccg#ArtifactCard> <http://www.w3.org/2000/01/rdf-schemacomment> "Represents cards that depict magical items, equipment, or artifacts."@en ;
+                                       <http://www.w3.org/2000/01/rdf-schemalabel> "Artifact Card"@en ;
+                                       <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccg#PermanentCard> .
+
+
+<https://example.org/ccg#CreatureCard> <http://www.w3.org/2000/01/rdf-schemacomment> "Represents cards that depict creatures, characters, or entities within the game."@en ;
+                                       <http://www.w3.org/2000/01/rdf-schemalabel> "Creature Card"@en ;
+                                       <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccg#PermanentCard> ;
+                                       <https://example.org/ccg#isType> <https://example.org/MagicTheGathering/Permanent> .
+
+
+<https://example.org/ccg#InstantCard> <http://www.w3.org/2000/01/rdf-schemacomment> "Represents cards that take effect instantly."@en ;
+                                      <http://www.w3.org/2000/01/rdf-schemalabel> "Instant"@en ;
+                                      <http://www.w3.org/2000/01/rdf-schemasubClassOf> <https://example.org/ccg#SpellCard> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
