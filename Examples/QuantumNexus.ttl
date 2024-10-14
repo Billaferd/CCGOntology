@@ -10,17 +10,19 @@ ccg:QuantumNexus rdf:type ccg:CardGame ;
     dct:description "A sci-fi trading card game of strategic battles between advanced civilizations."@en .
 
 # Game Components
-ccg:QuantumNexusDeck rdf:type ccg:Deck ;
-    ccg:isCardIn ccg:QuantumNexus ;
+ccg:QuantumNexusDeck a rdfs:Class ;
+    rdfs:subClassOf ccg:Deck ;
     ccg:hasCardCount 200 .
 
-ccg:MissionCardArea rdf:type ccg:PublicPlayZone ;
+ccg:MissionCardArea a rdfs:Class ;
+    rdfs:subClassOf ccg:PublicPlayZone ;
     ccg:hasPlayArea ccg:QuantumNexus .
 
 ccg:LoadoutArea rdf:type ccg:PublicPlayZone ;
     ccg:hasPlayArea ccg:QuantumNexus .
 
-ccg:QuantumNexusBattlefield rdf:type ccg:PlayArea ;
+ccg:QuantumNexusBattlefield a rdfs:Class ;
+    rdfs:subClassOf ccg:PlayArea ;
     ccg:hasPlayArea ccg:QuantumNexus .
 
 # Example Quadrants (Full Representation Would Include All Quadrants)
