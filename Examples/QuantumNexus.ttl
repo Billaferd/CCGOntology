@@ -33,25 +33,25 @@ ccg:FrontCenterQuadrant rdf:type ccg:PlayZone ;
     ccg:hasPlayArea ccg:QuantumNexusBattlefield . 
 
 # Card Types
-ccg:UnitCard rdf:type ccg:Card ;
+ccg:UnitCard a rdfs:Class ;
     rdfs:subClassOf ccg:Card .
 
-ccg:LeaderUnitCard rdf:type ccg:UnitCard ;
+ccg:LeaderUnitCard a rdfs:Class ;
     rdfs:subClassOf ccg:UnitCard .
 
-ccg:AssetCard rdf:type ccg:Card ;
+ccg:AssetCard a rdfs:Class ;
     rdfs:subClassOf ccg:Card .
 
-ccg:EventCard rdf:type ccg:Card ;
+ccg:EventCard a rdfs:Class ;
     rdfs:subClassOf ccg:Card .
 
-ccg:UpgradeCard rdf:type ccg:Card ;
+ccg:UpgradeCard a rdfs:Class ;
     rdfs:subClassOf ccg:Card .
 
-ccg:TerrainCard rdf:type ccg:Card ;
+ccg:TerrainCard a rdfs:Class ;
     rdfs:subClassOf ccg:Card .
 
-ccg:MissionCard rdf:type ccg:Card ;
+ccg:MissionCard a rdfs:Class ;
     rdfs:subClassOf ccg:Card .
 
 # Card Attributes
@@ -59,21 +59,21 @@ ccg:hasCP rdf:type owl:DatatypeProperty ;
     rdfs:domain ccg:Card ;
     rdfs:range xsd:integer . 
 
-ccg:hasAttackValue rdf:type ccg:CardStat ;
+ccg:hasAttackValue owl:DatatypeProperty ;
     rdfs:subClassOf ccg:CardStat;
     skos:prefLabel "Attack"@en .
 
-ccg:hasDefenseValue rdf:type ccg:CardStat;
+ccg:hasDefenseValue owl:DatatypeProperty;
     rdfs:subClassOf ccg:CardStat;
     skos:prefLabel "Defense"@en .
 
 # Domain Properties (Could Be Expanded for All Domains)
-ccg:hasTechnologyPoints rdf:type owl:ObjectProperty ;
+ccg:hasTechnologyPoints a owl:DatatypeProperty ;
     rdfs:domain ccg:Card ;
     rdfs:range xsd:integer .
 
 # Duplicate Limit
-ccg:hasDuplicateLimit rdf:type owl:DatatypeProperty ;
+ccg:hasDuplicateLimit a owl:DatatypeProperty ;
     rdfs:domain ccg:Card ;
     rdfs:range xsd:integer .
 
