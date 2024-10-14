@@ -1,0 +1,92 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ccg: <https://example.org/ccg> .
+
+# Quantum Nexus as a Card Game
+ccg:QuantumNexus rdf:type ccg:CardGame ;
+    skos:prefLabel "Quantum Nexus"@en ;
+    dct:description "A sci-fi trading card game of strategic battles between advanced civilizations."@en .
+
+# Game Components
+ccg:QuantumNexusDeck rdf:type ccg:Deck ;
+    ccg:isCardIn ccg:QuantumNexus ;
+    ccg:hasCardCount 200 .
+
+ccg:MissionCardArea rdf:type ccg:PublicPlayZone ;
+    ccg:hasPlayArea ccg:QuantumNexus .
+
+ccg:LoadoutArea rdf:type ccg:PublicPlayZone ;
+    ccg:hasPlayArea ccg:QuantumNexus .
+
+ccg:QuantumNexusBattlefield rdf:type ccg:PlayArea ;
+    ccg:hasPlayArea ccg:QuantumNexus .
+
+# Example Quadrants (Full Representation Would Include All Quadrants)
+ccg:FrontLeftQuadrant rdf:type ccg:PlayZone ;
+    ccg:hasPlayArea ccg:QuantumNexusBattlefield .
+
+ccg:FrontCenterQuadrant rdf:type ccg:PlayZone ;
+    ccg:hasPlayArea ccg:QuantumNexusBattlefield . 
+
+# Card Types
+ccg:UnitCard rdf:type ccg:Card ;
+    rdfs:subClassOf ccg:Card .
+
+ccg:LeaderUnitCard rdf:type ccg:UnitCard ;
+    rdfs:subClassOf ccg:UnitCard .
+
+ccg:AssetCard rdf:type ccg:Card ;
+    rdfs:subClassOf ccg:Card .
+
+ccg:EventCard rdf:type ccg:Card ;
+    rdfs:subClassOf ccg:Card .
+
+ccg:UpgradeCard rdf:type ccg:Card ;
+    rdfs:subClassOf ccg:Card .
+
+ccg:TerrainCard rdf:type ccg:Card ;
+    rdfs:subClassOf ccg:Card .
+
+ccg:MissionCard rdf:type ccg:Card ;
+    rdfs:subClassOf ccg:Card .
+
+# Card Attributes
+ccg:hasCP rdf:type owl:DatatypeProperty ;
+    rdfs:domain ccg:Card ;
+    rdfs:range xsd:integer . 
+
+ccg:hasAttackValue rdf:type ccg:CardStat ;
+    rdfs:subClassOf ccg:CardStat;
+    skos:prefLabel "Attack"@en .
+
+ccg:hasDefenseValue rdf:type ccg:CardStat;
+    rdfs:subClassOf ccg:CardStat;
+    skos:prefLabel "Defense"@en .
+
+# Domain Properties (Could Be Expanded for All Domains)
+ccg:hasTechnologyPoints rdf:type owl:ObjectProperty ;
+    rdfs:domain ccg:Card ;
+    rdfs:range xsd:integer .
+
+# Duplicate Limit
+ccg:hasDuplicateLimit rdf:type owl:DatatypeProperty ;
+    rdfs:domain ccg:Card ;
+    rdfs:range xsd:integer .
+
+# Turn Structure (Basic Phases)
+ccg:QuantumNexusTurnStructure rdf:type ccg:TurnStructure ;
+    ccg:hasPhase ccg:ReadyPhase ;
+    ccg:hasPhase ccg:DeploymentPhase ;
+    ccg:hasPhase ccg:CommandPhase ;
+    ccg:hasPhase ccg:BattlePhase . 
+
+# Game Actions (Examples)
+ccg:DeployUnitAction rdf:type ccg:CardAction ;
+    skos:prefLabel "Deploy Unit" ;
+    dct:description "Play a unit card from the hand to the battlefield."@en .
+
+ccg:ActivateAbilityAction rdf:type ccg:ActivateAction ;
+    skos:prefLabel "Activate Ability" ;
+    dct:description "Use a card's ability by paying its cost."@en .
