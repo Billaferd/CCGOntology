@@ -112,3 +112,11 @@ qn:AttachUpgradeAction a rdfs:Class ;
 qn:attachedTo a owl:ObjectProperty ;
     rdfs:range qn:UpgradeCard ;
     rdfs:domain ccg:PermanentCard .
+
+qn:hasDomainPoints a owl:DatatypeProperty ;
+    rdfs:subClassOf ccg:hasCurrentValue ;
+    rdfs:range xsd:integer ;
+    owl:withRestrictions (
+        [ xsd:minInclusive 0 ]
+        [ xsd:maxInclusive 4 ]
+    ) .
