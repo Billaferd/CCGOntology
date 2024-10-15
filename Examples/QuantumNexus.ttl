@@ -34,25 +34,25 @@ ccg:FrontCenterQuadrant rdf:type ccg:PlayZone ;
 
 # Card Types
 ccg:UnitCard a rdfs:Class ;
-    rdfs:subClassOf ccg:Card .
+    rdfs:subClassOf ccg:PermanentCard .
 
 ccg:LeaderUnitCard a rdfs:Class ;
     rdfs:subClassOf ccg:UnitCard .
 
 ccg:AssetCard a rdfs:Class ;
-    rdfs:subClassOf ccg:Card .
+    rdfs:subClassOf ccg:PermanentCard .
 
 ccg:EventCard a rdfs:Class ;
     rdfs:subClassOf ccg:Card .
 
 ccg:UpgradeCard a rdfs:Class ;
-    rdfs:subClassOf ccg:Card .
+    rdfs:subClassOf ccg:PermanentCard .
 
 ccg:TerrainCard a rdfs:Class ;
-    rdfs:subClassOf ccg:Card .
+    rdfs:subClassOf ccg:PermanentCard .
 
 ccg:MissionCard a rdfs:Class ;
-    rdfs:subClassOf ccg:Card .
+    rdfs:subClassOf ccg:PermanentCard .
 
 # Card Attributes
 ccg:hasCP rdf:type owl:DatatypeProperty ;
@@ -67,18 +67,13 @@ ccg:hasDefenseValue owl:DatatypeProperty;
     rdfs:subClassOf ccg:CardStat;
     skos:prefLabel "Defense"@en .
 
-# Domain Properties (Could Be Expanded for All Domains)
-ccg:hasTechnologyPoints a owl:DatatypeProperty ;
-    rdfs:domain ccg:Card ;
-    rdfs:range xsd:integer .
-
 # Duplicate Limit
 ccg:hasDuplicateLimit a owl:DatatypeProperty ;
     rdfs:domain ccg:Card ;
     rdfs:range xsd:integer .
 
 # Turn Structure (Basic Phases)
-ccg:QuantumNexusTurnStructure rdf:type ccg:TurnStructure ;
+ccg:QuantumNexusTurnStructure a ccg:TurnStructure ;
     ccg:hasPhase ccg:ReadyPhase ;
     ccg:hasPhase ccg:DeploymentPhase ;
     ccg:hasPhase ccg:CommandPhase ;
