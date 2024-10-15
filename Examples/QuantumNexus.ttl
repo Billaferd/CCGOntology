@@ -5,74 +5,81 @@
 @prefix ccg: <https://example.org/ccg> .
 
 # Quantum Nexus as a Card Game
-ccg:QuantumNexus rdf:type ccg:CardGame ;
+qn:QuantumNexus rdf:type ccg:CardGame ;
     skos:prefLabel "Quantum Nexus"@en ;
     dct:description "A sci-fi trading card game of strategic battles between advanced civilizations."@en .
 
 # Game Components
-ccg:QuantumNexusDeck a rdfs:Class ;
+qn:QuantumNexusDeck a rdfs:Class ;
     rdfs:subClassOf ccg:Deck ;
     ccg:hasCardCount 200 .
 
-ccg:MissionCardArea a rdfs:Class ;
+qn:MissionCardArea a rdfs:Class ;
     rdfs:subClassOf ccg:PublicPlayZone ;
     ccg:hasPlayArea ccg:QuantumNexus .
 
-ccg:LoadoutArea rdf:type ccg:PublicPlayZone ;
+qn:LoadoutArea rdf:type ccg:PublicPlayZone ;
     ccg:hasPlayArea ccg:QuantumNexus .
 
-ccg:QuantumNexusBattlefield a rdfs:Class ;
+qn:QuantumNexusBattlefield a rdfs:Class ;
     rdfs:subClassOf ccg:PlayArea ;
     ccg:hasPlayArea ccg:QuantumNexus .
 
 # Example Quadrants (Full Representation Would Include All Quadrants)
-ccg:FrontLeftQuadrant rdf:type ccg:PlayZone ;
-    ccg:hasPlayArea ccg:QuantumNexusBattlefield .
+qn:FrontLeftQuadrant a rdfs:Class ;
+    rdfs:subClassOf ccg:PlayZone ;
+    ccg:adjacentTo qn:FrontCenterQuadrant ;
+    ccg:hasPlayArea qn:QuantumNexusBattlefield .
 
-ccg:FrontCenterQuadrant rdf:type ccg:PlayZone ;
-    ccg:hasPlayArea ccg:QuantumNexusBattlefield . 
+qn:FrontCenterQuadrant a rdfs:Class ;
+    rdfs:subClassOf ccg:PlayZone ;
+    ccg:hasPlayArea qn:QuantumNexusBattlefield . 
 
+ccg:adjacentTo a owl:SymmetricProperty ;
+    rdfs:range ccg:PlayZone ;
+    rdfs:domain ccg:PlayZone .
+    
 # Card Types
-ccg:UnitCard a rdfs:Class ;
+qn:UnitCard a rdfs:Class ;
     rdfs:subClassOf ccg:PermanentCard .
 
-ccg:LeaderUnitCard a rdfs:Class ;
+qn:LeaderUnitCard a rdfs:Class ;
     rdfs:subClassOf ccg:UnitCard .
 
-ccg:AssetCard a rdfs:Class ;
+qn:AssetCard a rdfs:Class ;
     rdfs:subClassOf ccg:PermanentCard .
 
-ccg:EventCard a rdfs:Class ;
+qn:EventCard a rdfs:Class ;
     rdfs:subClassOf ccg:Card .
 
-ccg:UpgradeCard a rdfs:Class ;
+qn:UpgradeCard a rdfs:Class ;
     rdfs:subClassOf ccg:PermanentCard .
 
-ccg:TerrainCard a rdfs:Class ;
+qn:TerrainCard a rdfs:Class ;
     rdfs:subClassOf ccg:PermanentCard .
 
-ccg:MissionCard a rdfs:Class ;
+qn:MissionCard a rdfs:Class ;
     rdfs:subClassOf ccg:PermanentCard .
 
-ccg:CommandPoint a rdfs:Class ;
+qn:CommandPoint a rdfs:Class ;
     rdfs:subClassOf ccg:Resource .
 
-ccg:VictoryPoint a rdfs:Class ;
+qn:VictoryPoint a rdfs:Class ;
     rdfs:subClassOf ccg:Resource .
 
 # Turn Structure (Basic Phases)
-ccg:QuantumNexusTurnStructure a ccg:TurnStructure ;
+qn:QuantumNexusTurnStructure a ccg:TurnStructure ;
     ccg:hasPhase ccg:ReadyPhase ;
     ccg:hasPhase ccg:DeploymentPhase ;
     ccg:hasPhase ccg:CommandPhase ;
     ccg:hasPhase ccg:BattlePhase . 
 
 # Game Actions (Examples)
-ccg:DeployUnitAction rdf:type ccg:CardAction ;
+qn:DeployUnitAction rdf:type ccg:CardAction ;
     skos:prefLabel "Deploy Unit" ;
     dct:description "Play a unit card from the hand to the battlefield."@en .
 
-ccg:ActivateAbilityAction rdf:type ccg:ActivateAction ;
+qn:ActivateAbilityAction rdf:type ccg:ActivateAction ;
     skos:prefLabel "Activate Ability" ;
     dct:description "Use a card's ability by paying its cost."@en .
 
