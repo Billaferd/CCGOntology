@@ -57,10 +57,6 @@ qn:BackRightQuadrant a rdfs:Class ;
     rdfs:subClassOf ccg:PublicPlayZone ;
     CCG:adjacentTo qn:BackCenterQuadrant, qn:FrontRightQuadrant ;
     ccg:hasPlayArea qn:QuantumNexusBattlefield .
-
-ccg:adjacentTo a owl:SymmetricProperty ;
-    rdfs:range ccg:PlayZone ;
-    rdfs:domain ccg:PlayZone .
     
 # Card Types
 qn:UnitCard a rdfs:Class ;
