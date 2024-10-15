@@ -57,6 +57,9 @@ ccg:MissionCard a rdfs:Class ;
 ccg:CommandPoint a rdfs:Class ;
     rdfs:subClassOf ccg:Resource .
 
+ccg:VictoryPoint a rdfs:Class ;
+    rdfs:subClassOf ccg:Resource .
+
 # Turn Structure (Basic Phases)
 ccg:QuantumNexusTurnStructure a ccg:TurnStructure ;
     ccg:hasPhase ccg:ReadyPhase ;
@@ -72,3 +75,10 @@ ccg:DeployUnitAction rdf:type ccg:CardAction ;
 ccg:ActivateAbilityAction rdf:type ccg:ActivateAction ;
     skos:prefLabel "Activate Ability" ;
     dct:description "Use a card's ability by paying its cost."@en .
+
+qn:AttachUpgradeAction a rdfs:Class ;
+    rdfs:subClassOf ccg:CardAction .
+
+qn:attachedTo a owl:ObjectProperty ;
+    rdfs:range qn:UpgradeCard ;
+    rdfs:domain ccg:PermanentCard .
