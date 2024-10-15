@@ -133,6 +133,9 @@ ccg:Effect a owl:Class
     rdfs:label "Effect"@en ;
     dct:description "Effects caused by cards."@en .
 
+ccg:KeyWord a owl:Class ;
+    rdfs:subClassOf CCG:Effect .
+
 ccg:CardPool a owl:Class
         , skos:Concept ;
     skos:related ccg:Card ;
