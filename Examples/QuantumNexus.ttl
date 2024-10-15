@@ -54,23 +54,8 @@ ccg:TerrainCard a rdfs:Class ;
 ccg:MissionCard a rdfs:Class ;
     rdfs:subClassOf ccg:PermanentCard .
 
-# Card Attributes
-ccg:hasCP rdf:type owl:DatatypeProperty ;
-    rdfs:domain ccg:Card ;
-    rdfs:range xsd:integer . 
-
-ccg:hasAttackValue owl:DatatypeProperty ;
-    rdfs:subClassOf ccg:CardStat;
-    skos:prefLabel "Attack"@en .
-
-ccg:hasDefenseValue owl:DatatypeProperty;
-    rdfs:subClassOf ccg:CardStat;
-    skos:prefLabel "Defense"@en .
-
-# Duplicate Limit
-ccg:hasDuplicateLimit a owl:DatatypeProperty ;
-    rdfs:domain ccg:Card ;
-    rdfs:range xsd:integer .
+ccg:CommandPoint a rdfs:Class ;
+    rdfs:subClassOf ccg:Resource .
 
 # Turn Structure (Basic Phases)
 ccg:QuantumNexusTurnStructure a ccg:TurnStructure ;
