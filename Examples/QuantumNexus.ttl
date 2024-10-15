@@ -5,7 +5,8 @@
 @prefix ccg: <https://example.org/ccg> .
 
 # Quantum Nexus as a Card Game
-qn:QuantumNexus rdf:type ccg:CardGame ;
+qn:QuantumNexus a rdfs:Class ;
+    rdfs:subClassOf ccg:CardGame ;
     skos:prefLabel "Quantum Nexus"@en ;
     dct:description "A sci-fi trading card game of strategic battles between advanced civilizations."@en .
 
@@ -18,7 +19,8 @@ qn:MissionCardArea a rdfs:Class ;
     rdfs:subClassOf ccg:PublicPlayZone ;
     ccg:hasPlayArea ccg:QuantumNexus .
 
-qn:LoadoutArea rdf:type ccg:PublicPlayZone ;
+qn:LoadoutArea a rdfs:Class ;
+    rdfs:subClassOf ccg:PublicPlayZone ;
     ccg:hasPlayArea ccg:QuantumNexus .
 
 qn:QuantumNexusBattlefield a rdfs:Class ;
@@ -27,13 +29,34 @@ qn:QuantumNexusBattlefield a rdfs:Class ;
 
 # Example Quadrants (Full Representation Would Include All Quadrants)
 qn:FrontLeftQuadrant a rdfs:Class ;
-    rdfs:subClassOf ccg:PlayZone ;
-    ccg:adjacentTo qn:FrontCenterQuadrant ;
+    rdfs:subClassOf ccg:PublicPlayZone ;
+    ccg:adjacentTo qn:FrontCenterQuadrant, qn:BackLeftQuadrant ;
     ccg:hasPlayArea qn:QuantumNexusBattlefield .
 
 qn:FrontCenterQuadrant a rdfs:Class ;
-    rdfs:subClassOf ccg:PlayZone ;
+    rdfs:subClassOf ccg:PublicPlayZone ;
+    ccg:adjacentTo qn:FrontLeftQuadrant, qn:FrontRightQuadrant, qn:BackCenterQuadrant ;
     ccg:hasPlayArea qn:QuantumNexusBattlefield . 
+
+qn:FrontRightQuadrant a rdfs:Class ;
+    rdfs:subClassOf ccg:PublicPlayZone ;
+    CCG:adjacentTo qn:FrontCenterQuadrant, qn:BackRightQuadrant ;
+    ccg:hasPlayArea qn:QuantumNexusBattlefield .
+
+qn:BackLeftQuadrant a rdfs:Class ;
+    rdfs:subClassOf ccg:PublicPlayZone ;
+    ccg:adjacentTo qn:BackCenterQuadrant, qn:FrontLeftQuadrant ;
+    ccg:hasPlayArea qn:QuantumNexusBattlefield .
+
+qn:BackCenterQuadrant a rdfs:Class ;
+    rdfs:subClassOf ccg:PublicPlayZone ;
+    ccg:adjacentTo qn:BackLeftQuadrant, qn:BackRightQuadrant, qn:FrontCenterQuadrant ;
+    ccg:hasPlayArea qn:QuantumNexusBattlefield . 
+
+qn:BackRightQuadrant a rdfs:Class ;
+    rdfs:subClassOf ccg:PublicPlayZone ;
+    CCG:adjacentTo qn:BackCenterQuadrant, qn:FrontRightQuadrant ;
+    ccg:hasPlayArea qn:QuantumNexusBattlefield .
 
 ccg:adjacentTo a owl:SymmetricProperty ;
     rdfs:range ccg:PlayZone ;
