@@ -134,7 +134,10 @@ ccg:Effect a owl:Class
     dct:description "Effects caused by cards."@en .
 
 ccg:KeyWord a owl:Class ;
-    rdfs:subClassOf CCG:Effect .
+    rdfs:subClassOf CCG:Effect ;
+    skos:prefLabel "Keyword"@en ;
+    rdfs:label "Keyword"@en ;
+    dct:description "Effects imparted by Keywords."@en .
 
 ccg:CardPool a owl:Class
         , skos:Concept ;
