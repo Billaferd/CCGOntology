@@ -182,6 +182,15 @@ ccg:ResourceCost a owl:Class
     dct:description "The type and cost of resource to be paid for an effect."@en ;
     skos:example "2 Red Mana, 1 Leaf Energy"@en .
 
+ccg:ResourceRequirement a owl:Class
+        , skos:Concept ;
+    rdfs:subClassOf ccg:ResourcePool ;
+    skos:broader ccg:ResourcePool ;
+    skos:prefLabel "Resource Requirement"@en ;
+    rdfs:label "Resource Requirement"@en ;
+    dct:description "The type and amount of resources required."@en ;
+    skos:example "2 Red Mana, 1 Leaf Energy"@en .
+
 ccg:ResourcePool a owl:Class
         , skos:Concept ;
     skos:related ccg:Resource ;
