@@ -55,7 +55,7 @@ qn:BackCenterQuadrant a rdfs:Class ;
 
 qn:BackRightQuadrant a rdfs:Class ;
     rdfs:subClassOf ccg:PublicPlayZone ;
-    CCG:adjacentTo qn:BackCenterQuadrant, qn:FrontRightQuadrant ;
+    ccg:adjacentTo qn:BackCenterQuadrant, qn:FrontRightQuadrant ;
     ccg:hasPlayArea qn:QuantumNexusBattlefield .
     
 # Card Types
@@ -81,17 +81,65 @@ qn:MissionCard a rdfs:Class ;
     rdfs:subClassOf ccg:PermanentCard .
 
 qn:CommandPoint a rdfs:Class ;
-    rdfs:subClassOf ccg:Resource .
+    rdfs:subClassOf ccg:GameStat, ccg:CardStat .
 
 qn:VictoryPoint a rdfs:Class ;
-    rdfs:subClassOf ccg:Resource .
+    rdfs:subClassOf ccg:GameStat .
+
+qn:InitiativeRule a ccg:Rule ;
+    skos:prefLabel "Initiative Rule"@en ;
+    dct:description "The player who activates/deploys the fewest cards in the previous phase has the initiative in the current phase."@en ;
+    spin:constraint [
+        a spin:Template ;
+        spin:body [
+            CONSTRUCT {
+    qn:DeploymentPhase ccg:hasInitiativePlayer ?player .
+}
+WHERE {
+    # ... (Similar to the general template, identifying the previous Battle Phase)
+
+    # Find players tied for fewest cards played 
+    { 
+        SELECT ?player (COUNT(?action) AS ?actionCount)
+        WHERE {
+            # ... (Logic to count cards played by each player)
+        }
+        GROUP BY ?player
+        HAVING (COUNT(?action) = MIN(?actionCountInGroup)) 
+    }
+
+    # If there's a tie, find the player who spent the least CP 
+    {
+        SELECT ?player (SUM(?cpCost) AS ?totalCPSpent)
+        WHERE {
+            # ... (Logic to sum CP costs of actions taken by tied players) 
+        }
+        GROUP BY ?player
+        ORDER BY ?totalCPSpent
+        LIMIT 1
+    }
+        ]
+    ] .
 
 # Turn Structure (Basic Phases)
 qn:QuantumNexusTurnStructure a ccg:TurnStructure ;
-    ccg:hasPhase ccg:ReadyPhase ;
-    ccg:hasPhase ccg:DeploymentPhase ;
-    ccg:hasPhase ccg:CommandPhase ;
-    ccg:hasPhase ccg:BattlePhase . 
+    ccg:hasPhase qn:ReadyPhase ;
+    ccg:hasPhase qn:DeploymentPhase ;
+    ccg:hasPhase qn:CommandPhase ;
+    ccg:hasPhase qn:BattlePhase . 
+
+qn:ReadyPhase a rdfs:Class ;
+    rdfs:subClassOf ccg:Phase ;
+    ccg:hasStep qn:DeactivateStep, qn:ResetComandPointStep, qn:DrawCardLimitStep ;
+    skos:prefLabel "Ready Phase" ;
+    dct:description "The ready phase is the first phase of a turn."@en .
+
+qn:DeploymentPhase a owl:Class ;
+    rdfs:subClassOf ccg:Phase ;
+    ccg:hasStep qn:DeployStep ;
+    skos:prefLabel "Deployment Phase"@en ;
+    dct:description "The second phase, where cards are deployed into the battlefield."@en .
+    
 
 # Game Actions (Examples)
 qn:DeployUnitAction rdf:type ccg:CardAction ;
@@ -116,3 +164,4 @@ qn:hasDomainPoints a owl:DatatypeProperty ;
         [ xsd:minInclusive 0 ]
         [ xsd:maxInclusive 4 ]
     ) .
+
